@@ -1,4 +1,4 @@
-export interface IApplicationModel {
+export interface IUpdateApplicationModel {
   id: number;
   userId: number;
   bootcampId: number;

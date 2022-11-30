@@ -1,4 +1,4 @@
-export interface IEmployeeModel {
+export interface IUpdateInstructorModel {
   id: number;
   firstName: string;
   lastName: string;
@@ -6,5 +6,5 @@ export interface IEmployeeModel {
   password: string;
   nationalIdentity: number;
   dateOfBirth: string;
-  position: string;
+  companyName: string;
 }

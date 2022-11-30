@@ -1,4 +1,4 @@
-export interface IInstructorModel {
+export interface IUpdateApplicantResponse {
   id: number;
   firstName: string;
   lastName: string;
@@ -6,5 +6,5 @@ export interface IInstructorModel {
   password: string;
   nationalIdentity: number;
   dateOfBirth: string;
-  companyName: string;
+  about: string;
 }

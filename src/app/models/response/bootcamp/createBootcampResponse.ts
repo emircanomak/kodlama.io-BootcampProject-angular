@@ -1,4 +1,4 @@
-export interface IBootcampModel {
+export interface ICreateBootcampResponse {
   id: number;
   instructorId: number;
   name: string;

@@ -15,6 +15,8 @@ import { CreateEmployeeComponent } from './components/employee/create-employee/c
 import { UpdateEmployeeComponent } from './components/employee/update-employee/update-employee.component';
 import { CreateInstructorComponent } from './components/instructor/create-instructor/create-instructor.component';
 import { UpdateInstructorComponent } from './components/instructor/update-instructor/update-instructor.component';
+import { NavbarComponent } from './layouts/navbar/navbar.component';
+import { LoginComponent } from './components/login/login.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +32,9 @@ import { UpdateInstructorComponent } from './components/instructor/update-instru
     CreateEmployeeComponent,
     UpdateEmployeeComponent,
     CreateInstructorComponent,
-    UpdateInstructorComponent
+    UpdateInstructorComponent,
+    NavbarComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,

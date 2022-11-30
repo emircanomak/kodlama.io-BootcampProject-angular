@@ -16,9 +16,13 @@ import { UpdateEmployeeComponent } from './components/employee/update-employee/u
 import { CreateInstructorComponent } from './components/instructor/create-instructor/create-instructor.component';
 import { UpdateInstructorComponent } from './components/instructor/update-instructor/update-instructor.component';
 import { NavbarComponent } from './layouts/navbar/navbar.component';
+<<<<<<< HEAD
 import { LoginComponent } from './components/login/login.component';
 import { HomeComponent } from './components/home/home.component';
 import {HttpClientModule} from "@angular/common/http"
+=======
+
+>>>>>>> 1915c252dc17b99be1c2b55f1dfc7182881bccb8
 
 @NgModule({
   declarations: [
@@ -36,8 +40,12 @@ import {HttpClientModule} from "@angular/common/http"
     CreateInstructorComponent,
     UpdateInstructorComponent,
     NavbarComponent,
+<<<<<<< HEAD
     LoginComponent,
     HomeComponent
+=======
+   
+>>>>>>> 1915c252dc17b99be1c2b55f1dfc7182881bccb8
   ],
   imports: [
     BrowserModule,

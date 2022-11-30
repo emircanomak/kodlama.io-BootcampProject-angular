@@ -4,7 +4,7 @@ export interface IInstructorModel {
   lastName: string;
   email: string;
   password: string;
-  nationalIdentity: string;
+  nationalIdentity: number;
   dateOfBirth: string;
   companyName: string;
 }

@@ -6,7 +6,7 @@
       "lastName": "Alıcı",
       "email": "beyza@gmail.com",
       "password": "123456",
-      "nationalIdentity": "12345678910",
+      "nationalIdentity": 12345678910,
       "dateOfBirth": "01/01/2023",
       "about": "Ben Beyza."
     }
@@ -18,7 +18,7 @@
       "lastName": "Omak",
       "email": "emir@gmail.com",
       "password": "123456",
-      "nationalIdentity": "12345678911",
+      "nationalIdentity": 12345678911,
       "dateOfBirth": "01/01/1998",
       "position": "Başkan"
     }
@@ -30,7 +30,7 @@
       "lastName": "Demiroğ",
       "email": "engin@gmail.com",
       "password": "123456",
-      "nationalIdentity": "12345678912",
+      "nationalIdentity": 12345678912,
       "dateOfBirth": "01/01/1988",
       "companyName": "kodlama.io"
     }

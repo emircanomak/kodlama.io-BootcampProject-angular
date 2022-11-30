@@ -1,1 +1,35 @@
-<p>create-black-list works!</p>
+<button type="button" style="float:right; margin-right: 200px;" class="btn btn-success btn-lg mt-5">Engelle</button>
+
+<h1 class="mt-5 mb-5" style="text-align: center;">Kara Liste</h1>
+
+<table class="table" style="margin-left: 100px;">
+    <thead>
+      <tr style="text-align:center">
+        <th scope="col">Id</th>
+        <th scope="col">Applicant Id</th>
+        <th scope="col">Date</th>
+        <th scope="col">Reason</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr style="text-align:center" *ngFor= "let blacklist of blacklists">
+ 
+        <td>{{blacklist.id}}</td>
+        <td>{{blacklist.applicantId}}</td>
+        <td>{{blacklist.date}}</td>
+        <td>{{blacklist.reason}}</td>
+        <td>
+          <div>
+          <button type="button" class="btn btn-primary mx-3">Detay</button>
+          <button type="button" class="btn btn-secondary mx-3">Düzenle</button>
+          <button type="button" class="btn btn-danger mx-3">Sil</button>
+          </div>
+         
+        </td>
+      </tr>
+
+      
+
+      
+    </tbody>
+  </table>

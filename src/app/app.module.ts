@@ -17,6 +17,8 @@ import { CreateInstructorComponent } from './components/instructor/create-instru
 import { UpdateInstructorComponent } from './components/instructor/update-instructor/update-instructor.component';
 import { NavbarComponent } from './layouts/navbar/navbar.component';
 import { LoginComponent } from './components/login/login.component';
+import { HomeComponent } from './components/home/home.component';
+import {HttpClientModule} from "@angular/common/http"
 
 @NgModule({
   declarations: [
@@ -34,11 +36,13 @@ import { LoginComponent } from './components/login/login.component';
     CreateInstructorComponent,
     UpdateInstructorComponent,
     NavbarComponent,
-    LoginComponent
+    LoginComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

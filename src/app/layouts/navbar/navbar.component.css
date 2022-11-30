@@ -1,5 +1,4 @@
 
-
 .bg-black {
     background-color: #000;
 }
@@ -8,15 +7,24 @@
     width: 30px;
     height: 30px;
     border-radius: 4px;
+    float: right;
+    display: flex;
+    align-items:flex-end;
+    
 }
 
 .navbar-brand {
     padding: 14px 20px;
     font-size: 16px;
+    display: flex;
+    justify-content: end;
+    float: right;
 }
 
 .navbar-nav {
     width: 100%;
+    display: flex;
+    justify-content: end;
 }
 
 .nav-item {

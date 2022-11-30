@@ -1,1 +1,44 @@
-<p>create-applicant works!</p>
+<button type="button" style="float:right; margin-right: 200px;" class="btn btn-success btn-lg mt-5">Aday Ekle</button>
+
+<h1 class="mt-5 mb-5" style="text-align: center;">Aday Listesi</h1>
+
+<table class="table" style="margin-left: 100px;">
+    <thead>
+      <tr style="text-align:center">
+        <th scope="col">id</th>
+        <th scope="col">Adı</th>
+        <th scope="col">Soyadı</th>
+        <th scope="col">Email</th>
+        <th scope="col">Şifre</th>
+        <th scope="col">Kimlik No</th>
+        <th  scope="col">Doğum Tarihi</th>
+        <th  scope="col">Hakkında</th>
+        <th  scope="col">İşlemler</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr style="text-align:center" *ngFor= "let applicant of applicants">
+ 
+        <td>{{applicant.id}}</td>
+        <td>{{applicant.firstName}}</td>
+        <td>{{applicant.lastName}}</td>
+        <td>{{applicant.email}}</td>
+        <td>{{applicant.password}}</td>
+        <td>{{applicant.nationalIdentity}}</td>
+        <td>{{applicant.dateOfBirth}}</td>
+        <td>{{applicant.about}}</td>
+        <td>
+          <div>
+          <button type="button" class="btn btn-primary mx-3">Detay</button>
+          <button type="button" class="btn btn-secondary mx-3">Düzenle</button>
+          <button type="button" class="btn btn-danger mx-3">Sil</button>
+          </div>
+         
+        </td>
+      </tr>
+
+      
+
+      
+    </tbody>
+  </table>

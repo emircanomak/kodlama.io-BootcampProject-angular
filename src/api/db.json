@@ -1,4 +1,64 @@
 {
-  "name":"Hediye",
-  "surname":"Yıldırım"
+  "applicant": [
+    {
+      "id": 1,
+      "firstName": "Beyza",
+      "lastName": "Alıcı",
+      "email": "beyza@gmail.com",
+      "password": "123456",
+      "nationalIdentity": "12345678910",
+      "dateOfBirth": "01/01/2023",
+      "about": "Ben Beyza."
+    }
+  ],
+  "employee": [
+    {
+      "id": 1,
+      "firstName": "Emir",
+      "lastName": "Omak",
+      "email": "emir@gmail.com",
+      "password": "123456",
+      "nationalIdentity": "12345678911",
+      "dateOfBirth": "01/01/1998",
+      "position": "Başkan"
+    }
+  ],
+  "instructor": [
+    {
+      "id": 1,
+      "firstName": "Engin",
+      "lastName": "Demiroğ",
+      "email": "engin@gmail.com",
+      "password": "123456",
+      "nationalIdentity": "12345678912",
+      "dateOfBirth": "01/01/1988",
+      "companyName": "kodlama.io"
+    }
+  ],
+  "blackList": [
+    {
+      "id": 1,
+      "applicantId": 1,
+      "date": "12/11/2022",
+      "reason": "Uygun değil"
+    }
+  ],
+  "bootcamp": [
+    {
+      "id": 1,
+      "instructorId": 1,
+      "name": "Angular",
+      "dateStart": "01/01/2022",
+      "dateEnd": "01/05/2022",
+      "state": 1
+    }
+  ],
+  "application": [
+    {
+      "id": 1,
+      "userId": 1,
+      "bootcampId": 1,
+      "state": 1
+    }
+  ]
 }

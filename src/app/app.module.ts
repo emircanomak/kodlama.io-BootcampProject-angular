@@ -16,7 +16,7 @@ import { UpdateEmployeeComponent } from './components/employee/update-employee/u
 import { CreateInstructorComponent } from './components/instructor/create-instructor/create-instructor.component';
 import { UpdateInstructorComponent } from './components/instructor/update-instructor/update-instructor.component';
 import { NavbarComponent } from './layouts/navbar/navbar.component';
-import { LoginComponent } from './components/login/login.component';
+
 
 @NgModule({
   declarations: [
@@ -34,7 +34,7 @@ import { LoginComponent } from './components/login/login.component';
     CreateInstructorComponent,
     UpdateInstructorComponent,
     NavbarComponent,
-    LoginComponent
+   
   ],
   imports: [
     BrowserModule,

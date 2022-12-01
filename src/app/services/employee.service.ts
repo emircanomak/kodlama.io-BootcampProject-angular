@@ -2,6 +2,7 @@ import { ICreateEmployeeModel } from './../models/request/employee/createEmploye
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
+import { IUpdateEmployeeModel } from '../models/request/employee/updateEmployeeModel';
 
 @Injectable({
   providedIn: 'root',
@@ -24,4 +25,14 @@ export class EmployeeService {
       this.apiUrl + '/' + data.id
     );
   }
+
+  //update employee part
+  getEmployeeById(id:number):Observable<IUpdateEmployeeModel>{
+    return this.httpClient.get<IUpdateEmployeeModel>(this.apiUrl+"/"+id)
+  }
+
+  update(id, employeeModel :IUpdateEmployeeModel ):Observable<IUpdateEmployeeModel>{
+    return this.httpClient.put<IUpdateEmployeeModel>(this.apiUrl + "/"+id,employeeModel) 
+  }
+
 }

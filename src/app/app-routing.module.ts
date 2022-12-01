@@ -1,3 +1,4 @@
+import { AddApplicationComponent } from './components/application/add-application/add-application.component';
 import { AddEmployeeComponent } from './components/employee/add-employee/add-employee.component';
 import { AddBootcampComponent } from './components/bootcamp/add-bootcamp/add-bootcamp.component';
 import { AddInstructorComponent } from './components/instructor/add-instructor/add-instructor.component';
@@ -24,7 +25,7 @@ const routes: Routes = [
   { path: 'add-instructor', component: AddInstructorComponent },
   { path: 'add-bootcamp', component: AddBootcampComponent },
   { path: 'add-employee', component: AddEmployeeComponent },
-  { path: 'add-application', component: AddApplicantComponent },
+  { path: 'add-application', component: AddApplicationComponent},
 ];
 
 @NgModule({

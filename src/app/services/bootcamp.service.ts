@@ -18,6 +18,11 @@ export class BootcampService {
     return this.httpClient.get<ICreateBootcampModel[]>(this.apiUrl)
 
   }
+  
+  add(value:any){
+    
+    return this.httpClient.post(this.apiUrl,value);
+  }
 
  
 }

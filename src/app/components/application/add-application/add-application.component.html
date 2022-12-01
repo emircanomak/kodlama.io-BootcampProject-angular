@@ -1,1 +1,29 @@
-<p>add-application works!</p>
+<div class="container">
+    <div class="row">
+        <div class="col-md-6"></div>
+        <form [formGroup]="applicationAddForm">
+            <div class="mb-3">
+              <button type="button" class="btn btn-outline-dark mt-5" routerLink="/application">Geri Dön</button>
+                <h2 class="text-center mt-3">Başvuru Ekle</h2>
+              <label for="exampleInputEmail1" class="form-label">User ID</label>
+              <input formControlName="userId" type="number" class="form-control" placeholder="userId" id="exampleInputEmail1" aria-describedby="emailHelp">
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Bootcamp ID</label>
+                <input formControlName="bootcampId" type="number" class="form-control" placeholder="bootcampId" id="exampleInputEmail1" aria-describedby="emailHelp">
+              </div>
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Applicant ID</label>
+                <input formControlName="applicantId" type="number" class="form-control" placeholder="applicantId" id="exampleInputEmail1" aria-describedby="emailHelp">
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">State</label>
+                <input formControlName="state" type="number" class="form-control" placeholder="state" id="exampleInputEmail1" aria-describedby="emailHelp">
+              </div>      
+            <button (click)="add()" type="submit" class="btn btn-warning">Ekle</button>
+
+          </form>
+    </div>
+
+
+</div>

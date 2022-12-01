@@ -9,26 +9,6 @@
       "nationalIdentity": 12345678910,
       "dateOfBirth": "01/01/2023",
       "about": "Ben Beyza."
-    },
-    {
-      "id": 2,
-      "firstName": "Emircan",
-      "lastName": "Omak",
-      "email": "emir@gmail.com",
-      "password": "123456",
-      "nationalIdentity": 12345678919,
-      "dateOfBirth": "01/01/2023",
-      "about": "Ben Emircan."
-    },
-    {
-      "firstName": "Berkay ",
-      "lastName": "Anduv",
-      "email": "berkayanduv@hotmail.com",
-      "password": "123",
-      "nationalIdentity": "32165498910",
-      "dateOfBirth": "04/04/1999",
-      "about": "son kuşak",
-      "id": 3
     }
   ],
   "employee": [
@@ -85,12 +65,6 @@
       "applicantId": "80",
       "date": "01.12.2022",
       "reason": "hediyeY1LD1R1M@yahoo.com"
-    },
-    {
-      "id": 6,
-      "applicantId": "54",
-      "date": "12/08/2023",
-      "reason": "rte@gmail.com"
     }
   ],
   "bootcamp": [
@@ -110,13 +84,6 @@
       "userId": 1,
       "bootcampId": 1,
       "state": 1
-    },
-    {
-      "userId": 2,
-      "bootcampId": 2,
-      "applicantId": 2,
-      "state": 2,
-      "id": 2
     }
   ]
 }

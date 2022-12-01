@@ -18,4 +18,8 @@ export class BlacklistService {
   addBlacklist(value:any){
     return this.httpClient.post(this.apiUrl, value)
   }
+
+  deleteBlacklist(blackListModel:ICreateBlackListModel):Observable<ICreateBlackListModel>{
+    return this.httpClient.delete<ICreateBlackListModel>(this.apiUrl+"/"+blackListModel.id)
+  }
 }

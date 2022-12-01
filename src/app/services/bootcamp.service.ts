@@ -24,5 +24,9 @@ export class BootcampService {
     return this.httpClient.post(this.apiUrl,value);
   }
 
+  delete(bootcamp:ICreateBootcampModel):Observable<ICreateBootcampModel>{
+    return this.httpClient.delete<ICreateBootcampModel>(this.apiUrl + "/" + bootcamp.id)
+  }
+
  
 }

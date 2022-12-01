@@ -1,1 +1,20 @@
-<p>update-black-list works!</p>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-6"></div>
+        <form [formGroup]="updateBlacklist">
+            <div class="mb-3">
+                <h2 class="text-center mt-3">Kara Listeyi Güncelle</h2>
+              <label for="exampleInputEmail1" class="form-label">tarih</label>
+              <input formControlName="date" type="text" class="form-control" placeholder="tarih" id="date" aria-describedby="date">
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Neden</label>
+                <input formControlName="reason" type="text" class="form-control" placeholder="lastName" id="reason" aria-describedby="reason">
+              </div>
+            <button (click)="update()" type="submit" class="btn btn-warning">Güncelle</button>
+          </form>
+    </div>
+
+
+</div>

@@ -26,12 +26,12 @@ const routes: Routes = [
   { path: 'add-bootcamp', component: AddBootcampComponent },
   { path: 'add-employee', component: AddEmployeeComponent },
   { path: 'add-application', component: AddApplicationComponent },
-  { path: 'update-applicant', component: AddApplicantComponent },
-  { path: 'update-blacklist', component: AddBlackListComponent },
-  { path: 'update-instructor', component: AddInstructorComponent },
-  { path: 'update-bootcamp', component: AddBootcampComponent },
-  { path: 'update-employee', component: AddEmployeeComponent },
-  { path: 'update-application', component: AddApplicationComponent },
+  { path: 'update-applicant/:id', component: AddApplicantComponent },
+  { path: 'update-blacklist/:id', component: AddBlackListComponent },
+  { path: 'update-instructor/:id', component: AddInstructorComponent },
+  { path: 'update-bootcamp/:id', component: AddBootcampComponent },
+  { path: 'update-employee/:id', component: AddEmployeeComponent },
+  { path: 'update-application/:id', component: AddApplicationComponent },
 ];
 
 @NgModule({

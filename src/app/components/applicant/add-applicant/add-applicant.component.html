@@ -1,1 +1,44 @@
-<p>add-applicant works!</p>
+<div class="container">
+  <button routerLink="/applicant" type="submit" class="btn btn-outline-dark mt-3" >Geri Dön</button>
+    <div class="row">
+      
+        <div class="col-md-6"></div>
+        <form [formGroup]="applicantAddForm">
+            <div class="mb-3">
+                <h2 class="text-center mt-2">Aday Ekle</h2>
+              <label for="exampleInputEmail1" class="form-label">Ad</label>
+              <input formControlName="firstName" type="text" class="form-control" placeholder="firstName" id="exampleInputEmail1" aria-describedby="emailHelp">
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Soyad</label>
+                <input formControlName="lastName" type="text" class="form-control" placeholder="lastName" id="exampleInputEmail1" aria-describedby="emailHelp">
+              </div>
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Email</label>
+                <input formControlName="email" type="text" class="form-control" placeholder="email" id="exampleInputEmail1" aria-describedby="emailHelp">
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Şifre</label>
+                <input formControlName="password" type="text" class="form-control" placeholder="password" id="exampleInputEmail1" aria-describedby="emailHelp">
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Kimlik No </label>
+                <input formControlName="nationalIdentity" type="text" class="form-control" placeholder="nationalIdentity" id="exampleInputEmail1" aria-describedby="emailHelp">
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Doğum Tarihi</label>
+                <input formControlName="dateOfBirth" type="text" class="form-control" placeholder="dateOfBirth" id="exampleInputEmail1" aria-describedby="emailHelp">
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Hakkında</label>
+                <input formControlName="about" type="text" class="form-control" placeholder="about" id="exampleInputEmail1" aria-describedby="emailHelp">
+              </div>
+            <button (click)="add()" type="submit" class="btn btn-warning">Ekle</button>
+            
+          </form>
+    </div>
+
+
+</div>
+
+

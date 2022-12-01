@@ -8,6 +8,9 @@ import { ICreateApplicantModel } from '../models/request/applicant/createApplica
   providedIn: 'root'
 })
 export class ApplicantService {
+  add(value: any) {
+    return this.httpClient.post(this.apiUrl, value)
+  }
 
   apiUrl ="http://localhost:3000/applicant"
 

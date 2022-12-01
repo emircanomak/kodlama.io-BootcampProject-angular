@@ -1,1 +1,49 @@
-<p>add-instructor works!</p>
+<div class="container">
+  <div class="row">
+    <div class="col-md-6"></div>
+    <form [formGroup]="instructorAddForm">
+      <div class="mb-3">
+        <div>
+          <button class="btn btn-outline-dark" style="margin-top: 15px;" routerLink="/instructor">Geri</button>
+          <h2 class="text-center mt-3">Eğitmen Ekle</h2>
+        </div>
+        <label for="exampleInputEmail1" class="form-label">Ad</label>
+        <input formControlName="firstName" type="text" class="form-control" placeholder="Ad" id="exampleInputEmail1"
+          aria-describedby="emailHelp">
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Soyad</label>
+        <input formControlName="lastName" type="text" class="form-control" placeholder="Soyad" id="exampleInputEmail1"
+          aria-describedby="emailHelp">
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Email</label>
+        <input formControlName="email" type="text" class="form-control" placeholder="Email" id="exampleInputEmail1"
+          aria-describedby="emailHelp">
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Şifre</label>
+        <input formControlName="password" type="text" class="form-control" placeholder="Password"
+          id="exampleInputEmail1" aria-describedby="emailHelp">
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Kimlik No</label>
+        <input formControlName="nationalIdentity" type="text" class="form-control" placeholder="Kimlik No"
+          id="exampleInputEmail1" aria-describedby="emailHelp">
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Doğum Tarihi</label>
+        <input formControlName="dateOfBirth" type="text" class="form-control" placeholder="Doğum Tarihi"
+          id="exampleInputEmail1" aria-describedby="emailHelp">
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Şirket Adı</label>
+        <input formControlName="companyName" type="text" class="form-control" placeholder="Şirket Adı"
+          id="exampleInputEmail1" aria-describedby="emailHelp">
+      </div>
+      <button (click)="add()" type="submit" class="btn btn-warning">Ekle</button>
+    </form>
+  </div>
+
+
+</div>

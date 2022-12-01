@@ -1,1 +1,37 @@
-<p>create-application works!</p>
+<button type="button" style="float:right; margin-right: 200px;" class="btn btn-success btn-lg mt-5">Başvuru Ekle</button>
+
+<h1 class="mt-5 mb-5" style="text-align: center;">Başvurular Listesi</h1>
+
+<table class="table" style="margin-left: 100px;">
+    <thead>
+      <tr style="text-align:center">
+        <th scope="col">id</th>
+        <th scope="col">applicantId</th>
+        <th scope="col">userId</th>
+        <th scope="col">bootcampId</th>
+        <th scope="col">state</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr style="text-align:center" *ngFor= "let application of applications">
+ 
+        <td>{{application.id}}</td>
+        <td>{{application.applicantId}}</td>
+        <td>{{application.userId}}</td>
+        <td>{{application.bootcampId}}</td>
+        <td>{{application.state}}</td>
+        <td>
+          <div>
+          <button type="button" class="btn btn-primary mx-3">Detay</button>
+          <button type="button" class="btn btn-secondary mx-3">Düzenle</button>
+          <button type="button" class="btn btn-danger mx-3">Sill</button>
+          </div>
+         
+        </td>
+      </tr>
+
+      
+
+      
+    </tbody>
+  </table>

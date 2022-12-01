@@ -81,14 +81,6 @@
       "dateStart": "01/01/2022",
       "dateEnd": "01/05/2022",
       "state": 1
-    },
-    {
-      "instructorId": 3,
-      "name": "Casgem",
-      "dateStart": 1404,
-      "dateEnd": 1504,
-      "state": 1,
-      "id": 3
     }
   ],
   "application": [

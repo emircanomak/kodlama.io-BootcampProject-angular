@@ -53,6 +53,16 @@
       "nationalIdentity": 12345678912,
       "dateOfBirth": "01/01/1988",
       "companyName": "kodlama.io"
+    },
+    {
+      "firstName": "Engin",
+      "lastName": "Demiroğ",
+      "email": "engindemirog@gmail.com",
+      "password": "123456",
+      "nationalIdentity": "12345678910",
+      "dateOfBirth": "01/02/1989",
+      "companyName": "Kodlama.io",
+      "id": 2
     }
   ],
   "blackList": [

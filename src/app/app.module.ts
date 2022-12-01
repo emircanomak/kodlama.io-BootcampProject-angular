@@ -25,6 +25,13 @@ import { AddBootcampComponent } from './components/bootcamp/add-bootcamp/add-boo
 import { AddEmployeeComponent } from './components/employee/add-employee/add-employee.component';
 import { AddInstructorComponent } from './components/instructor/add-instructor/add-instructor.component'
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { LoginComponent } from './components/login/login/login.component';
+import { DetailApplicantComponent } from './components/applicant/detail-applicant/detail-applicant.component';
+import { DetailApplicationComponent } from './components/application/detail-application/detail-application.component';
+import { DetailBlackListComponent } from './components/black-list/detail-black-list/detail-black-list.component';
+import { DetailBootcampComponent } from './components/bootcamp/detail-bootcamp/detail-bootcamp.component';
+import { DetailEmployeeComponent } from './components/employee/detail-employee/detail-employee.component';
+import { DetailInstructorComponent } from './components/instructor/detail-instructor/detail-instructor.component';
 
 
 
@@ -50,7 +57,14 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     AddBlackListComponent,
     AddBootcampComponent,
     AddEmployeeComponent,
-    AddInstructorComponent
+    AddInstructorComponent,
+    LoginComponent,
+    DetailApplicantComponent,
+    DetailApplicationComponent,
+    DetailBlackListComponent,
+    DetailBootcampComponent,
+    DetailEmployeeComponent,
+    DetailInstructorComponent
 
   ],
   imports: [

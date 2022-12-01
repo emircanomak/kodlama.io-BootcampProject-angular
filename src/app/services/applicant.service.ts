@@ -33,8 +33,8 @@ export class ApplicantService {
   
   }
 
-  getApplicantById(id:number):Observable<ICreateApplicantModel>{
-    return this.httpClient.get<ICreateApplicantModel>(this.apiUrl+"/"+id)
+  getApplicantById(id:number):Observable<IUpdateApplicantModel>{
+    return this.httpClient.get<IUpdateApplicantModel>(this.apiUrl+"/"+id)
   }
 
 }

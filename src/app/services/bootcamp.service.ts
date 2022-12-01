@@ -18,6 +18,11 @@ export class BootcampService {
     return this.httpClient.get<ICreateBootcampModel[]>(this.apiUrl)
 
   }
+  getBootcampById(id:number):Observable<ICreateBootcampModel>{
+    return this.httpClient.get<ICreateBootcampModel>(this.apiUrl +"/" +id)
+
+
+  }
   
   add(value:any){
     
@@ -26,6 +31,12 @@ export class BootcampService {
 
   delete(bootcamp:ICreateBootcampModel):Observable<ICreateBootcampModel>{
     return this.httpClient.delete<ICreateBootcampModel>(this.apiUrl + "/" + bootcamp.id)
+  }
+
+  update(id,bootcamp:any){
+  
+    return this.httpClient.put(this.apiUrl + "/" + id , bootcamp)
+
   }
 
  

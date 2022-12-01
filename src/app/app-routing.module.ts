@@ -1,3 +1,8 @@
+import { AddEmployeeComponent } from './components/employee/add-employee/add-employee.component';
+import { AddBootcampComponent } from './components/bootcamp/add-bootcamp/add-bootcamp.component';
+import { AddInstructorComponent } from './components/instructor/add-instructor/add-instructor.component';
+import { AddBlackListComponent } from './components/black-list/add-black-list/add-black-list.component';
+import { AddApplicantComponent } from './components/applicant/add-applicant/add-applicant.component';
 import { CreateApplicationComponent } from './components/application/create-application/create-application.component';
 import { CreateApplicantComponent } from './components/applicant/create-applicant/create-applicant.component';
 import { CreateEmployeeComponent } from './components/employee/create-employee/create-employee.component';
@@ -14,6 +19,12 @@ const routes: Routes = [
   { path: 'applicant', component: CreateApplicantComponent },
   { path: 'instructor', component: CreateInstructorComponent },
   { path: 'application', component: CreateApplicationComponent },
+  { path: 'add-applicant', component: AddApplicantComponent },
+  { path: 'add-blacklist', component: AddBlackListComponent },
+  { path: 'add-instructor', component: AddInstructorComponent },
+  { path: 'add-bootcamp', component: AddBootcampComponent },
+  { path: 'add-employee', component: AddEmployeeComponent },
+  { path: 'add-application', component: AddApplicantComponent },
 ];
 
 @NgModule({

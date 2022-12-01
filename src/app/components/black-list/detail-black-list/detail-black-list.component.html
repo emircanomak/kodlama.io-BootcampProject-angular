@@ -1,1 +1,17 @@
-<p>detail-black-list works!</p>
+<div class="mb-3">
+  <button type="button" class="btn btn-outline-dark mt-5" routerLink="/blacklist">Geri Dön</button>
+  <div class="card">
+    <div class="row g-0" *ngFor="let data of blacklistDetail">
+      <div class="col-md-4">
+        <img src="https://hemenkredinotu.com/wp-content/uploads/2019/07/Bankalar%C4%B1n-kara-listesi.jpg"
+          class="img-fluid rounded-start" alt="...">
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <h5 class="card-title"><b>Tarih:</b> {{data.date}}</h5>
+          <h5 class="card-title"><b>Neden:</b> {{data.reason}}</h5>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

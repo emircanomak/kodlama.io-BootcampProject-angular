@@ -27,12 +27,23 @@ export class EmployeeService {
   }
 
   //update employee part
-  getEmployeeById(id:number):Observable<IUpdateEmployeeModel>{
-    return this.httpClient.get<IUpdateEmployeeModel>(this.apiUrl+"/"+id)
+  getEmployeeById(id: number): Observable<IUpdateEmployeeModel> {
+    return this.httpClient.get<IUpdateEmployeeModel>(this.apiUrl + '/' + id);
   }
 
-  update(id, employeeModel :IUpdateEmployeeModel ):Observable<IUpdateEmployeeModel>{
-    return this.httpClient.put<IUpdateEmployeeModel>(this.apiUrl + "/"+id,employeeModel) 
+  update(
+    id,
+    employeeModel: IUpdateEmployeeModel
+  ): Observable<IUpdateEmployeeModel> {
+    return this.httpClient.put<IUpdateEmployeeModel>(
+      this.apiUrl + '/' + id,
+      employeeModel
+    );
   }
 
+  getEmployeeDetail(id: number): Observable<ICreateEmployeeModel[]> {
+    return this.httpClient.get<ICreateEmployeeModel[]>(
+      this.apiUrl + '?q&id=' + id
+    );
+  }
 }

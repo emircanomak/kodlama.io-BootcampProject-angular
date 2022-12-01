@@ -40,4 +40,10 @@ export class InstructorService {
       this.apiUrl + '/' + data.id
     );
   }
+
+  getInstructorDetail(id: number): Observable<ICreateInstructorModel[]> {
+    return this.httpClient.get<ICreateInstructorModel[]>(
+      this.apiUrl + '?q&id=' + id
+    );
+  }
 }

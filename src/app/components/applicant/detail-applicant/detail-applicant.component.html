@@ -1,1 +1,19 @@
-<p>detail-applicant works!</p>
+<div class="mb-3">
+  <button type="button" class="btn btn-outline-dark mt-5" routerLink="/applicant">Geri Dön</button>
+  <div class="card">
+    <div class="row g-0" *ngFor="let data of applicantDetail">
+      <div class="col-md-4">
+        <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png"
+          class="img-fluid rounded-start" alt="...">
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <h5 class="card-title"><b>Aday Adı:</b> {{data.firstName}}</h5>
+          <h5 class="card-title"><b>Aday Soyadı:</b> {{data.lastName}}</h5>
+          <h5 class="card-title"><b>Doğum Tarihi</b> {{data.dateOfBirth}}</h5>
+          <h5 class="card-title"><b>Hakkında:</b> {{data.about}}</h5>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

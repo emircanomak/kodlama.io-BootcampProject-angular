@@ -1,1 +1,18 @@
-<p>detail-bootcamp works!</p>
+<div class="mb-3">
+  <button type="button" class="btn btn-outline-dark mt-5" routerLink="/bootcampList">Geri Dön</button>
+  <div class="card">
+    <div class="row g-0" *ngFor="let data of bootcampDetail">
+      <div class="col-md-4">
+        <img src="https://cdn.searchenginejournal.com/wp-content/uploads/2019/04/the-seo-guide-to-angular-1520x800.png"
+          class="img-fluid rounded-start" alt="...">
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <h5 class="card-title"><b>Bootcamp Adı:</b> {{data.name}}</h5>
+          <h5 class="card-title"><b>Başlangıç Tarihi:</b> {{data.dateStart}}</h5>
+          <h5 class="card-title"><b>Bitiş Tarihi:</b> {{data.dateEnd}}</h5>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,1 +1,18 @@
-<p>detail-application works!</p>
+<div class="mb-3">
+  <button type="button" class="btn btn-outline-dark mt-5" routerLink="/application">Geri Dön</button>
+  <div class="card">
+    <div class="row g-0" *ngFor="let data of applicationDetail">
+      <div class="col-md-4">
+        <img src="https://www.eagvs.com/asset/20/belcika/belcika-basvuru-formu-nasil-doldurulur.jpg"
+          class="img-fluid rounded-start" alt="...">
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <h5 class="card-title"><b>Durum:</b> {{data.state}}</h5>
+          <h5 class="card-title"><b>Applicant Id:</b> {{data.applicantId}}</h5>
+          <h5 class="card-title"><b>Bootcamp Id:</b> {{data.bootcampId}}</h5>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,1 +1,18 @@
-<p>detail-employee works!</p>
+<div class="mb-3">
+  <button type="button" class="btn btn-outline-dark mt-5" routerLink="/employee">Geri Dön</button>
+  <div class="card">
+    <div class="row g-0" *ngFor="let data of employeeDetail">
+      <div class="col-md-4">
+        <img src="https://www.socialbusinesstr.com/wp-content/uploads/2017/11/mutlu_calisanlar_-770x460.jpg"
+          class="img-fluid rounded-start" alt="...">
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <h5 class="card-title"><b>Çalışan Adı:</b> {{data.firstName}}</h5>
+          <h5 class="card-title"><b>Çalışan Soyadı:</b> {{data.lastName}}</h5>
+          <h5 class="card-title"><b>Pozisyon:</b> {{data.position}}</h5>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,1 +1,18 @@
-<p>detail-instructor works!</p>
+<div class="mb-3">
+  <button type="button" class="btn btn-outline-dark mt-5" routerLink="/instructor">Geri Dön</button>
+  <div class="card">
+    <div class="row g-0" *ngFor="let data of instructorDetail">
+      <div class="col-md-4">
+        <img src="https://w7.pngwing.com/pngs/1000/684/png-transparent-professor-teacher-teacher-hand-boy-human.png"
+          class="img-fluid rounded-start" alt="...">
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <h5 class="card-title"><b>Eğitmen Adı:</b> {{data.firstName}}</h5>
+          <h5 class="card-title"><b>Eğitmen Soyadı:</b> {{data.lastName}}</h5>
+          <h5 class="card-title"><b>Şirket Adı:</b> {{data.companyName}}</h5>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -30,8 +30,10 @@
       <td>{{employee.position}}</td>
       <td>
         <div>
-          <button type="button" class="btn btn-primary mx-3">Detay</button>
-          <button type="button" class="btn btn-secondary mx-3" routerLink="/update-employee/{{employee.id}}">Düzenle</button>
+          <button type="button" class="btn btn-primary mx-3"
+            routerLink="/employee-detail/{{employee.id}}">Detay</button>
+          <button type="button" class="btn btn-secondary mx-3"
+            routerLink="/update-employee/{{employee.id}}">Düzenle</button>
           <button type="button" class="btn btn-danger mx-3" (click)="delete(employee)">Sil</button>
         </div>
 

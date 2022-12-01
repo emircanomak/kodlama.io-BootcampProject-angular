@@ -1,4 +1,5 @@
-<button type="button" style="float:right; margin-right: 200px;" class="btn btn-success btn-lg mt-5" routerLink="/add-instructor">Eğitmen
+<button type="button" style="float:right; margin-right: 200px;" class="btn btn-success btn-lg mt-5"
+  routerLink="/add-instructor">Eğitmen
   Ekle</button>
 
 <h1 class="mt-5 mb-5" style="text-align: center;">Eğitmen Listesi</h1>
@@ -32,7 +33,7 @@
         <div>
           <button type="button" class="btn btn-primary mx-3">Detay</button>
           <button type="button" class="btn btn-secondary mx-3">Düzenle</button>
-          <button type="button" class="btn btn-danger mx-3">Sil</button>
+          <button type="button" class="btn btn-danger mx-3" (click)="delete(instructor)">Sil</button>
         </div>
 
       </td>

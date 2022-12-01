@@ -27,4 +27,9 @@ export class CreateInstructorComponent {
       .getInstructor()
       .subscribe((data) => (this.instructors = data));
   }
+
+  delete(data: ICreateInstructorModel) {
+    this.instructors = this.instructors.filter((x) => x !== data);
+    this.instructorService.delete(data).subscribe();
+  }
 }

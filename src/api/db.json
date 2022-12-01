@@ -97,5 +97,17 @@
       "state": 2,
       "id": 1
     }
+  ],
+  "users": [
+    {
+      "id":1,
+      "name":"Emir",
+      "lastName":"Omak",
+      "mail":"emiromak@gmail.com",
+      "password":"abbasyanbasan",
+      "expiration":"lololololo",
+      "token":"EMROMKEMROMKEMROM44K44"
+
+    }
   ]
 }

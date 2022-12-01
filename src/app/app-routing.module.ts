@@ -4,19 +4,18 @@ import { CreateBlackListComponent } from './components/black-list/create-black-l
 import { CreateBootcampComponent } from './components/bootcamp/create-bootcamp/create-bootcamp.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { CreateInstructorComponent } from './components/instructor/create-instructor/create-instructor.component';
 
 const routes: Routes = [
-
-  {path:"bootcampList",component:CreateBootcampComponent},
-  {path:"blacklist", component:CreateBlackListComponent},
-  {path:"employee", component:CreateEmployeeComponent},
-  {path:"applicant", component:CreateApplicantComponent}
-
-
+  { path: 'bootcampList', component: CreateBootcampComponent },
+  { path: 'blacklist', component: CreateBlackListComponent },
+  { path: 'employee', component: CreateEmployeeComponent },
+  { path: 'applicant', component: CreateApplicantComponent },
+  { path: 'instructor', component: CreateInstructorComponent },
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}

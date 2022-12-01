@@ -1,1 +1,27 @@
-<p>add-black-list works!</p>
+<div class="container">
+  <button type="button" class="btn btn-info mx-2 mt-3" routerLink="/blacklist">Geri Git</button>
+    <div class="row">
+      
+        <div class="col-md-6"></div>
+        
+        <form [formGroup]="addBlackListForm">
+            <div class="mb-3">
+                <h2 class="text-center mt-3">Kara Listeye Ekle</h2>
+              <label for="exampleInputEmail1" class="form-label">applicantId</label>
+              <input formControlName="applicantId" type="text" class="form-control" placeholder="applicantId" id="exampleInputEmail1" aria-describedby="emailHelp">
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Tarih</label>
+                <input formControlName="date" type="text" class="form-control" placeholder="Tarih" id="exampleInputEmail1" aria-describedby="emailHelp">
+              </div>
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Neden</label>
+                <input formControlName="reason" type="text" class="form-control" placeholder="Neden" id="exampleInputEmail1" aria-describedby="emailHelp">
+              </div>
+              
+            <button (click)="addBlacklist()" type="submit" class="btn btn-warning">Ekle</button>
+          </form>
+    </div>
+
+
+</div>

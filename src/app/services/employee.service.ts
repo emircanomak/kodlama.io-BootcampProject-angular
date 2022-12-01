@@ -18,6 +18,9 @@ export class EmployeeService {
     return this.httpClient.get<ICreateEmployeeModel[]>(this.apiUrl)
   
   }
+  addEmployee(value:any){
+    return this.httpClient.post(this.apiUrl, value)
+  }
 
 
 

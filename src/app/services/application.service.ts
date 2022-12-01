@@ -18,6 +18,12 @@ export class ApplicationService {
    return this.httpClient.get<ICreateApplicationModel[]>(this.path)
   }
 
+  getApplicationById(id:number):Observable<ICreateApplicationModel>{
+
+    return this.httpClient.get<ICreateApplicationModel>(this.path + "/" +id)
+
+  }
+
   add(value:any){
 
     return this.httpClient.post(this.path,value);
@@ -25,6 +31,10 @@ export class ApplicationService {
 
   delete(applicationModel : ICreateApplicationModel):Observable<ICreateApplicationModel>{
     return this.httpClient.delete<ICreateApplicationModel>(this.path+"/"+applicationModel.id)
+  }
+  update(id:number,application:any){
+    
+    return this.httpClient.put(this.path + "/" +id,application)
   }
 
 }

@@ -10,6 +10,7 @@
         <th scope="col">userId</th>
         <th scope="col">bootcampId</th>
         <th scope="col">state</th>
+        <th  scope="col">İşlemler</th>
       </tr>
     </thead>
     <tbody>
@@ -23,7 +24,7 @@
         <td>
           <div>
           <button type="button" class="btn btn-primary mx-3">Detay</button>
-          <button type="button" class="btn btn-secondary mx-3">Düzenle</button>
+          <button type="button" class="btn btn-secondary mx-3"routerLink="/update-application/{{application.id}}">Düzenle</button>
           <button type="button" class="btn btn-danger mx-3" (click)="deleteApplication(application)">Sill</button>
           </div>
          

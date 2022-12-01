@@ -12,6 +12,10 @@ export class ApplicantService {
     return this.httpClient.post(this.apiUrl, value)
   }
 
+  delete(applicantModel : ICreateApplicantModel):Observable<ICreateApplicantModel>{
+    return this.httpClient.delete<ICreateApplicantModel>(this.apiUrl+"/"+applicantModel.id)
+  }
+
   apiUrl ="http://localhost:3000/applicant"
 
   applicants : ICreateApplicantModel[]= []

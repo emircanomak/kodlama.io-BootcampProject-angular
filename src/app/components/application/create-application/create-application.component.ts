@@ -25,6 +25,11 @@ export class CreateApplicationComponent {
     })
   }
 
+  deleteApplication(applicationModel : ICreateApplicationModel) {
+    this.applications = this.applications.filter(m=>m  !== applicationModel);
+    this.applicationService.delete(applicationModel).subscribe();
+  }
+
 
 
 }

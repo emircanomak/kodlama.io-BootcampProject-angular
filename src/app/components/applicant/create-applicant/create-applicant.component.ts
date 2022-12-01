@@ -22,10 +22,13 @@ export class CreateApplicantComponent {
   }
 
   getApplicant(){
-
-
     this.applicantService.getApplicant().subscribe(data=> this.applicants=data)
 
+  }
+
+  deleteApplicant(applicantModel : ICreateApplicantModel) {
+    this.applicants = this.applicants.filter(m=>m  !== applicantModel);
+    this.applicantService.delete(applicantModel).subscribe();
   }
 
 }

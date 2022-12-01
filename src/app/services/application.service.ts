@@ -23,4 +23,8 @@ export class ApplicationService {
     return this.httpClient.post(this.path,value);
   }
 
+  delete(applicationModel : ICreateApplicationModel):Observable<ICreateApplicationModel>{
+    return this.httpClient.delete<ICreateApplicationModel>(this.path+"/"+applicationModel.id)
+  }
+
 }

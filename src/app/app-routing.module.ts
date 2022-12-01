@@ -1,3 +1,9 @@
+import { UpdateApplicationComponent } from './components/application/update-application/update-application.component';
+import { UpdateEmployeeComponent } from './components/employee/update-employee/update-employee.component';
+import { UpdateBootcampComponent } from './components/bootcamp/update-bootcamp/update-bootcamp.component';
+import { UpdateInstructorComponent } from './components/instructor/update-instructor/update-instructor.component';
+import { UpdateBlackListComponent } from './components/black-list/update-black-list/update-black-list.component';
+import { UpdateApplicantComponent } from './components/applicant/update-applicant/update-applicant.component';
 import { AddApplicationComponent } from './components/application/add-application/add-application.component';
 import { AddEmployeeComponent } from './components/employee/add-employee/add-employee.component';
 import { AddBootcampComponent } from './components/bootcamp/add-bootcamp/add-bootcamp.component';
@@ -26,12 +32,12 @@ const routes: Routes = [
   { path: 'add-bootcamp', component: AddBootcampComponent },
   { path: 'add-employee', component: AddEmployeeComponent },
   { path: 'add-application', component: AddApplicationComponent },
-  { path: 'update-applicant/:id', component: AddApplicantComponent },
-  { path: 'update-blacklist/:id', component: AddBlackListComponent },
-  { path: 'update-instructor/:id', component: AddInstructorComponent },
-  { path: 'update-bootcamp/:id', component: AddBootcampComponent },
-  { path: 'update-employee/:id', component: AddEmployeeComponent },
-  { path: 'update-application/:id', component: AddApplicationComponent },
+  { path: 'update-applicant/:id', component: UpdateApplicantComponent },
+  { path: 'update-blacklist/:id', component: UpdateBlackListComponent },
+  { path: 'update-instructor/:id', component: UpdateInstructorComponent },
+  { path: 'update-bootcamp/:id', component: UpdateBootcampComponent },
+  { path: 'update-employee/:id', component: UpdateEmployeeComponent },
+  { path: 'update-application/:id', component: UpdateApplicationComponent },
 ];
 
 @NgModule({

@@ -27,7 +27,7 @@ export class UpdateApplicantComponent {
 
   createApplicantUpdateform(){
     this.applicantUpdateForm = this.formBuilder.group({
-      name:[this.applicant.firstName , Validators.required],
+      firstName:[this.applicant.firstName , Validators.required],
       lastName:[this.applicant.lastName , Validators.required],
       email:[this.applicant.email , Validators.required],
       password:[this.applicant.password , Validators.required],

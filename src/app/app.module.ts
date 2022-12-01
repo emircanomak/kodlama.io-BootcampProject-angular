@@ -24,6 +24,7 @@ import { AddBlackListComponent } from './components/black-list/add-black-list/ad
 import { AddBootcampComponent } from './components/bootcamp/add-bootcamp/add-bootcamp.component';
 import { AddEmployeeComponent } from './components/employee/add-employee/add-employee.component';
 import { AddInstructorComponent } from './components/instructor/add-instructor/add-instructor.component'
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 
@@ -55,7 +56,9 @@ import { AddInstructorComponent } from './components/instructor/add-instructor/a
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

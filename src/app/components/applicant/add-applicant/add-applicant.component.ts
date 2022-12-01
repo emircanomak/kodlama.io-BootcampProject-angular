@@ -15,20 +15,28 @@ export class AddApplicantComponent {
   applicantAddForm : FormGroup
 
   ngOnInit(): void {
+    this.createApplicantAddform();
 
   }
 
   createApplicantAddform(){
     this.applicantAddForm = this.FormBuilder.group({
-      // brandId:[""],
-      // description:[""],
-      // plate:[""],
-      // model:[""],
-      // imgUrl:[""],
-      // colorId:[""]
+      firstName:["", Validators.required],
+      lastName:["",Validators.required],
+      email:["",Validators.required],
+      password:["",Validators.required],
+      nationalIdentity:["",Validators.required],
+      dateOfBirth:["",Validators.required],
+      about:["",Validators.required],
       
 
     })
+  }
+
+  add(){
+   this.applicantService.add(this.applicantAddForm.value).subscribe(data=>{
+    
+   })
   }
 
 }

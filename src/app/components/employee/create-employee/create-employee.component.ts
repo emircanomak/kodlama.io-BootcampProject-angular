@@ -6,24 +6,30 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-create-employee',
   templateUrl: './create-employee.component.html',
-  styleUrls: ['./create-employee.component.css']
+  styleUrls: ['./create-employee.component.css'],
 })
 export class CreateEmployeeComponent {
-  employees : ICreateEmployeeModel[] = []
+  employees: ICreateEmployeeModel[] = [];
 
-  constructor(private employeeService : EmployeeService, private activatedRoute : ActivatedRoute){}
+  constructor(
+    private employeeService: EmployeeService,
+    private activatedRoute: ActivatedRoute
+  ) {}
 
   ngOnInit(): void {
-    this.activatedRoute.params.subscribe(params=>{
+    this.activatedRoute.params.subscribe((params) => {
       this.getEmployee();
-     })
+    });
   }
 
-  getEmployee(){
-
-
-    this.employeeService.getEmployee().subscribe(data=> this.employees=data)
-
+  getEmployee() {
+    this.employeeService
+      .getEmployee()
+      .subscribe((data) => (this.employees = data));
   }
 
+  delete(data: ICreateEmployeeModel) {
+    this.employees = this.employees.filter((x) => x !== data);
+    this.employeeService.delete(data).subscribe();
+  }
 }

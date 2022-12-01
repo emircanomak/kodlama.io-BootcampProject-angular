@@ -13,16 +13,6 @@
   ],
   "employee": [
     {
-      "id": 1,
-      "firstName": "Emir",
-      "lastName": "Omak",
-      "email": "emir@gmail.com",
-      "password": "123456",
-      "nationalIdentity": 12345678911,
-      "dateOfBirth": "01/01/1998",
-      "position": "Başkan"
-    },
-    {
       "firstName": "Beyza",
       "lastName": "Alıcı",
       "email": "beyza@yahoo.com",
@@ -34,16 +24,6 @@
     }
   ],
   "instructor": [
-    {
-      "id": 1,
-      "firstName": "Engin",
-      "lastName": "Demiroğ",
-      "email": "engin@gmail.com",
-      "password": "123456",
-      "nationalIdentity": 12345678912,
-      "dateOfBirth": "01/01/1988",
-      "companyName": "kodlama.io"
-    },
     {
       "firstName": "Engin",
       "lastName": "Demiroğ",
@@ -103,28 +83,12 @@
       "state": 1
     },
     {
-      "instructorId": 1,
-      "name": "asdasd",
-      "dateStart": 1,
-      "dateEnd": 1,
-      "state": 1,
-      "id": 2
-    },
-    {
       "instructorId": 3,
       "name": "Casgem",
       "dateStart": 1404,
       "dateEnd": 1504,
       "state": 1,
       "id": 3
-    },
-    {
-      "instructorId": 5,
-      "name": "Casgem",
-      "dateStart": 1404,
-      "dateEnd": 1504,
-      "state": 1,
-      "id": 4
     }
   ],
   "application": [

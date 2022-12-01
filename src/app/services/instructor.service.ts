@@ -19,4 +19,10 @@ export class InstructorService {
   add(value: any) {
     return this.httpClient.post(this.apiUrl, value);
   }
+
+  delete(data: ICreateInstructorModel): Observable<ICreateInstructorModel> {
+    return this.httpClient.delete<ICreateInstructorModel>(
+      this.apiUrl + '/' + data.id
+    );
+  }
 }

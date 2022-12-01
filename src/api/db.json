@@ -9,6 +9,16 @@
       "nationalIdentity": 12345678910,
       "dateOfBirth": "01/01/2023",
       "about": "Ben Beyza."
+    },
+    {
+      "id": 2,
+      "firstName": "Emircan",
+      "lastName": "Omak",
+      "email": "emir@gmail.com",
+      "password": "123456",
+      "nationalIdentity": 12345678919,
+      "dateOfBirth": "01/01/2023",
+      "about": "Ben Emircan."
     }
   ],
   "employee": [

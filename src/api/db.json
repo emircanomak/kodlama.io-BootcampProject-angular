@@ -19,6 +19,16 @@
       "nationalIdentity": 12345678919,
       "dateOfBirth": "01/01/2023",
       "about": "Ben Emircan."
+    },
+    {
+      "firstName": "Berkay ",
+      "lastName": "Anduv",
+      "email": "berkayanduv@hotmail.com",
+      "password": "123",
+      "nationalIdentity": "32165498910",
+      "dateOfBirth": "04/04/1999",
+      "about": "son kuşak",
+      "id": 3
     }
   ],
   "employee": [
@@ -31,6 +41,16 @@
       "nationalIdentity": 12345678911,
       "dateOfBirth": "01/01/1998",
       "position": "Başkan"
+    },
+    {
+      "firstName": "Beyza",
+      "lastName": "Alıcı",
+      "email": "beyza@yahoo.com",
+      "password": "123456",
+      "nationalIdentity": "111111111111",
+      "dateOfBirth": "31.05.2000",
+      "position": "Front-End Developer",
+      "id": 2
     }
   ],
   "instructor": [
@@ -43,6 +63,16 @@
       "nationalIdentity": 12345678912,
       "dateOfBirth": "01/01/1988",
       "companyName": "kodlama.io"
+    },
+    {
+      "firstName": "Engin",
+      "lastName": "Demiroğ",
+      "email": "engindemirog@gmail.com",
+      "password": "123456",
+      "nationalIdentity": "12345678910",
+      "dateOfBirth": "01/02/1989",
+      "companyName": "Kodlama.io",
+      "id": 2
     }
   ],
   "blackList": [
@@ -51,6 +81,36 @@
       "applicantId": 1,
       "date": "12/11/2022",
       "reason": "Uygun değil"
+    },
+    {
+      "id": 2,
+      "applicantId": "16",
+      "date": "04/04/2022",
+      "reason": "mert@hotmail.com"
+    },
+    {
+      "id": 3,
+      "applicantId": "16",
+      "date": "01.12.2022",
+      "reason": "emşr"
+    },
+    {
+      "id": 4,
+      "applicantId": "16",
+      "date": "01.12.2022",
+      "reason": "emir@yahoo@hotmail.com"
+    },
+    {
+      "id": 5,
+      "applicantId": "80",
+      "date": "01.12.2022",
+      "reason": "hediyeY1LD1R1M@yahoo.com"
+    },
+    {
+      "id": 6,
+      "applicantId": "54",
+      "date": "12/08/2023",
+      "reason": "rte@gmail.com"
     }
   ],
   "bootcamp": [

@@ -1,1 +1,40 @@
-<p>add-employee works!</p>
+<div class="container">
+    <button  type="submit" class="btn btn-outline-dark mt-3" routerLink="/employee">Geri Git</button>
+    <div class="row">
+        <div class="col-md-6"></div>
+        <form [formGroup]="addEmployeeForm">
+            <div class="mb-2">
+                <h2 class="text-center mt-2">Çalışan Ekle</h2>
+              <label for="exampleInputEmail1" class="form-label">İsim</label>
+              <input formControlName="firstName" type="text" class="form-control" placeholder="İsim" id="exampleInputEmail1" aria-describedby="emailHelp">
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Soyisim</label>
+                <input formControlName="lastName" type="text" class="form-control" placeholder="Soyisim" id="exampleInputEmail1" aria-describedby="emailHelp">
+              </div>
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">E-mail</label>
+                <input formControlName="email" type="text" class="form-control" placeholder="E-mail" id="exampleInputEmail1" aria-describedby="emailHelp">
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Şifre</label>
+                <input formControlName="password" type="text" class="form-control" placeholder="Şifre" id="exampleInputEmail1" aria-describedby="emailHelp">
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Kimlik No</label>
+                <input formControlName="nationalIdentity" type="text" class="form-control" placeholder="Kimlik No" id="exampleInputEmail1" aria-describedby="emailHelp">
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Doğum Tarihi</label>
+                <input formControlName="dateOfBirth" type="text" class="form-control" placeholder="Doğum Tarihi" id="exampleInputEmail1" aria-describedby="emailHelp">
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Pozisyon</label>
+                <input formControlName="position" type="text" class="form-control" placeholder="Pozisyon" id="exampleInputEmail1" aria-describedby="emailHelp">
+              </div>
+            <button (click)="addEmployee()" type="submit" class="btn btn-warning">Ekle</button>
+          </form>
+    </div>
+
+
+</div>

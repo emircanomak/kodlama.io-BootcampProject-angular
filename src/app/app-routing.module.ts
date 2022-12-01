@@ -1,3 +1,4 @@
+import { HomeComponent } from './components/home/home.component';
 import { DetailApplicationComponent } from './components/application/detail-application/detail-application.component';
 import { DetailEmployeeComponent } from './components/employee/detail-employee/detail-employee.component';
 import { DetailBootcampComponent } from './components/bootcamp/detail-bootcamp/detail-bootcamp.component';
@@ -25,34 +26,36 @@ import { CreateBootcampComponent } from './components/bootcamp/create-bootcamp/c
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { CreateInstructorComponent } from './components/instructor/create-instructor/create-instructor.component';
+import { LoginGuard } from './guards/login.guard';
 
 const routes: Routes = [
-  { path: 'bootcampList', component: CreateBootcampComponent },
-  { path: 'blacklist', component: CreateBlackListComponent },
-  { path: 'employee', component: CreateEmployeeComponent },
-  { path: 'applicant', component: CreateApplicantComponent },
-  { path: 'instructor', component: CreateInstructorComponent },
-  { path: 'application', component: CreateApplicationComponent },
-  { path: 'add-applicant', component: AddApplicantComponent },
-  { path: 'add-blacklist', component: AddBlackListComponent },
-  { path: 'add-instructor', component: AddInstructorComponent },
-  { path: 'add-bootcamp', component: AddBootcampComponent },
-  { path: 'add-employee', component: AddEmployeeComponent },
-  { path: 'add-application', component: AddApplicationComponent },
+  {path:"",component:HomeComponent},
+  { path: 'bootcampList', component: CreateBootcampComponent,canActivate:[LoginGuard] },
+  { path: 'blacklist', component: CreateBlackListComponent,canActivate:[LoginGuard]  },
+  { path: 'employee', component: CreateEmployeeComponent,canActivate:[LoginGuard]  },
+  { path: 'applicant', component: CreateApplicantComponent,canActivate:[LoginGuard]  },
+  { path: 'instructor', component: CreateInstructorComponent,canActivate:[LoginGuard]  },
+  { path: 'application', component: CreateApplicationComponent,canActivate:[LoginGuard]  },
+  { path: 'add-applicant', component: AddApplicantComponent,canActivate:[LoginGuard]  },
+  { path: 'add-blacklist', component: AddBlackListComponent,canActivate:[LoginGuard]  },
+  { path: 'add-instructor', component: AddInstructorComponent,canActivate:[LoginGuard]  },
+  { path: 'add-bootcamp', component: AddBootcampComponent,canActivate:[LoginGuard]  },
+  { path: 'add-employee', component: AddEmployeeComponent,canActivate:[LoginGuard]  },
+  { path: 'add-application', component: AddApplicationComponent,canActivate:[LoginGuard]  },
   
-  { path: 'update-applicant/:id', component: UpdateApplicantComponent },
-  { path: 'update-blacklist/:id', component: UpdateBlackListComponent },
-  { path: 'update-instructor/:id', component: UpdateInstructorComponent },
-  { path: 'update-bootcamp/:id', component: UpdateBootcampComponent },
-  { path: 'update-employee/:id', component: UpdateEmployeeComponent },
-  { path: 'update-application/:id', component: UpdateApplicationComponent },
+  { path: 'update-applicant/:id', component: UpdateApplicantComponent ,canActivate:[LoginGuard] },
+  { path: 'update-blacklist/:id', component: UpdateBlackListComponent,canActivate:[LoginGuard]  },
+  { path: 'update-instructor/:id', component: UpdateInstructorComponent ,canActivate:[LoginGuard] },
+  { path: 'update-bootcamp/:id', component: UpdateBootcampComponent ,canActivate:[LoginGuard] },
+  { path: 'update-employee/:id', component: UpdateEmployeeComponent ,canActivate:[LoginGuard] },
+  { path: 'update-application/:id', component: UpdateApplicationComponent ,canActivate:[LoginGuard] },
 
-  { path: 'applicant-detail/:id', component: DetailApplicantComponent },
-  { path: 'blacklist-detail/:id', component: DetailBlackListComponent },
-  { path: 'instructor-detail/:id', component: DetailInstructorComponent },
-  { path: 'bootcamp-detail/:id', component: DetailBootcampComponent },
-  { path: 'employee-detail/:id', component: DetailEmployeeComponent },
-  { path: 'application-detail/:id', component: DetailApplicationComponent },
+  { path: 'applicant-detail/:id', component: DetailApplicantComponent,canActivate:[LoginGuard]   },
+  { path: 'blacklist-detail/:id', component: DetailBlackListComponent,canActivate:[LoginGuard]  },
+  { path: 'instructor-detail/:id', component: DetailInstructorComponent,canActivate:[LoginGuard]  },
+  { path: 'bootcamp-detail/:id', component: DetailBootcampComponent,canActivate:[LoginGuard]  },
+  { path: 'employee-detail/:id', component: DetailEmployeeComponent ,canActivate:[LoginGuard] },
+  { path: 'application-detail/:id', component: DetailApplicationComponent,canActivate:[LoginGuard]  },
   { path: 'login', component: LoginComponent },
 ];
 

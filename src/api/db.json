@@ -46,7 +46,7 @@
       "id": 2,
       "applicantId": "06",
       "date": "04/04/2022",
-      "reason": "mert45@hotmail.com"
+      "reason": "uğur : "
     },
     {
       "id": 3,
@@ -100,14 +100,13 @@
   ],
   "users": [
     {
-      "id":1,
-      "name":"Emir",
-      "lastName":"Omak",
-      "mail":"emiromak@gmail.com",
-      "password":"abbasyanbasan",
-      "expiration":"lololololo",
-      "token":"EMROMKEMROMKEMROM44K44"
-
+      "id": 1,
+      "name": "Emir",
+      "lastName": "Omak",
+      "mail": "emiromak@gmail.com",
+      "password": "abbasyanbasan",
+      "expiration": "lololololo",
+      "token": "EMROMKEMROMKEMROM44K44"
     }
   ]
 }

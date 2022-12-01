@@ -23,6 +23,9 @@ getBlackList(){
     this.blacklists = data
   })
 }
-
+  deleteBlacklist(blacklists:ICreateBlackListModel){
+    this.blacklists = this.blacklists.filter(x=> x !== blacklists);
+    this.blacklistService.deleteBlacklist(blacklists).subscribe();
+  }
 
 }

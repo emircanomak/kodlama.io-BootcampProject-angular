@@ -15,4 +15,8 @@ export class InstructorService {
   getInstructor(): Observable<ICreateInstructorModel[]> {
     return this.httpClient.get<ICreateInstructorModel[]>(this.apiUrl);
   }
+
+  add(value: any) {
+    return this.httpClient.post(this.apiUrl, value);
+  }
 }

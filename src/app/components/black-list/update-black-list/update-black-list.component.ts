@@ -12,25 +12,39 @@ import { Component } from '@angular/core';
   styleUrls: ['./update-black-list.component.css']
 })
 export class UpdateBlackListComponent {
-  blacklist:IUpdateBlackListModel[]=[];
+  blacklist:IUpdateBlackListModel;
   updateBlacklist:FormGroup;
   constructor(private blacklistService:BlacklistService, private activatedRoute:ActivatedRoute, private formBuilder:FormBuilder){}
 
   ngOnInit(): void{
-    
+    this.activatedRoute.params.subscribe(params => {
+      this.getBlacklistId(params["id"]);
+    })
     }
 
     createUpdateBlackList(){
       this.updateBlacklist = this.formBuilder.group({
-        date:[this.blacklist[0].date, Validators.required],
-        reason:[this.blacklist[0].reason, Validators.required]
+        id:[this.blacklist.id, Validators.required],
+        applicantId:[this.blacklist.applicantId, Validators.required],
+        date:[this.blacklist.date, Validators.required],
+        reason:[this.blacklist.reason, Validators.required]
+      })
+    }
+
+    getBlacklistId(id:number){
+      this.blacklistService.getBlacklistById(id).subscribe((data) => {
+        console.log(data);
+        
+        this.blacklist=data
+        this.createUpdateBlackList()
       })
     }
 
 
-    update(): void {
-      this.blacklistService.update(this.activatedRoute.snapshot.params["id"], this.updateBlacklist.value).subscribe(); 
-      location.reload();
+    update() {
+      this.blacklistService.update(this.activatedRoute.snapshot.params["id"], this.updateBlacklist.value).subscribe(data => {
+
+      })
     }
 }
 

@@ -24,6 +24,10 @@ export class BlacklistService {
     return this.httpClient.delete<ICreateBlackListModel>(this.apiUrl+"/"+blackListModel.id)
   }
 
+  getBlacklistById(id:number):Observable<IUpdateBlackListModel>{
+    return this.httpClient.get<IUpdateBlackListModel>(this.apiUrl +"/"+ id)
+  }
+
   update(id:number , data:IUpdateBlackListModel):Observable<IUpdateBlackListModel>{
     return this.httpClient.put<IUpdateBlackListModel>(this.apiUrl+"/"+id ,data)
   }

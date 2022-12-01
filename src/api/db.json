@@ -40,19 +40,19 @@
       "id": 1,
       "applicantId": 1,
       "date": "12/11/2022",
-      "reason": "Uygun değil"
+      "reason": "Uygun değillss"
     },
     {
       "id": 2,
-      "applicantId": "16",
+      "applicantId": "06",
       "date": "04/04/2022",
-      "reason": "mert@hotmail.com"
+      "reason": "mert45@hotmail.com"
     },
     {
       "id": 3,
       "applicantId": "16",
-      "date": "01.12.2022",
-      "reason": "emşr"
+      "date": "879879",
+      "reason": "safsagsauhkluıhlouıl"
     },
     {
       "id": 4,
@@ -65,6 +65,12 @@
       "applicantId": "80",
       "date": "01.12.2022",
       "reason": "hediyeY1LD1R1M@yahoo.com"
+    },
+    {
+      "id": 6,
+      "applicantId": "7893534563",
+      "date": "05/08/2002",
+      "reason": "ttttttttccccccccccccccccccccccccccc"
     }
   ],
   "bootcamp": [

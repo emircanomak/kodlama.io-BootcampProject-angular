@@ -10,6 +10,7 @@ import { IUpdateApplicantModel } from '../models/request/applicant/updateApplica
 })
 export class ApplicantService {
   add(value: any) {
+    
     return this.httpClient.post(this.apiUrl, value)
   }
 

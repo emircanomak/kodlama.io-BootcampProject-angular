@@ -2,6 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { ICreateApplicantModel } from '../models/request/applicant/createApplicantModel';
+import { IUpdateApplicantModel } from '../models/request/applicant/updateApplicantModel';
 
 
 @Injectable({
@@ -16,6 +17,10 @@ export class ApplicantService {
     return this.httpClient.delete<ICreateApplicantModel>(this.apiUrl+"/"+applicantModel.id)
   }
 
+  update(id, applicantModel :IUpdateApplicantModel ):Observable<IUpdateApplicantModel>{
+    return this.httpClient.put<IUpdateApplicantModel>(this.apiUrl + "/"+id,applicantModel) 
+  }
+
   apiUrl ="http://localhost:3000/applicant"
 
   applicants : ICreateApplicantModel[]= []
@@ -25,6 +30,10 @@ export class ApplicantService {
 
     return this.httpClient.get<ICreateApplicantModel[]>(this.apiUrl)
   
+  }
+
+  getApplicantById(id:number):Observable<ICreateApplicantModel>{
+    return this.httpClient.get<ICreateApplicantModel>(this.apiUrl+"/"+id)
   }
 
 }

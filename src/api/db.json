@@ -123,28 +123,12 @@
       "state": 1
     },
     {
-      "instructorId": 1,
-      "name": "asdasd",
-      "dateStart": 1,
-      "dateEnd": 1,
-      "state": 1,
-      "id": 2
-    },
-    {
       "instructorId": 3,
       "name": "Casgem",
       "dateStart": 1404,
       "dateEnd": 1504,
       "state": 1,
       "id": 3
-    },
-    {
-      "instructorId": 5,
-      "name": "Casgem",
-      "dateStart": 1404,
-      "dateEnd": 1504,
-      "state": 1,
-      "id": 4
     }
   ],
   "application": [

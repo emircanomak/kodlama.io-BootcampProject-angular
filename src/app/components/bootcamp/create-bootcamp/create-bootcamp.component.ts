@@ -25,4 +25,8 @@ export class CreateBootcampComponent {
       this.bootcampService.getBootcamp().subscribe(data=> this.bootcamps=data)
 
     }
+    delete(bootcamp:ICreateBootcampModel){
+      this.bootcamps = this.bootcamps.filter(b=>b!==bootcamp);
+      this.bootcampService.delete(bootcamp).subscribe()
+    }
 }

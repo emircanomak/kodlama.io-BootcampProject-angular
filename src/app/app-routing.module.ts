@@ -8,13 +8,12 @@ import { RouterModule, Routes } from '@angular/router';
 import { CreateInstructorComponent } from './components/instructor/create-instructor/create-instructor.component';
 
 const routes: Routes = [
-
-  {path:"bootcampList",component:CreateBootcampComponent},
-  {path:"blacklist", component:CreateBlackListComponent},
-  {path:"employee", component:CreateEmployeeComponent},
-  {path:"applicant", component:CreateApplicantComponent}
-
-
+  { path: 'bootcampList', component: CreateBootcampComponent },
+  { path: 'blacklist', component: CreateBlackListComponent },
+  { path: 'employee', component: CreateEmployeeComponent },
+  { path: 'applicant', component: CreateApplicantComponent },
+  { path: 'instructor', component: CreateInstructorComponent },
+  { path: 'application', component: CreateApplicationComponent },
 ];
 
 @NgModule({

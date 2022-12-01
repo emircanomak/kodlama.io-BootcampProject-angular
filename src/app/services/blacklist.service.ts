@@ -1,3 +1,4 @@
+import { IUpdateBlackListModel } from './../models/request/blackList/updateBlackListModel';
 import { ICreateBlackListModel } from './../models/request/blackList/createBlackListModel';
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
@@ -21,5 +22,9 @@ export class BlacklistService {
 
   deleteBlacklist(blackListModel:ICreateBlackListModel):Observable<ICreateBlackListModel>{
     return this.httpClient.delete<ICreateBlackListModel>(this.apiUrl+"/"+blackListModel.id)
+  }
+
+  update(id:number , data:IUpdateBlackListModel):Observable<IUpdateBlackListModel>{
+    return this.httpClient.put<IUpdateBlackListModel>(this.apiUrl+"/"+id ,data)
   }
 }

@@ -17,7 +17,13 @@ import { CreateInstructorComponent } from './components/instructor/create-instru
 import { UpdateInstructorComponent } from './components/instructor/update-instructor/update-instructor.component';
 import { NavbarComponent } from './layouts/navbar/navbar.component';
 import { HomeComponent } from './components/home/home.component';
-import {HttpClientModule} from "@angular/common/http"
+import {HttpClientModule} from "@angular/common/http";
+import { AddApplicantComponent } from './components/applicant/add-applicant/add-applicant.component';
+import { AddApplicationComponent } from './components/application/add-application/add-application.component';
+import { AddBlackListComponent } from './components/black-list/add-black-list/add-black-list.component';
+import { AddBootcampComponent } from './components/bootcamp/add-bootcamp/add-bootcamp.component';
+import { AddEmployeeComponent } from './components/employee/add-employee/add-employee.component';
+import { AddInstructorComponent } from './components/instructor/add-instructor/add-instructor.component'
 
 
 
@@ -37,7 +43,13 @@ import {HttpClientModule} from "@angular/common/http"
     CreateInstructorComponent,
     UpdateInstructorComponent,
     NavbarComponent,
-    HomeComponent
+    HomeComponent,
+    AddApplicantComponent,
+    AddApplicationComponent,
+    AddBlackListComponent,
+    AddBootcampComponent,
+    AddEmployeeComponent,
+    AddInstructorComponent
 
   ],
   imports: [

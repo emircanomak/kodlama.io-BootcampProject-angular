@@ -19,6 +19,16 @@
       "nationalIdentity": 12345678919,
       "dateOfBirth": "01/01/2023",
       "about": "Ben Emircan."
+    },
+    {
+      "firstName": "Berkay ",
+      "lastName": "Anduv",
+      "email": "berkayanduv@hotmail.com",
+      "password": "123",
+      "nationalIdentity": "32165498910",
+      "dateOfBirth": "04/04/1999",
+      "about": "son kuşak",
+      "id": 3
     }
   ],
   "employee": [

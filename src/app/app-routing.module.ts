@@ -1,3 +1,4 @@
+import { RegisterComponent } from './components/register/register.component';
 import { HomeComponent } from './components/home/home.component';
 import { DetailApplicationComponent } from './components/application/detail-application/detail-application.component';
 import { DetailEmployeeComponent } from './components/employee/detail-employee/detail-employee.component';
@@ -57,6 +58,7 @@ const routes: Routes = [
   { path: 'employee-detail/:id', component: DetailEmployeeComponent ,canActivate:[LoginGuard] },
   { path: 'application-detail/:id', component: DetailApplicationComponent,canActivate:[LoginGuard]  },
   { path: 'login', component: LoginComponent },
+  { path: "register", component:RegisterComponent}
 ];
 
 @NgModule({

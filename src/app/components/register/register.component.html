@@ -1,0 +1,27 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-6"></div>
+        <form [formGroup]="registerForm">
+            <div class="mb-3">
+                <h2 class="text-center mt-3">Kayıt Ol</h2>
+              <label for="exampleInputEmail1" class="form-label">Ad</label>
+              <input formControlName="name" type="text" class="form-control" placeholder="Ad" id="exampleInputEmail1" aria-describedby="emailHelp">
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Soyad</label>
+                <input formControlName="lastName" type="text" class="form-control" placeholder="Soyad" id="exampleInputEmail1" aria-describedby="emailHelp">
+              </div>
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Email</label>
+                <input formControlName="mail" type="text" class="form-control" placeholder="email" id="exampleInputEmail1" aria-describedby="emailHelp">
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Şifre</label>
+                <input formControlName="password" type="password" class="form-control" placeholder="Şifre" id="exampleInputEmail1" aria-describedby="emailHelp">
+              </div>
+            <button (click)="add()" type="submit" class="btn btn-info">Kayıt Ol</button>
+          </form>
+    </div>
+
+
+</div>

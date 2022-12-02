@@ -32,6 +32,7 @@ import { DetailBlackListComponent } from './components/black-list/detail-black-l
 import { DetailBootcampComponent } from './components/bootcamp/detail-bootcamp/detail-bootcamp.component';
 import { DetailEmployeeComponent } from './components/employee/detail-employee/detail-employee.component';
 import { DetailInstructorComponent } from './components/instructor/detail-instructor/detail-instructor.component';
+import { RegisterComponent } from './components/register/register.component';
 
 
 
@@ -64,7 +65,8 @@ import { DetailInstructorComponent } from './components/instructor/detail-instru
     DetailBlackListComponent,
     DetailBootcampComponent,
     DetailEmployeeComponent,
-    DetailInstructorComponent
+    DetailInstructorComponent,
+    RegisterComponent
 
   ],
   imports: [

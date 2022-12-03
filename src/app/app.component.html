@@ -1,4 +1,13 @@
-<app-navbar></app-navbar>
-<app-home></app-home>
+<div class="sidenav fixed-start">
+  <app-sidebar></app-sidebar>
+</div>
+<main class="main-content border-radius-lg">
+  <app-navbar></app-navbar>
+  <div class="container-fluid py-4">
+    <router-outlet></router-outlet>  
+  </div>
+</main>
+<app-settings></app-settings>
 
-<router-outlet></router-outlet>
+
+

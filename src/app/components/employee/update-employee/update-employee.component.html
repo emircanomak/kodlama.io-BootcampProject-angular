@@ -1,45 +1,40 @@
-<div class="container">
-    <button routerLink="/employee" type="submit" class="btn btn-outline-dark mt-3" >Geri Dön</button>
-      <div class="row">
-        
-          <div class="col-md-6"></div>
-          <form [formGroup]="employeeUpdateForm" *ngIf="employee">
-              <div class="mb-3">
-                  <h2 class="text-center mt-2">Çalışan Güncelle</h2>
-                <label for="exampleInputEmail1" class="form-label">Ad</label>
-                <input formControlName="firstName" type="text" class="form-control" placeholder="firstName" id="exampleInputEmail1" aria-describedby="emailHelp">
-              </div>
-              <div class="mb-3">
-                  <label for="exampleInputEmail1" class="form-label">Soyad</label>
-                  <input formControlName="lastName" type="text" class="form-control" placeholder="lastName" id="exampleInputEmail1" aria-describedby="emailHelp">
-                </div>
-              <div class="mb-3">
-                  <label for="exampleInputEmail1" class="form-label">Email</label>
-                  <input formControlName="email" type="text" class="form-control" placeholder="email" id="exampleInputEmail1" aria-describedby="emailHelp">
-                </div>
-                <div class="mb-3">
-                  <label for="exampleInputEmail1" class="form-label">Şifre</label>
-                  <input formControlName="password" type="text" class="form-control" placeholder="password" id="exampleInputEmail1" aria-describedby="emailHelp">
-                </div>
-                <div class="mb-3">
-                  <label for="exampleInputEmail1" class="form-label">Kimlik No </label>
-                  <input formControlName="nationalIdentity" type="text" class="form-control" placeholder="nationalIdentity" id="exampleInputEmail1" aria-describedby="emailHelp">
-                </div>
-                <div class="mb-3">
-                  <label for="exampleInputEmail1" class="form-label">Doğum Tarihi</label>
-                  <input formControlName="dateOfBirth" type="text" class="form-control" placeholder="dateOfBirth" id="exampleInputEmail1" aria-describedby="emailHelp">
-                </div>
-                <div class="mb-3">
-                  <label for="exampleInputEmail1" class="form-label">Hakkında</label>
-                  <input formControlName="about" type="text" class="form-control" placeholder="about" id="exampleInputEmail1" aria-describedby="emailHelp">
-                </div>
-              <button  type="submit" (click)="update()" class="btn btn-warning">Güncelle</button>
-              
-            </form>
-      </div>
-  
-  
+<div style="border-top: 1px solid rgb(40, 26, 34,0.23); width: 55%; margin: auto;" class="card mb-4 mt-5 px-8">
+  <div class="card-header pb-0">
+    <h6 class="text-center mb-4" style=" font-size: 2rem;">Çalışan Ekle</h6>
   </div>
-  
-  
-  
+  <div class="card-body px-0 pt-0 pb-2" >
+    <form  [formGroup]="employeeUpdateForm" *ngIf="employee" >
+      <div class="form-group">
+        <label for="example-text-input" class="form-control-label">Ad</label>
+        <input class="form-control" placeholder="ad" formControlName="firstName" type="text" id="example-text-input">
+    </div>
+    <div class="form-group">
+      <label for="example-text-input" class="form-control-label">Soyad</label>
+      <input class="form-control" placeholder="soyad" formControlName="lastName" type="text" id="example-text-input">
+  </div>
+  <div class="form-group">
+    <label for="example-text-input" class="form-control-label">E-mail</label>
+    <input class="form-control" placeholder="email" formControlName="email" type="text"  id="example-text-input">
+</div>
+<div class="form-group">
+  <label for="example-text-input" class="form-control-label">Şifre</label>
+  <input class="form-control" placeholder="Şifre" formControlName="password" type="password"  id="example-text-input">
+</div>
+      <div class="form-group">
+        <label for="example-number-input" class="form-control-label">Kimlik No</label>
+        <input class="form-control"  placeholder="Kimlik no" formControlName="nationalIdentity"  value="23" id="example-number-input">
+    </div>
+    <div class="form-group">
+      <label for="example-date-input" class="form-control-label">Doğum Tarihi</label>
+      <input class="form-control" type="date" formControlName="dateOfBirth" value="2018-11-23" id="example-date-input">
+  </div>
+      <div class="form-group">
+          <label for="example-text-input" class="form-control-label">Pozisyon</label>
+          <input class="form-control" placeholder="Pozisyon" formControlName="position" type="text"  id="example-text-input">
+      </div>
+    
+    <button (click)="update()" style="margin-right:15px" type="submit" class="btn btn-warning">Güncelle</button>
+    <button type="button" class="btn btn-outline-dark px-3" routerLink="/employee">Geri Dön</button>
+    </form>
+  </div>
+</div>

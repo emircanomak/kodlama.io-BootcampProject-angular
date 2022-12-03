@@ -33,6 +33,10 @@ import { DetailBootcampComponent } from './components/bootcamp/detail-bootcamp/d
 import { DetailEmployeeComponent } from './components/employee/detail-employee/detail-employee.component';
 import { DetailInstructorComponent } from './components/instructor/detail-instructor/detail-instructor.component';
 import { RegisterComponent } from './components/register/register.component';
+import { SidebarComponent } from './layouts/sidebar/sidebar.component';
+import { FooterComponent } from './layouts/footer/footer.component';
+import { SettingsComponent } from './layouts/settings/settings.component';
+
 
 
 
@@ -66,7 +70,11 @@ import { RegisterComponent } from './components/register/register.component';
     DetailBootcampComponent,
     DetailEmployeeComponent,
     DetailInstructorComponent,
-    RegisterComponent
+    RegisterComponent,
+    SidebarComponent,
+    FooterComponent,
+    SettingsComponent
+    
 
   ],
   imports: [

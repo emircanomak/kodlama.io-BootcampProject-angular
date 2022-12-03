@@ -35,8 +35,9 @@ export class AddBootcampComponent {
       if(this.bootcampAddForm.value){
         let bootcampInputData=Object.assign({},this.bootcampAddForm.value);
         this.bootcampService.add(bootcampInputData).subscribe((data)=>{
-
+          alert("Eklendi")
         });
+
       }
     }
 }

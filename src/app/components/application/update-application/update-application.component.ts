@@ -39,9 +39,6 @@ export class UpdateApplicationComponent {
     })
   }
 
-
-
-
   createUpdateForm(){
     this.applicationUpdateForm = this.formBuilder.group({  
       

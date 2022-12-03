@@ -1,27 +1,24 @@
-<div class="container">
-  <button type="button" class="btn btn-info mx-2 mt-3" routerLink="/blacklist">Geri Git</button>
-    <div class="row">
-      
-        <div class="col-md-6"></div>
-        
-        <form [formGroup]="addBlackListForm">
-            <div class="mb-3">
-                <h2 class="text-center mt-3">Kara Listeye Ekle</h2>
-              <label for="exampleInputEmail1" class="form-label">applicantId</label>
-              <input formControlName="applicantId" type="text" class="form-control" placeholder="applicantId" id="exampleInputEmail1" aria-describedby="emailHelp">
-            </div>
-            <div class="mb-3">
-                <label for="exampleInputEmail1" class="form-label">Tarih</label>
-                <input formControlName="date" type="text" class="form-control" placeholder="Tarih" id="exampleInputEmail1" aria-describedby="emailHelp">
-              </div>
-            <div class="mb-3">
-                <label for="exampleInputEmail1" class="form-label">Neden</label>
-                <input formControlName="reason" type="text" class="form-control" placeholder="Neden" id="exampleInputEmail1" aria-describedby="emailHelp">
-              </div>
-              
-            <button (click)="addBlacklist()" type="submit" class="btn btn-warning">Ekle</button>
-          </form>
+<div style="border-top: 1px solid rgb(40, 26, 34,0.23); width: 55%; margin: auto;" class="card mb-4 mt-5 px-8">
+  <div class="card-header pb-0">
+    <h6 class="text-center mb-4" style=" font-size: 2rem;">Kara Liste Ekle</h6>
+  </div>
+  <div class="card-body px-0 pt-0 pb-2" >
+    <form  [formGroup]="addBlackListForm" >
+      <div class="form-group">
+        <label for="example-number-input" class="form-control-label">Applicant Id</label>
+        <input class="form-control"  placeholder="applicantId" formControlName="applicantId"  value="23" id="example-number-input">
     </div>
-
-
+    <div class="form-group">
+      <label for="example-date-input" class="form-control-label">Tarih</label>
+      <input class="form-control" type="date" formControlName="date" value="2018-11-23" id="example-date-input">
+  </div>
+      <div class="form-group">
+          <label for="example-text-input" class="form-control-label">Neden</label>
+          <input class="form-control" placeholder="Neden" formControlName="reason" type="text" value="John Snow" id="example-text-input">
+      </div>
+    
+    <button (click)="addBlacklist()" style="margin-right:15px" type="submit" class="btn btn-warning">Ekle</button>
+    <button type="button" class="btn btn-outline-dark px-3" routerLink="/blacklist">Geri Dön</button>
+    </form>
+  </div>
 </div>

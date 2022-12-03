@@ -1,43 +1,76 @@
-<button type="button" style="float:right; margin-right: 200px;" class="btn btn-success btn-lg mt-5"
-  routerLink="/add-bootcamp">Bootcamp Ekle</button>
 
-<h1 class="mt-5 mb-5" style="text-align: center;">Bootcamp Listesi</h1>
-
-<table class="table" style="margin-left: 100px;">
-  <thead>
-    <tr style="text-align:center">
-      <th scope="col">id</th>
-      <th scope="col">Instructor Id</th>
-      <th scope="col">Name</th>
-      <th scope="col">Date Start</th>
-      <th scope="col">Date End</th>
-      <th scope="col">State</th>
-      <th scope="col">İşlemler</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr style="text-align:center" *ngFor="let bootcamp of bootcamps">
-
-      <td>{{bootcamp.id}}</td>
-      <td>{{bootcamp.instructorId}}</td>
-      <td>{{bootcamp.name}}</td>
-      <td>{{bootcamp.dateStart}}</td>
-      <td>{{bootcamp.dateEnd}}</td>
-      <td>{{bootcamp.state}}</td>
-      <td>
-        <div>
-          <button type="button" class="btn btn-primary mx-3"
-            routerLink="/bootcamp-detail/{{bootcamp.id}}">Detay</button>
-          <button type="button" class="btn btn-secondary mx-3"
-            routerLink="/update-bootcamp/{{bootcamp.id}}">Düzenle</button>
-          <button type="button" class="btn btn-danger mx-3" (click)="delete(bootcamp)">Sil</button>
+ <div class="container-fluid py-4"> 
+  <div class="row">
+    <div class="col-12">
+      <div class="card mb-4">
+        <div class="card-header pb-0">
+          <h6 style="float:left; font-size: 2rem;"  >Bootcamp Listesi <button type="button"  class="btn btn-success btn-lg "
+            routerLink="/add-bootcamp">Bootcamp Ekle</button> </h6>
+       
         </div>
+        <div class="card-body px-0 pt-0 pb-2">
+          <div class="table-responsive p-0">
+            <table class="table align-items-center mb-0">
+              <thead>
+                <tr class="text-center">
+                  <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Id</th>
+                  <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">Instructor Id</th>
+                  <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Bootcamp Adı</th>
+                  <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Başlangıç Tarihi</th>
+                  <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Bitiş Tarihi</th>
+                  <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7"> Durum</th>
+                  <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7"> İşlemler</th>
 
-      </td>
-    </tr>
+                  <th class="text-secondary opacity-7"></th>
+                </tr>
+              </thead>
+              <tbody *ngFor="let bootcamp of bootcamps" class="text-center">
+                <tr>
+                  <td>
+                    <div class="d-flex px-2 py-1">
+                      <div>
+                      </div>
+                      <td >
+                        <p class="text-xs font-weight-bold mb-0"></p>
+                        <p class="text-xs text-secondary mb-0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{bootcamp.id}}</p>
+                      </td>
+                    </div>
+                  </td>
+                  <td>
+                    <p class="text-xs font-weight-bold mb-0"></p>
+                    <p class="text-xs text-secondary mb-0">{{bootcamp.instructorId}}</p>
+                  </td>
+                  <td class="align-middle text-center text-sm">
+                    <span class="mb-0 text-sm">{{bootcamp.name}}</span>
+                  </td>
+                  <td class="align-middle text-center">
+                    <span class="text-secondary text-xs font-weight-bold">{{bootcamp.dateStart}}</span>
+                  </td>
+                  <td class="align-middle">
+                    <a href="javascript:;" class="text-secondary font-weight-bold text-xs" data-toggle="tooltip" data-original-title="Edit user">
+                      {{bootcamp.dateEnd}}
+                    </a>
+                  </td>
+                  <td class="align-middle text-center text-sm">
+                    <span class="badge badge-sm bg-gradient-success">{{bootcamp.state}}</span>
+                  </td>
 
-
-
-
-  </tbody>
-</table>
+                <td>
+                  <div>
+                    <button type="button" class="btn btn-primary mx-3"
+                      routerLink="/bootcamp-detail/{{bootcamp.id}}">Detay</button>
+                    <button type="button" class="btn btn-secondary mx-3"
+                      routerLink="/update-bootcamp/{{bootcamp.id}}">Düzenle</button>
+                    <button type="button" class="btn btn-danger mx-3" (click)="delete(bootcamp)">Sil</button>
+                  </div>
+          
+                </td>
+                </tr>
+                
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>

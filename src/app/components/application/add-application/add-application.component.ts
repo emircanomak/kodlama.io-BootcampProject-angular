@@ -40,6 +40,7 @@ export class AddApplicationComponent {
       this.applicationService.add(applicationInputData).subscribe(data=>{
         
       })
+      alert("Eklendi")
     }
 
   }

@@ -1,44 +1,90 @@
-<button type="button" style="float:right; margin-right: 200px;" class="btn btn-success btn-lg mt-5"
-  routerLink="/add-instructor">Eğitmen
-  Ekle</button>
 
-<h1 class="mt-5 mb-5" style="text-align: center;">Eğitmen Listesi</h1>
-
-<table class="table" style="margin-left: 100px;">
-  <thead>
-    <tr style="text-align:center">
-      <th scope="col">id</th>
-      <th scope="col">Adı</th>
-      <th scope="col">Soyadı</th>
-      <th scope="col">Email</th>
-      <th scope="col">Şifre</th>
-      <th scope="col">Kimlik No</th>
-      <th scope="col">Doğum Tarihi</th>
-      <th scope="col">Şirket Adı</th>
-      <th scope="col">İşlemler</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr style="text-align:center" *ngFor="let instructor of instructors">
-
-      <td>{{instructor.id}}</td>
-      <td>{{instructor.firstName}}</td>
-      <td>{{instructor.lastName}}</td>
-      <td>{{instructor.email}}</td>
-      <td>{{instructor.password}}</td>
-      <td>{{instructor.nationalIdentity}}</td>
-      <td>{{instructor.dateOfBirth}}</td>
-      <td>{{instructor.companyName}}</td>
-      <td>
-        <div>
-          <button type="button" class="btn btn-primary mx-3"
-            routerLink="/instructor-detail/{{instructor.id}}">Detay</button>
-          <button type="button" class="btn btn-secondary mx-3"
-            routerLink="/update-instructor/{{instructor.id}}">Düzenle</button>
-          <button type="button" class="btn btn-danger mx-3" (click)="delete(instructor)">Sil</button>
+ <div class="container-fluid py-4"> 
+  <div class="row">
+    <div class="col-12">
+      <div class="card mb-4">
+        <div class="card-header pb-0">
+          <h6 style="float:left; font-size: 2rem;"  >Eğitmen Listesi <button type="button"  class="btn btn-success btn-lg "
+            routerLink="/add-instructor">Eğitmen ekle</button> </h6>
+       
         </div>
+        <div class="card-body px-0 pt-0 pb-2">
+          <div class="table-responsive p-0">
+            <table class="table align-items-center mb-0">
+              <thead>
+                <tr class="text-center">
+                  <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Id</th>
+                  <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">Ad</th>
+                  <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Soyad</th>
+                  <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">E-mail</th>
+                  <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Şifre</th>
+                  <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Kimlik No</th>
+                  <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Doğum Tarihi</th>
+                  <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Şirket Adı</th>
+                  <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7"> İşlemler</th>
 
-      </td>
-    </tr>
-  </tbody>
-</table>
+                  <th class="text-secondary opacity-7"></th>
+                </tr>
+              </thead>
+              <tbody *ngFor="let instructor of instructors" class="text-center">
+                <tr>
+                  
+                  <td class="align-middle text-center text-sm">
+                    <span class="mb-0 text-sm">{{instructor.id}}</span>
+                  </td>
+                  <td class="align-middle text-center">
+                    <span class="text-secondary text-xs font-weight-bold">{{instructor.firstName}}</span>
+                  </td>
+                  <td class="align-middle">
+                    <a href="javascript:;" class="text-secondary font-weight-bold text-xs" data-toggle="tooltip" data-original-title="Edit user">
+                      {{instructor.lastName}}
+                    </a>
+                  </td>
+                  <td class="align-middle">
+                    <a href="javascript:;" class="text-secondary font-weight-bold text-xs" data-toggle="tooltip" data-original-title="Edit user">
+                      {{instructor.email}}
+                    </a>
+                  </td>
+                  <td class="align-middle">
+                    <a href="javascript:;" class="text-secondary font-weight-bold text-xs" data-toggle="tooltip" data-original-title="Edit user">
+                      {{instructor.password}}
+                    </a>
+                  </td>
+                  <td class="align-middle">
+                    <a href="javascript:;" class="text-secondary font-weight-bold text-xs" data-toggle="tooltip" data-original-title="Edit user">
+                      {{instructor.nationalIdentity}}
+                    </a>
+                  </td>
+                  <td class="align-middle">
+                    <a href="javascript:;" class="text-secondary font-weight-bold text-xs" data-toggle="tooltip" data-original-title="Edit user">
+                      {{instructor.dateOfBirth}}
+                    </a>
+                  </td>
+                  <td class="align-middle">
+                    <a href="javascript:;" class="text-secondary font-weight-bold text-xs" data-toggle="tooltip" data-original-title="Edit user">
+                      {{instructor.companyName}}
+                    </a>
+                  </td>
+
+                <td>
+                  <div>
+                    <button type="button" class="btn btn-primary mx-3"
+                      routerLink="/instructor-detail/{{instructor.id}}">Detay</button>
+                    <button type="button" class="btn btn-secondary mx-3"
+                      routerLink="/update-instructor/{{instructor.id}}">Düzenle</button>
+                    <button type="button" class="btn btn-danger mx-3"  (click)="delete(instructor)">Sil</button>
+                  </div>
+          
+                </td>
+                </tr>
+                
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+

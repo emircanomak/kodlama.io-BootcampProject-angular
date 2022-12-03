@@ -1,34 +1,31 @@
-<div class="container">
-    <div class="row">
-        <div class="col-md-6"></div>
-        <form [formGroup]="bootcampUpdateForm" *ngIf="bootcamp">
-            <div class="mb-3">
-              <button type="button" class="btn btn-outline-dark mt-5" routerLink="/bootcampList">Geri Dön</button>
-                <h2 class="text-center mt-3">Bootcamp Ekle</h2>
-              <label for="exampleInputEmail1" class="form-label">Instructor Id</label>
-              <input formControlName="instructorId" type="number" class="form-control" placeholder="instructorId" id="exampleInputEmail1" aria-describedby="emailHelp">
-            </div>
-            <div class="mb-3">
-                <label for="exampleInputEmail1" class="form-label">Ad</label>
-                <input formControlName="name" type="text" class="form-control" placeholder="name" id="exampleInputEmail1" aria-describedby="emailHelp">
-              </div>
-            <div class="mb-3">
-                <label for="exampleInputEmail1" class="form-label">Başlangıç Tarihi</label>
-                <input formControlName="dateStart" type="text" class="form-control" placeholder="dateStart" id="exampleInputEmail1" aria-describedby="emailHelp">
-              </div>
-              <div class="mb-3">
-                <label for="exampleInputEmail1" class="form-label">Bitiş Tarihi</label>
-                <input formControlName="dateEnd" type="text" class="form-control" placeholder="dateEnd" id="exampleInputEmail1" aria-describedby="emailHelp">
-              </div>
-              <div class="mb-3">
-                <label for="exampleInputEmail1" class="form-label">State </label>
-                <input formControlName="state" type="number" class="form-control" placeholder="state" id="exampleInputEmail1" aria-describedby="emailHelp">
-              </div>
-
-            <button (click)="updateBootcamp()" type="submit" class="btn btn-warning">Güncelle</button>
-
-          </form>
-    </div>
-
-
+<div style="border-top: 1px solid rgb(40, 26, 34,0.23); width: 55%; margin: auto;" class="card mb-4 mt-5 px-8">
+  <div class="card-header pb-0">
+    <h6 class="text-center mb-4" style=" font-size: 2rem;">Bootcamp Düzenle</h6>
+  </div>
+  <div class="card-body px-0 pt-0 pb-2" >
+    <form  [formGroup]="bootcampUpdateForm"  *ngIf="bootcamp">
+      <div class="form-group">
+          <label for="example-text-input" class="form-control-label">Instructor Id</label>
+          <input class="form-control" placeholder="instructor id" formControlName="instructorId" type="text" value="John Snow" id="example-text-input">
+      </div>
+      <div class="form-group">
+          <label for="example-search-input" class="form-control-label">İsim</label>
+          <input class="form-control" placeholder="İsim" formControlName="name" type="search" value="Tell me your secret ..." id="example-search-input">
+      </div>
+      <div class="form-group">
+          <label for="example-number-input" class="form-control-label">Durum</label>
+          <input class="form-control"  placeholder="durum" formControlName="state" type="number" value="23" id="example-number-input">
+      </div>
+      <div class="form-group">
+          <label for="example-date-input" class="form-control-label">Başlangıç Tarihi</label>
+          <input class="form-control" type="date" formControlName="dateStart" value="2018-11-23" id="example-date-input">
+      </div>
+      <div class="form-group">
+        <label for="example-date-input" class="form-control-label">Bitiş Tarihi</label>
+        <input class="form-control" type="date" formControlName="dateEnd" value="2018-11-23" id="example-date-input">
+      </div>
+    <button (click)="updateBootcamp()" style="margin-right:15px" type="submit" class="btn btn-warning">Güncelle</button>
+    <button type="button" class="btn btn-outline-dark px-3" routerLink="/bootcampList">Geri Dön</button>
+    </form>
+  </div>
 </div>

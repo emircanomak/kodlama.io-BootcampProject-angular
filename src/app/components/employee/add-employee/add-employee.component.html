@@ -1,40 +1,40 @@
-<div class="container">
-    <button  type="submit" class="btn btn-outline-dark mt-3" routerLink="/employee">Geri Git</button>
-    <div class="row">
-        <div class="col-md-6"></div>
-        <form [formGroup]="addEmployeeForm">
-            <div class="mb-2">
-                <h2 class="text-center mt-2">Çalışan Ekle</h2>
-              <label for="exampleInputEmail1" class="form-label">İsim</label>
-              <input formControlName="firstName" type="text" class="form-control" placeholder="İsim" id="exampleInputEmail1" aria-describedby="emailHelp">
-            </div>
-            <div class="mb-3">
-                <label for="exampleInputEmail1" class="form-label">Soyisim</label>
-                <input formControlName="lastName" type="text" class="form-control" placeholder="Soyisim" id="exampleInputEmail1" aria-describedby="emailHelp">
-              </div>
-            <div class="mb-3">
-                <label for="exampleInputEmail1" class="form-label">E-mail</label>
-                <input formControlName="email" type="text" class="form-control" placeholder="E-mail" id="exampleInputEmail1" aria-describedby="emailHelp">
-              </div>
-              <div class="mb-3">
-                <label for="exampleInputEmail1" class="form-label">Şifre</label>
-                <input formControlName="password" type="text" class="form-control" placeholder="Şifre" id="exampleInputEmail1" aria-describedby="emailHelp">
-              </div>
-              <div class="mb-3">
-                <label for="exampleInputEmail1" class="form-label">Kimlik No</label>
-                <input formControlName="nationalIdentity" type="text" class="form-control" placeholder="Kimlik No" id="exampleInputEmail1" aria-describedby="emailHelp">
-              </div>
-              <div class="mb-3">
-                <label for="exampleInputEmail1" class="form-label">Doğum Tarihi</label>
-                <input formControlName="dateOfBirth" type="text" class="form-control" placeholder="Doğum Tarihi" id="exampleInputEmail1" aria-describedby="emailHelp">
-              </div>
-              <div class="mb-3">
-                <label for="exampleInputEmail1" class="form-label">Pozisyon</label>
-                <input formControlName="position" type="text" class="form-control" placeholder="Pozisyon" id="exampleInputEmail1" aria-describedby="emailHelp">
-              </div>
-            <button (click)="addEmployee()" type="submit" class="btn btn-warning">Ekle</button>
-          </form>
+<div style="border-top: 1px solid rgb(40, 26, 34,0.23); width: 55%; margin: auto;" class="card mb-4 mt-5 px-8">
+  <div class="card-header pb-0">
+    <h6 class="text-center mb-4" style=" font-size: 2rem;">Eğitmen Ekle</h6>
+  </div>
+  <div class="card-body px-0 pt-0 pb-2" >
+    <form  [formGroup]="addEmployeeForm" >
+      <div class="form-group">
+        <label for="example-text-input" class="form-control-label">Ad</label>
+        <input class="form-control" placeholder="ad" formControlName="firstName" type="text" id="example-text-input">
     </div>
-
-
+    <div class="form-group">
+      <label for="example-text-input" class="form-control-label">Soyad</label>
+      <input class="form-control" placeholder="soyad" formControlName="lastName" type="text" id="example-text-input">
+  </div>
+  <div class="form-group">
+    <label for="example-text-input" class="form-control-label">E-mail</label>
+    <input class="form-control" placeholder="email" formControlName="email" type="text"  id="example-text-input">
+</div>
+<div class="form-group">
+  <label for="example-text-input" class="form-control-label">Şifre</label>
+  <input class="form-control" placeholder="Şifre" formControlName="password" type="password"  id="example-text-input">
+</div>
+      <div class="form-group">
+        <label for="example-number-input" class="form-control-label">Kimlik No</label>
+        <input class="form-control"  placeholder="Kimlik no" formControlName="nationalIdentity"  value="23" id="example-number-input">
+    </div>
+    <div class="form-group">
+      <label for="example-date-input" class="form-control-label">Doğum Tarihi</label>
+      <input class="form-control" type="date" formControlName="dateOfBirth" value="2018-11-23" id="example-date-input">
+  </div>
+      <div class="form-group">
+          <label for="example-text-input" class="form-control-label">Pozisyon</label>
+          <input class="form-control" placeholder="Pozisyon" formControlName="position" type="text"  id="example-text-input">
+      </div>
+    
+    <button (click)="addEmployee()" style="margin-right:15px" type="submit" class="btn btn-warning">Ekle</button>
+    <button type="button" class="btn btn-outline-dark px-3" routerLink="/employee">Geri Dön</button>
+    </form>
+  </div>
 </div>

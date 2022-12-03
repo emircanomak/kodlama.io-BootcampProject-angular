@@ -5,7 +5,7 @@
       <div class="card mb-4">
         <div class="card-header pb-0">
           <h6 style="float:left; font-size: 2rem;"  >Kara Liste <button type="button"  class="btn btn-success btn-lg "
-            routerLink="/add-blacklist">Engelle</button> </h6>
+            routerLink="add-blacklist">Engelle</button> </h6>
        
         </div>
         <div class="card-body px-0 pt-0 pb-2">
@@ -50,9 +50,9 @@
                 <td>
                   <div>
                     <button type="button" class="btn btn-primary mx-3"
-                      routerLink="/blacklist-detail/{{blacklist.id}}">Detay</button>
+                      routerLink="blacklist-detail/{{blacklist.id}}">Detay</button>
                     <button type="button" class="btn btn-secondary mx-3"
-                      routerLink="/update-blacklist/{{blacklist.id}}">Düzenle</button>
+                      routerLink="update-blacklist/{{blacklist.id}}">Düzenle</button>
                     <button type="button" class="btn btn-danger mx-3"  (click)="deleteBlacklist(blacklist)">Sil</button>
                   </div>
           

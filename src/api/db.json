@@ -9,6 +9,26 @@
       "dateOfBirth": "2022-12-22",
       "about": "asdasd",
       "id": 3
+    },
+    {
+      "firstName": "emir",
+      "lastName": "omak",
+      "email": "smaflşasmş@homos",
+      "password": "123456",
+      "nationalIdentity": "2123616",
+      "dateOfBirth": "5502-03-04",
+      "about": "",
+      "id": 4
+    },
+    {
+      "firstName": "emir",
+      "lastName": "omak",
+      "email": "smaflşasmş@homos",
+      "password": "123456",
+      "nationalIdentity": "2123616",
+      "dateOfBirth": "5502-03-04",
+      "about": "325125",
+      "id": 5
     }
   ],
   "employee": [
@@ -33,6 +53,16 @@
       "dateOfBirth": "2022-12-31",
       "companyName": "asdasd",
       "id": 3
+    },
+    {
+      "firstName": "Berkay",
+      "lastName": "Anduv",
+      "email": "berkayanduv@hotmail.com",
+      "password": "12345",
+      "nationalIdentity": "489489789",
+      "dateOfBirth": "1999-04-04",
+      "companyName": "Turkcell",
+      "id": 4
     }
   ],
   "blackList": [
@@ -59,18 +89,6 @@
       "applicantId": "16",
       "date": "01.12.2022",
       "reason": "emir@yahoo@hotmail.com"
-    },
-    {
-      "id": 5,
-      "applicantId": "80",
-      "date": "01.12.2022",
-      "reason": "hediyeY1LD1R1M@yahoo.com"
-    },
-    {
-      "id": 6,
-      "applicantId": "7893534563",
-      "date": "05/08/2002",
-      "reason": "ttttttttccccccccccccccccccccccccccc"
     },
     {
       "id": 8,
@@ -158,6 +176,27 @@
       "mail": "beyza@gmail.com",
       "name": "Beyza",
       "lastName": "Alici",
+      "password": "12345"
+    },
+    {
+      "id": 6,
+      "mail": "emircan@gmail.comdasd",
+      "name": "Emircan",
+      "lastName": "Omak",
+      "password": "12345"
+    },
+    {
+      "id": 7,
+      "mail": "beyza@gmail.comdasd",
+      "name": "",
+      "lastName": "",
+      "password": "12345"
+    },
+    {
+      "id": 8,
+      "mail": "berkay@gmail.comdasd",
+      "name": "Berkay",
+      "lastName": "Anduv",
       "password": "12345"
     }
   ]

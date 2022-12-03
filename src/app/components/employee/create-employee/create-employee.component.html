@@ -5,7 +5,7 @@
       <div class="card mb-4">
         <div class="card-header pb-0">
           <h6 style="float:left; font-size: 2rem;"  >Çalışan Listesi <button type="button"  class="btn btn-success btn-lg "
-            routerLink="/add-employee">Çalışan ekle</button> </h6>
+            routerLink="add-employee">Çalışan ekle</button> </h6>
        
         </div>
         <div class="card-body px-0 pt-0 pb-2">
@@ -69,9 +69,9 @@
                 <td>
                   <div>
                     <button type="button" class="btn btn-primary mx-3"
-                      routerLink="/employee-detail/{{employee.id}}">Detay</button>
+                      routerLink="employee-detail/{{employee.id}}">Detay</button>
                     <button type="button" class="btn btn-secondary mx-3"
-                      routerLink="/update-employee/{{employee.id}}">Düzenle</button>
+                      routerLink="update-employee/{{employee.id}}">Düzenle</button>
                     <button type="button" class="btn btn-danger mx-3"  (click)="delete(employee)">Sil</button>
                   </div>
           

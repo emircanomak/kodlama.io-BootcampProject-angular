@@ -28,8 +28,9 @@ export class RegisterComponent {
 
   add(){
     this.registerServive.add(this.registerForm.value).subscribe((data) => {
-      alert("Kayıt Olundu")
     })
+    alert("Kayıt Olundu")
+
   }
 
 

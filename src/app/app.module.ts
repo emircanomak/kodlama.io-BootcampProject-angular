@@ -16,7 +16,6 @@ import { UpdateEmployeeComponent } from './components/employee/update-employee/u
 import { CreateInstructorComponent } from './components/instructor/create-instructor/create-instructor.component';
 import { UpdateInstructorComponent } from './components/instructor/update-instructor/update-instructor.component';
 import { NavbarComponent } from './layouts/navbar/navbar.component';
-import { HomeComponent } from './components/home/home.component';
 import {HttpClientModule} from "@angular/common/http";
 import { AddApplicantComponent } from './components/applicant/add-applicant/add-applicant.component';
 import { AddApplicationComponent } from './components/application/add-application/add-application.component';
@@ -36,6 +35,10 @@ import { RegisterComponent } from './components/register/register.component';
 import { SidebarComponent } from './layouts/sidebar/sidebar.component';
 import { FooterComponent } from './layouts/footer/footer.component';
 import { SettingsComponent } from './layouts/settings/settings.component';
+import { AdminComponent } from './pages/admin/admin.component';
+import { HomeComponent } from './pages/home/home.component';
+import { ApplicantComponent } from './pages/applicant/applicant.component';
+import { InstructorComponent } from './pages/instructor/instructor.component';
 
 
 
@@ -56,7 +59,6 @@ import { SettingsComponent } from './layouts/settings/settings.component';
     CreateInstructorComponent,
     UpdateInstructorComponent,
     NavbarComponent,
-    HomeComponent,
     AddApplicantComponent,
     AddApplicationComponent,
     AddBlackListComponent,
@@ -73,7 +75,11 @@ import { SettingsComponent } from './layouts/settings/settings.component';
     RegisterComponent,
     SidebarComponent,
     FooterComponent,
-    SettingsComponent
+    SettingsComponent,
+    AdminComponent,
+    HomeComponent,
+    ApplicantComponent,
+    InstructorComponent
     
 
   ],

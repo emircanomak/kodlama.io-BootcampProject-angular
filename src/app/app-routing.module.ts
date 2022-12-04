@@ -1,3 +1,4 @@
+import { ApplicantComponent } from './pages/applicant/applicant.component';
 import { AdminComponent } from './pages/admin/admin.component';
 import { RegisterComponent } from './components/register/register.component';
 import { DetailApplicationComponent } from './components/application/detail-application/detail-application.component';
@@ -31,13 +32,15 @@ import { LoginGuard } from './guards/login.guard';
 import { HomeComponent } from './pages/home/home.component';
 
 const routes: Routes = [
-  //child of home
-  {path:"" , component:HomeComponent,children:[
+
+  //Child of home
+    {path:"" , component:HomeComponent,children:[
     {path:"home-login",component:LoginComponent},
+    {path:"home-register",component:RegisterComponent},
     {path:"home-bootcamp",component:CreateBootcampComponent}
   ]},
 
-  //child of admin
+  //Child of admin
   {path:"admin",component:AdminComponent,canActivate:[LoginGuard], children:[
   { path: 'admin-application', component: CreateApplicationComponent,},
   { path: 'admin-bootcampList', component: CreateBootcampComponent},
@@ -46,57 +49,51 @@ const routes: Routes = [
   { path: 'admin-instructor', component: CreateInstructorComponent},
   { path: 'admin-employee', component: CreateEmployeeComponent},
 
-  //Child of application-child
+  //Child of admin-application-child
   { path: 'admin-application/add-application', component: AddApplicationComponent},
   { path: 'admin-application/update-application/:id', component: UpdateApplicationComponent},
   { path: 'admin-application/application-detail/:id', component: DetailApplicationComponent},
-  //end of application
+  //end of admin-application
 
-  //Child of bootcamp-child
+  //Child of admin-bootcamp-child
   { path: 'admin-bootcampList/add-bootcampList', component: AddBootcampComponent },
   { path: 'admin-bootcampList/update-bootcampList/:id', component: UpdateBootcampComponent},
   { path: 'admin-bootcampList/bootcampList-detail/:id', component: DetailBootcampComponent},
-  //end of bootcampList
+  //end of admin-bootcampList
 
-  //Child of blacklist-child
+  //Child of admin-blacklist-child
   { path: 'admin-blacklist/add-blacklist', component: AddBlackListComponent},
   { path: 'admin-blacklist/update-blacklist/:id', component: UpdateBlackListComponent},
   { path: 'admin-blacklist/blacklist-detail/:id', component: DetailBlackListComponent},
   //end of blacklist
 
-  //Child of applicant-child
+  //Child of admin-applicant-child
   { path: 'admin-applicant/add-applicant', component: AddApplicantComponent},
   { path: 'admin-applicant/update-applicant/:id', component: UpdateApplicantComponent},
   { path: 'admin-applicant/applicant-detail/:id', component: DetailApplicantComponent},
-  //end of applicant
+  //end of admin-applicant
 
-  //Child of instructor-child
+  //Child of admin-instructor-child
   { path: 'admin-instructor/add-instructor', component: AddInstructorComponent},
   { path: 'admin-instructor/update-instructor/:id', component: UpdateInstructorComponent},
   { path: 'admin-instructor/instructor-detail/:id', component: DetailInstructorComponent},
-  //end of instructor
+  //end of admin-instructor
 
-  //Child of employee-child
+  //Child of admin-employee-child
   { path: 'admin-employee/add-employee', component: AddEmployeeComponent },
   { path: 'admin-employee/update-employee/:id', component: UpdateEmployeeComponent },
   { path: 'admin-employee/employee-detail/:id', component: DetailEmployeeComponent },
-  
+   //end of admin-employee
+
+   // Admin login 
+  { path: 'login', component: LoginComponent },
+  { path: "register", component:RegisterComponent}
 
   ]},
 
+  //  //child of applicant
+ {path:"applicant",component:ApplicantComponent,canActivate:[LoginGuard]},
 
-
- 
-
-  
-
-  
-  
-  
-  
-
-  { path: 'login', component: LoginComponent },
-  { path: "register", component:RegisterComponent}
 ];
 
 @NgModule({

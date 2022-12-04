@@ -39,6 +39,8 @@ import { AdminComponent } from './pages/admin/admin.component';
 import { HomeComponent } from './pages/home/home.component';
 import { ApplicantComponent } from './pages/applicant/applicant.component';
 import { InstructorComponent } from './pages/instructor/instructor.component';
+import { ApplicantNavbarComponent } from './layouts/applicant-layouts/applicant-navbar/applicant-navbar.component';
+import { ApplicantFooterComponent } from './layouts/applicant-layouts/applicant-footer/applicant-footer.component';
 
 
 
@@ -79,7 +81,9 @@ import { InstructorComponent } from './pages/instructor/instructor.component';
     AdminComponent,
     HomeComponent,
     ApplicantComponent,
-    InstructorComponent
+    InstructorComponent,
+    ApplicantNavbarComponent,
+    ApplicantFooterComponent
     
 
   ],

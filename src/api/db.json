@@ -149,55 +149,18 @@
       "password": "abbasyanbasan",
       "expiration": "lololololo",
       "token": "EMROMKEMROMKEMROM44K44"
-    },
+    }
+   
+  ],
+  "applicantLogin": [
     {
-      "id": 2,
-      "mail": "sygrok@hotmail.com",
-      "name": "Berkay",
-      "lastName": "Anduv",
-      "password": "123456"
-    },
-    {
-      "id": 3,
-      "mail": "sygrok@hotmail.com",
-      "name": "sygrok@hotmail.com",
-      "lastName": "sygrok@hotmail.com",
-      "password": "32415"
-    },
-    {
-      "id": 4,
-      "mail": "sygrok@hotmail.com",
-      "name": "sygrok@hotmail.com",
-      "lastName": "sygrok@hotmail.com",
-      "password": "32415"
-    },
-    {
-      "id": 5,
-      "mail": "beyza@gmail.com",
+      "id": 1,
       "name": "Beyza",
-      "lastName": "Alici",
-      "password": "12345"
-    },
-    {
-      "id": 6,
-      "mail": "emircan@gmail.comdasd",
-      "name": "Emircan",
-      "lastName": "Omak",
-      "password": "12345"
-    },
-    {
-      "id": 7,
-      "mail": "beyza@gmail.comdasd",
-      "name": "",
-      "lastName": "",
-      "password": "12345"
-    },
-    {
-      "id": 8,
-      "mail": "berkay@gmail.comdasd",
-      "name": "Berkay",
-      "lastName": "Anduv",
-      "password": "12345"
+      "lastName": "Alıcı",
+      "mail": "beyza@gmail.com",
+      "password": "12345",
+      "expiration": "lololololo",
+      "token": "BYZ789BYZ89BYZ9878BYZ"
     }
   ]
 }

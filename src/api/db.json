@@ -45,18 +45,18 @@
   ],
   "instructor": [
     {
-      "firstName": "beyza@gmail.comdasd",
-      "lastName": "asdads",
-      "email": "asdas",
+      "firstName": "Engin",
+      "lastName": "Demiroğ",
+      "email": "engindemirog@gmail.com",
       "password": "12345",
       "nationalIdentity": "asdas",
       "dateOfBirth": "2022-12-31",
-      "companyName": "asdasd",
+      "companyName": "Kodlama.io",
       "id": 3
     },
     {
-      "firstName": "Berkay",
-      "lastName": "Anduv",
+      "firstName": "Emir",
+      "lastName": "Omak",
       "email": "berkayanduv@hotmail.com",
       "password": "12345",
       "nationalIdentity": "489489789",
@@ -149,22 +149,6 @@
       "password": "abbasyanbasan",
       "expiration": "lololololo",
       "token": "EMROMKEMROMKEMROM44K44"
-    },
-    {
-      "id": 2,
-<<<<<<< HEAD
-      "mail": "hediye@gmail.com",
-      "name": "Hediye",
-      "lastName": "Yıldırım",
-      "password": "hediye"
-=======
-      "mail": "sygrok@hotmail.com",
-      "name": "Berkay",
-      "lastName": "Anduv",
-      "password": "abbasyanbasan67",
-      "expiration": "lololololo",
-      "token": "EMROMKEMROMKEMROM44K44"
->>>>>>> fdbfd3c041c14906590960422f111814c5b90a2e
     }
   ],
   "applicantLogin": [

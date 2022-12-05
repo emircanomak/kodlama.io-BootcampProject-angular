@@ -41,6 +41,11 @@ import { ApplicantComponent } from './pages/applicant/applicant.component';
 import { InstructorComponent } from './pages/instructor/instructor.component';
 import { ApplicantNavbarComponent } from './layouts/applicant-layouts/applicant-navbar/applicant-navbar.component';
 import { ApplicantFooterComponent } from './layouts/applicant-layouts/applicant-footer/applicant-footer.component';
+import { ApplicantBootcampListComponent } from './applicant-components/applicant-bootcamp-list/applicant-bootcamp-list.component';
+import { ApplicantInstructorListComponent } from './applicant-components/applicant-instructor-list/applicant-instructor-list.component';
+import { InstructorApplicantListComponent } from './instructor-components/instructor-applicant-list/instructor-applicant-list.component';
+import { InstructorBlacklistComponent } from './instructor-components/instructor-blacklist/instructor-blacklist.component';
+import { InstructorListComponent } from './instructor-components/instructor-list/instructor-list.component';
 
 
 
@@ -83,7 +88,12 @@ import { ApplicantFooterComponent } from './layouts/applicant-layouts/applicant-
     ApplicantComponent,
     InstructorComponent,
     ApplicantNavbarComponent,
-    ApplicantFooterComponent
+    ApplicantFooterComponent,
+    ApplicantBootcampListComponent,
+    ApplicantInstructorListComponent,
+    InstructorApplicantListComponent,
+    InstructorBlacklistComponent,
+    InstructorListComponent
     
 
   ],

@@ -32,11 +32,12 @@ import { LoginGuard } from './guards/login.guard';
 import { HomeComponent } from './pages/home/home.component';
 
 const routes: Routes = [
-
+  {path:"home-login",component:LoginComponent},
+   {path:"home-register",component:RegisterComponent},
   //Child of home
     {path:"" , component:HomeComponent,children:[
-    {path:"home-login",component:LoginComponent},
-    {path:"home-register",component:RegisterComponent},
+    // {path:"home-login",component:LoginComponent},
+    // {path:"home-register",component:RegisterComponent},
     {path:"home-bootcamp",component:CreateBootcampComponent}
   ]},
 

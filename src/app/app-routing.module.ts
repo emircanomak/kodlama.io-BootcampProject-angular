@@ -1,3 +1,9 @@
+import { InstructorListComponent } from './instructor-components/instructor-list/instructor-list.component';
+import { InstructorBlacklistComponent } from './instructor-components/instructor-blacklist/instructor-blacklist.component';
+import { InstructorApplicantListComponent } from './instructor-components/instructor-applicant-list/instructor-applicant-list.component';
+import { InstructorComponent } from './pages/instructor/instructor.component';
+import { ApplicantInstructorListComponent } from './applicant-components/applicant-instructor-list/applicant-instructor-list.component';
+import { ApplicantBootcampListComponent } from './applicant-components/applicant-bootcamp-list/applicant-bootcamp-list.component';
 import { ApplicantComponent } from './pages/applicant/applicant.component';
 import { AdminComponent } from './pages/admin/admin.component';
 import { RegisterComponent } from './components/register/register.component';
@@ -86,14 +92,26 @@ const routes: Routes = [
   { path: 'admin-employee/employee-detail/:id', component: DetailEmployeeComponent },
    //end of admin-employee
 
-   // Admin login 
+   // login
   { path: 'login', component: LoginComponent },
   { path: "register", component:RegisterComponent}
 
   ]},
 
+  // ********* applicant ************
   //  //child of applicant
- {path:"applicant",component:ApplicantComponent,canActivate:[LoginGuard]},
+{path:"applicant",component:ApplicantComponent,canActivate:[LoginGuard], children:[
+  {path: "applicant-bootcamp-list", component: ApplicantBootcampListComponent},
+  {path: "applicant-instructor-list", component: ApplicantInstructorListComponent}
+ ]},
+
+ // ************ instructor ************
+ // child of instructor
+{path:"instructor", component:InstructorComponent, canActivate:[LoginGuard], children:[
+  {path: "instructor-applicant-list", component: InstructorApplicantListComponent},
+  {path: "instructor-blacklist", component: InstructorBlacklistComponent},
+  {path: "instructor-list", component: InstructorListComponent}
+ ]}
 
 ];
 

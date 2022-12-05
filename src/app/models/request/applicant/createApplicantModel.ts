@@ -7,4 +7,5 @@ export interface ICreateApplicantModel {
   nationalIdentity: number;
   dateOfBirth: string;
   about: string;
+  img: string;
 }

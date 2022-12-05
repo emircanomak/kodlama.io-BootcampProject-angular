@@ -1,3 +1,4 @@
+import { InstructorProfileComponent } from './instructor-components/instructor-profile/instructor-profile.component';
 import { InstructorListComponent } from './instructor-components/instructor-list/instructor-list.component';
 import { InstructorBlacklistComponent } from './instructor-components/instructor-blacklist/instructor-blacklist.component';
 import { InstructorApplicantListComponent } from './instructor-components/instructor-applicant-list/instructor-applicant-list.component';
@@ -31,7 +32,7 @@ import { CreateApplicantComponent } from './components/applicant/create-applican
 import { CreateEmployeeComponent } from './components/employee/create-employee/create-employee.component';
 import { CreateBlackListComponent } from './components/black-list/create-black-list/create-black-list.component';
 import { CreateBootcampComponent } from './components/bootcamp/create-bootcamp/create-bootcamp.component';
-import { NgModule } from '@angular/core';
+import { NgModule, Component } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { CreateInstructorComponent } from './components/instructor/create-instructor/create-instructor.component';
 import { LoginGuard } from './guards/login.guard';
@@ -110,7 +111,8 @@ const routes: Routes = [
 {path:"instructor", component:InstructorComponent, canActivate:[LoginGuard], children:[
   {path: "instructor-applicant-list", component: InstructorApplicantListComponent},
   {path: "instructor-blacklist", component: InstructorBlacklistComponent},
-  {path: "instructor-list", component: InstructorListComponent}
+  {path: "instructor-list", component: InstructorListComponent},
+  {path: "instructor-profile", component: InstructorProfileComponent}
  ]}
 
 ];

@@ -29,6 +29,16 @@
       "dateOfBirth": "5502-03-04",
       "about": "325125",
       "id": 5
+    },
+    {
+      "firstName": "Mert",
+      "lastName": "Subaşı",
+      "email": "mert@gmail.com",
+      "password": "mert123",
+      "nationalIdentity": "31541423124657",
+      "dateOfBirth": "1995-01-18",
+      "about": "ÇOK ÇALIŞKAN BİRİSİ EĞİTİM ALMAK İSTİYOR ",
+      "id": 6
     }
   ],
   "employee": [
@@ -149,22 +159,6 @@
       "password": "abbasyanbasan",
       "expiration": "lololololo",
       "token": "EMROMKEMROMKEMROM44K44"
-    },
-    {
-      "id": 2,
-<<<<<<< HEAD
-      "mail": "hediye@gmail.com",
-      "name": "Hediye",
-      "lastName": "Yıldırım",
-      "password": "hediye"
-=======
-      "mail": "sygrok@hotmail.com",
-      "name": "Berkay",
-      "lastName": "Anduv",
-      "password": "abbasyanbasan67",
-      "expiration": "lololololo",
-      "token": "EMROMKEMROMKEMROM44K44"
->>>>>>> fdbfd3c041c14906590960422f111814c5b90a2e
     }
   ],
   "applicantLogin": [

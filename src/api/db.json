@@ -152,10 +152,19 @@
     },
     {
       "id": 2,
+<<<<<<< HEAD
       "mail": "hediye@gmail.com",
       "name": "Hediye",
       "lastName": "Yıldırım",
       "password": "hediye"
+=======
+      "mail": "sygrok@hotmail.com",
+      "name": "Berkay",
+      "lastName": "Anduv",
+      "password": "abbasyanbasan67",
+      "expiration": "lololololo",
+      "token": "EMROMKEMROMKEMROM44K44"
+>>>>>>> fdbfd3c041c14906590960422f111814c5b90a2e
     }
   ],
   "applicantLogin": [

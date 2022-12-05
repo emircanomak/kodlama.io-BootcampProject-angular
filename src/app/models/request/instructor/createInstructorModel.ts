@@ -8,4 +8,5 @@ export interface ICreateInstructorModel {
   nationalIdentity: number;
   dateOfBirth: string;
   companyName: string;
+  img : string;
 }

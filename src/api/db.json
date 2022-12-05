@@ -1,34 +1,49 @@
 {
   "applicant": [
     {
-      "firstName": "asdas",
-      "lastName": "asdasd",
-      "email": "asdasda",
+      "firstName": "Berkay ",
+      "lastName": "Anduv",
+      "email": "berkayanduv@gmail.com",
       "password": "aq23",
       "nationalIdentity": "1231231",
-      "dateOfBirth": "2022-12-22",
-      "about": "asdasd",
-      "id": 3
+      "dateOfBirth": "1999-04-04",
+      "about": "Mezunun iş arıyorum.",
+      "id": 3,
+      "img": "https://pbs.twimg.com/profile_images/1028670681620340736/u2U89A2c_400x400.jpg"
     },
     {
-      "firstName": "emir",
-      "lastName": "omak",
-      "email": "smaflşasmş@homos",
+      "firstName": "EMİR",
+      "lastName": "OMAK",
+      "email": "emiromak@gmail.com",
       "password": "123456",
       "nationalIdentity": "2123616",
-      "dateOfBirth": "5502-03-04",
-      "about": "",
-      "id": 4
+      "dateOfBirth": "2000-09-04",
+      "about": "mezunum iş arıyorum.",
+      "id": 4,
+      "img": "https://miro.medium.com/max/2400/1*LV8tB2fEYMSReispTnjcDw.jpeg"
     },
     {
-      "firstName": "emir",
-      "lastName": "omak",
-      "email": "smaflşasmş@homos",
+      "firstName": "Beyza",
+      "lastName": "Alıcı",
+      "email": "beyzaalici@gmail.com",
       "password": "123456",
       "nationalIdentity": "2123616",
-      "dateOfBirth": "5502-03-04",
+      "dateOfBirth": "2000-05-31",
       "about": "325125",
-      "id": 5
+      "id": 5,
+      "img": "https://avatars.githubusercontent.com/u/77552400?v=4"
+    },
+    {
+      "firstName": "hediye",
+      "lastName": "Yildirım",
+      "email": "hediyeyildirim@gmail.com",
+      "password": "123456",
+      "nationalIdentity": "2123616",
+      "dateOfBirth": "1999-11-17",
+      "about": "325125",
+      "id": 5,
+      "img": "https://media-exp1.licdn.com/dms/image/D4D03AQElc-OsTbG7GA/profile-displayphoto-shrink_800_800/0/1668838419255?e=1675900800&v=beta&t=QbQ_ltYVH-axhv4uOA5pwJdzgd102n7aOqzP613-YrY"
+
     },
     {
       "firstName": "Mert",
@@ -39,6 +54,7 @@
       "dateOfBirth": "1995-01-18",
       "about": "ÇOK ÇALIŞKAN BİRİSİ EĞİTİM ALMAK İSTİYOR ",
       "id": 6
+
     }
   ],
   "employee": [
@@ -59,7 +75,6 @@
       "lastName": "Demiroğ",
       "email": "engindemirog@gmail.com",
       "password": "12345",
-      "image": "https://pbs.twimg.com/profile_images/1404479261566713856/_MklDkhx_400x400.jpg",
       "nationalIdentity": "asdas",
       "dateOfBirth": "2022-12-31",
       "companyName": "Kodlama.io",
@@ -70,22 +85,10 @@
       "lastName": "Samancıoğlu",
       "email": "atilsamancioglu@hotmail.com",
       "password": "12345",
-      "image": "http://atilsamancioglu.com/wp-content/uploads/2018/01/photo2.jpg",
       "nationalIdentity": "489489789",
       "dateOfBirth": "1999-04-04",
       "companyName": "Turkcell",
       "id": 4
-    },
-    {
-      "firstName": "Angela",
-      "lastName": "YU",
-      "email": "angela@gmail.com",
-      "password": "123456",
-      "image": "https://pbs.twimg.com/profile_images/1523987597751726081/XuQeo7gC_400x400.jpg",
-      "nationalIdentity": "11111111111",
-      "dateOfBirth": "1992-07-12",
-      "companyName": "Udemy",
-      "id": 5
     }
   ],
   "blackList": [
@@ -112,12 +115,6 @@
       "applicantId": "16",
       "date": "01.12.2022",
       "reason": "emir@yahoo@hotmail.com"
-    },
-    {
-      "id": 8,
-      "applicantId": "44",
-      "date": "2022-12-03",
-      "reason": "ıııııııııııııııııı"
     }
   ],
   "bootcamp": [

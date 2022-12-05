@@ -1,1 +1,44 @@
-<p>instructor-blacklist works!</p>
+
+    <div class="container" >
+        <div class="row">
+    <div class="col-md-4 mt-8" *ngFor="let blacklist of blacklists">
+      <div class="card x">
+        <img class="card-img-top" src="data:image/png;base64,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">
+        <div class="position-relative" style="height: 50px;overflow: hidden;margin-top: -50px;z-index:2;position: relative;">
+          <div class="position-absolute w-100 top-0" style="z-index: 1;">
+              <svg class="waves waves-sm" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 40" preserveAspectRatio="none" shape-rendering="auto">
+                <defs>
+                  <path id="card-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"></path>
+                </defs>
+                <g class="moving-waves">
+                  <use xlink:href="#card-wave" x="48" y="-1" fill="rgba(255,255,255,0.30"></use>
+                  <use xlink:href="#card-wave" x="48" y="3" fill="rgba(255,255,255,0.35)"></use>
+                  <use xlink:href="#card-wave" x="48" y="5" fill="rgba(255,255,255,0.25)"></use>
+                  <use xlink:href="#card-wave" x="48" y="8" fill="rgba(255,255,255,0.20)"></use>
+                  <use xlink:href="#card-wave" x="48" y="13" fill="rgba(255,255,255,0.15)"></use>
+                  <use xlink:href="#card-wave" x="48" y="16" fill="rgba(255,255,255,0.99)"></use>
+                </g>
+              </svg>
+            </div>
+        </div>
+        <div class="card-body">
+          <!-- <h4>
+           {{blacklist.id}}
+          </h4> -->
+          <!-- <p>
+            {{blacklist.applicantId}}
+          </p><br> -->
+          <p>
+            {{blacklist.date}}
+          </p><br>
+          <p>
+            {{blacklist.reason}}
+          </p>
+          <a (click)="deleteBlacklist(blacklist)" class="text-primary icon-move-right">Engeli Kaldır 
+            <i class="fas fa-arrow-left text-sm ms-1" aria-hidden="true"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+</div>
+</div>

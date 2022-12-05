@@ -43,6 +43,18 @@
       "about": "325125",
       "id": 5,
       "img": "https://media-exp1.licdn.com/dms/image/D4D03AQElc-OsTbG7GA/profile-displayphoto-shrink_800_800/0/1668838419255?e=1675900800&v=beta&t=QbQ_ltYVH-axhv4uOA5pwJdzgd102n7aOqzP613-YrY"
+      
+    },
+    {
+      "firstName": "Mert",
+      "lastName": "Subaşı",
+      "email": "mert@gmail.com",
+      "password": "mert123",
+      "nationalIdentity": "31541423124657",
+      "dateOfBirth": "1995-01-18",
+      "about": "ÇOK ÇALIŞKAN BİRİSİ EĞİTİM ALMAK İSTİYOR ",
+      "id": 6
+
     }
   ],
   "employee": [
@@ -73,6 +85,15 @@
       "firstName": "Atıl",
       "lastName": "Samancıoğlu",
       "email": "atilsamancioglu@hotmail.com",
+      "nationalIdentity": "asdas",
+      "dateOfBirth": "2022-12-31",
+      "companyName": "Kodlama.io",
+      "id": 3
+    },
+    {
+      "firstName": "Emir",
+      "lastName": "Omak",
+      "email": "berkayanduv@hotmail.com",
       "password": "12345",
       "nationalIdentity": "48948978239",
       "dateOfBirth": "1975-04-04",
@@ -146,7 +167,7 @@
   ],
   "bootcamp": [
     {
-      "instructorId": "55",
+      "instructorId": "5",
       "name": "React",
       "dateStart": "2022-06-25",
       "dateEnd": "2022-12-29",
@@ -154,39 +175,39 @@
       "id": 1
     },
     {
-      "instructorId": 2,
-      "name": "React",
-      "dateStart": 15.02,
-      "dateEnd": 15.03,
-      "state": 2,
-      "id": 2
-    },
-    {
       "instructorId": "3",
-      "name": "html css",
+      "name": "HTML-CSS",
       "dateStart": "2022-12-08",
       "dateEnd": "2022-12-15",
       "state": 1,
       "id": 3
     },
     {
-      "instructorId": "rgrgrwe",
-      "name": "wegewftwe",
-      "dateStart": "2022-12-07",
-      "dateEnd": "2022-12-16",
+      "instructorId": "1",
+      "name": "Angular",
+      "dateStart": "2022-12-10",
+      "dateEnd": "2023-01-13",
       "state": 1,
       "id": 4
-    }
-  ],
-  "application": [
+    },
     {
-      "userId": 2,
-      "bootcampId": 2,
-      "applicantId": 2,
-      "state": 2,
-      "id": 1
+      "instructorId": "2",
+      "name": "DevOps",
+      "dateStart": "2022-12-17",
+      "dateEnd": "2023-01-07",
+      "state": 1,
+      "id": 5
+    },
+    {
+      "instructorId": "4",
+      "name": "Java",
+      "dateStart": "2023-01-02",
+      "dateEnd": "2023-02-02",
+      "state": 1,
+      "id": 6
     }
   ],
+  "application": [],
   "users": [
     {
       "id": 1,
@@ -194,21 +215,6 @@
       "lastName": "Omak",
       "mail": "emiromak@gmail.com",
       "password": "abbasyanbasan",
-      "expiration": "lololololo",
-      "token": "EMROMKEMROMKEMROM44K44"
-    },
-    {
-      "id": 2,
-      "mail": "hediye@gmail.com",
-      "name": "Hediye",
-      "lastName": "Yıldırım",
-      "password": "hediye"
-    },
-    {
-      "mail": "sygrok@hotmail.com",
-      "name": "Berkay",
-      "lastName": "Anduv",
-      "password": "abbasyanbasan67",
       "expiration": "lololololo",
       "token": "EMROMKEMROMKEMROM44K44"
     }

@@ -149,8 +149,14 @@
       "password": "abbasyanbasan",
       "expiration": "lololololo",
       "token": "EMROMKEMROMKEMROM44K44"
+    },
+    {
+      "id": 2,
+      "mail": "hediye@gmail.com",
+      "name": "Hediye",
+      "lastName": "Yıldırım",
+      "password": "hediye"
     }
-   
   ],
   "applicantLogin": [
     {

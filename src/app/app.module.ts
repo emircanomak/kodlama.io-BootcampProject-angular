@@ -46,6 +46,9 @@ import { ApplicantInstructorListComponent } from './applicant-components/applica
 import { InstructorApplicantListComponent } from './instructor-components/instructor-applicant-list/instructor-applicant-list.component';
 import { InstructorBlacklistComponent } from './instructor-components/instructor-blacklist/instructor-blacklist.component';
 import { InstructorListComponent } from './instructor-components/instructor-list/instructor-list.component';
+import { InstructorNavbarComponent } from './layouts/instructor-layouts/instructor-navbar/instructor-navbar.component';
+import { InstructorFooterComponent } from './layouts/instructor-layouts/instructor-footer/instructor-footer.component';
+import { InstructorProfileComponent } from './instructor-components/instructor-profile/instructor-profile.component';
 
 
 
@@ -93,7 +96,10 @@ import { InstructorListComponent } from './instructor-components/instructor-list
     ApplicantInstructorListComponent,
     InstructorApplicantListComponent,
     InstructorBlacklistComponent,
-    InstructorListComponent
+    InstructorListComponent,
+    InstructorNavbarComponent,
+    InstructorFooterComponent,
+    InstructorProfileComponent
     
 
   ],

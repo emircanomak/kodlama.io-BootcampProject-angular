@@ -55,18 +55,18 @@
   ],
   "instructor": [
     {
-      "firstName": "beyza@gmail.comdasd",
-      "lastName": "asdads",
-      "email": "asdas",
+      "firstName": "Engin",
+      "lastName": "Demiroğ",
+      "email": "engindemirog@gmail.com",
       "password": "12345",
       "nationalIdentity": "asdas",
       "dateOfBirth": "2022-12-31",
-      "companyName": "asdasd",
+      "companyName": "Kodlama.io",
       "id": 3
     },
     {
-      "firstName": "Berkay",
-      "lastName": "Anduv",
+      "firstName": "Emir",
+      "lastName": "Omak",
       "email": "berkayanduv@hotmail.com",
       "password": "12345",
       "nationalIdentity": "489489789",

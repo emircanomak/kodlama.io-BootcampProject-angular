@@ -4,6 +4,7 @@ export interface ICreateInstructorModel {
   lastName: string;
   email: string;
   password: string;
+  image: string;
   nationalIdentity: number;
   dateOfBirth: string;
   companyName: string;

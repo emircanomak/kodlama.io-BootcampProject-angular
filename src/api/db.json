@@ -59,20 +59,33 @@
       "lastName": "Demiroğ",
       "email": "engindemirog@gmail.com",
       "password": "12345",
+      "image": "https://pbs.twimg.com/profile_images/1404479261566713856/_MklDkhx_400x400.jpg",
       "nationalIdentity": "asdas",
       "dateOfBirth": "2022-12-31",
       "companyName": "Kodlama.io",
       "id": 3
     },
     {
-      "firstName": "Emir",
-      "lastName": "Omak",
-      "email": "berkayanduv@hotmail.com",
+      "firstName": "Atıl",
+      "lastName": "Samancıoğlu",
+      "email": "atilsamancioglu@hotmail.com",
       "password": "12345",
+      "image": "http://atilsamancioglu.com/wp-content/uploads/2018/01/photo2.jpg",
       "nationalIdentity": "489489789",
       "dateOfBirth": "1999-04-04",
       "companyName": "Turkcell",
       "id": 4
+    },
+    {
+      "firstName": "Angela",
+      "lastName": "YU",
+      "email": "angela@gmail.com",
+      "password": "123456",
+      "image": "https://pbs.twimg.com/profile_images/1523987597751726081/XuQeo7gC_400x400.jpg",
+      "nationalIdentity": "11111111111",
+      "dateOfBirth": "1992-07-12",
+      "companyName": "Udemy",
+      "id": 5
     }
   ],
   "blackList": [

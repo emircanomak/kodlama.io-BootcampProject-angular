@@ -19,7 +19,7 @@ export class AddInstructorComponent {
   ) {}
 
   ngOnInit(): void {
-    this.createInstructorAddForm()
+    this.createInstructorAddForm();
   }
 
   createInstructorAddForm() {
@@ -28,6 +28,7 @@ export class AddInstructorComponent {
       lastName: ['', Validators.required],
       email: ['', Validators.required],
       password: ['', Validators.required],
+      image: ['', Validators.required],
       nationalIdentity: ['', Validators.required],
       dateOfBirth: ['', Validators.required],
       companyName: ['', Validators.required],

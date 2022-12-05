@@ -31,6 +31,7 @@ export class UpdateInstructorComponent {
       lastName: [this.instructor.lastName, Validators.required],
       email: [this.instructor.email, Validators.required],
       password: [this.instructor.password, Validators.required],
+      image: [this.instructor.image, Validators.required],
       nationalIdentity: [this.instructor.nationalIdentity, Validators.required],
       dateOfBirth: [this.instructor.dateOfBirth, Validators.required],
       companyName: [this.instructor.companyName, Validators.required],

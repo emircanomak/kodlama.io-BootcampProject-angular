@@ -2,41 +2,47 @@
   <div class="card-header pb-0">
     <h6 class="text-center mb-4" style=" font-size: 2rem;">Eğitmen Ekle</h6>
   </div>
-  <div class="card-body px-0 pt-0 pb-2" >
-    <form  [formGroup]="instructorAddForm" >
+  <div class="card-body px-0 pt-0 pb-2">
+    <form [formGroup]="instructorAddForm">
       <div class="form-group">
         <label for="example-text-input" class="form-control-label">Ad</label>
         <input class="form-control" placeholder="ad" formControlName="firstName" type="text" id="example-text-input">
-    </div>
-    <div class="form-group">
-      <label for="example-text-input" class="form-control-label">Soyad</label>
-      <input class="form-control" placeholder="soyad" formControlName="lastName" type="text" id="example-text-input">
-  </div>
-  <div class="form-group">
-    <label for="example-text-input" class="form-control-label">E-mail</label>
-    <input class="form-control" placeholder="email" formControlName="email" type="text"  id="example-text-input">
-</div>
-<div class="form-group">
-  <label for="example-text-input" class="form-control-label">Şifre</label>
-  <input class="form-control" placeholder="Şifre" formControlName="password" type="password"  id="example-text-input">
-</div>
+      </div>
+      <div class="form-group">
+        <label for="example-text-input" class="form-control-label">Soyad</label>
+        <input class="form-control" placeholder="soyad" formControlName="lastName" type="text" id="example-text-input">
+      </div>
+      <div class="form-group">
+        <label for="example-text-input" class="form-control-label">E-mail</label>
+        <input class="form-control" placeholder="email" formControlName="email" type="text" id="example-text-input">
+      </div>
+      <div class="form-group">
+        <label for="example-text-input" class="form-control-label">Şifre</label>
+        <input class="form-control" placeholder="Şifre" formControlName="password" type="password"
+          id="example-text-input">
+      </div>
+      <div class="form-group">
+        <label for="example-text-input" class="form-control-label">Fotoğraf URL</label>
+        <input class="form-control" placeholder="Fotoğraf URL" formControlName="image" type="text" id="example-text-input">
+      </div>
       <div class="form-group">
         <label for="example-number-input" class="form-control-label">Kimlik No</label>
-        <input class="form-control"  placeholder="Kimlik no" formControlName="nationalIdentity"  value="23" id="example-number-input">
-    </div>
-    <div class="form-group">
-      <label for="example-date-input" class="form-control-label">Doğum Tarihi</label>
-      <input class="form-control" type="date" formControlName="dateOfBirth" value="2018-11-23" id="example-date-input">
-  </div>
-      <div class="form-group">
-          <label for="example-text-input" class="form-control-label">Şirket Adı</label>
-          <input class="form-control" placeholder="Şirket Adı" formControlName="companyName" type="text"  id="example-text-input">
+        <input class="form-control" placeholder="Kimlik no" formControlName="nationalIdentity" value="23"
+          id="example-number-input">
       </div>
-    
-    <button (click)="add()" style="margin-right:15px" type="submit" class="btn btn-warning">Ekle</button>
-    <button type="button" class="btn btn-outline-dark px-3" routerLink="admin/admin-instructor">Geri Dön</button>
+      <div class="form-group">
+        <label for="example-date-input" class="form-control-label">Doğum Tarihi</label>
+        <input class="form-control" type="date" formControlName="dateOfBirth" value="2018-11-23"
+          id="example-date-input">
+      </div>
+      <div class="form-group">
+        <label for="example-text-input" class="form-control-label">Şirket Adı</label>
+        <input class="form-control" placeholder="Şirket Adı" formControlName="companyName" type="text"
+          id="example-text-input">
+      </div>
+
+      <button (click)="add()" style="margin-right:15px" type="submit" class="btn btn-warning">Ekle</button>
+      <button type="button" class="btn btn-outline-dark px-3" routerLink="admin/admin-instructor">Geri Dön</button>
     </form>
   </div>
 </div>
-
-

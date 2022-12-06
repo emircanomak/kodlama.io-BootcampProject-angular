@@ -10,7 +10,8 @@
       "about": "Mezunun iş arıyorum.",
       "id": 3,
       "img": "https://pbs.twimg.com/profile_images/1028670681620340736/u2U89A2c_400x400.jpg",
-      "role": "roleApplicant"
+      "role": "roleApplicant",
+      "state": 1
     },
     {
       "firstName": "EMİR",
@@ -22,7 +23,8 @@
       "about": "mezunum iş arıyorum.",
       "id": 4,
       "img": "https://miro.medium.com/max/2400/1*LV8tB2fEYMSReispTnjcDw.jpeg",
-      "role": "roleApplicant"
+      "role": "roleApplicant",
+      "state": 1
     },
     {
       "firstName": "Beyza",
@@ -34,7 +36,8 @@
       "about": "325125",
       "id": 5,
       "img": "https://avatars.githubusercontent.com/u/77552400?v=4",
-      "role": "roleApplicant"
+      "role": "roleApplicant",
+      "state": 1
     },
     {
       "firstName": "Hediye",
@@ -46,7 +49,8 @@
       "about": "325125",
       "id": 5,
       "img": "https://media-exp1.licdn.com/dms/image/D4D03AQElc-OsTbG7GA/profile-displayphoto-shrink_800_800/0/1668838419255?e=1675900800&v=beta&t=QbQ_ltYVH-axhv4uOA5pwJdzgd102n7aOqzP613-YrY",
-      "role": "roleApplicant"
+      "role": "roleApplicant",
+      "state": 1
     },
     {
       "firstName": "Mert",
@@ -57,7 +61,8 @@
       "dateOfBirth": "1995-01-18",
       "about": "ÇOK ÇALIŞKAN BİRİSİ EĞİTİM ALMAK İSTİYOR ",
       "id": 6,
-      "role": "roleApplicant"
+      "role": "roleApplicant",
+      "state": 1
     }
   ],
   "employee": [
@@ -141,6 +146,18 @@
       "date": "6/11/2022",
       "applicantId": "6",
       "id": 6
+    },
+    {
+      "reason": "çok yaramaz",
+      "date": "6/11/2022",
+      "applicantId": "6",
+      "id": 7
+    },
+    {
+      "reason": "bitik",
+      "date": "6/11/2022",
+      "applicantId": "6",
+      "id": 8
     }
   ],
   "bootcamp": [
@@ -218,15 +235,14 @@
       "role": "roleAdmin"
     },
     {
-      "id":4,
-      "mail":"beyza@gmail.comdasd",
-      "name":"Beyza",
-      "lastName":"Alıcı",
+      "id": 4,
+      "mail": "beyza@gmail.comdasd",
+      "name": "Beyza",
+      "lastName": "Alıcı",
       "password": "123456",
       "expiration": "dsgdsgdsg",
       "token": "76976976",
       "role": "roleAdmin"
-
     }
   ]
 }

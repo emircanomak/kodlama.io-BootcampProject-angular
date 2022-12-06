@@ -5,4 +5,6 @@ export interface IGetAllBootcampResponse {
   dateStart: string;
   dateEnd: string;
   state: number;
+  instructorName : string;
+
 }

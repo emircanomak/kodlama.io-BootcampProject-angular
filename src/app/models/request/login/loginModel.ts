@@ -1,6 +1,6 @@
 export interface ILoginModel{
     email:string;
-    password:string
-   
+    password:string;
+    role:string;
 
 }

@@ -14,7 +14,7 @@ export class LoginComponent implements OnInit {
 
   loginAddForm:FormGroup
   tokenModel:ITokenModel
-
+  role:ILoginModel
   constructor(private formBuilder:FormBuilder,private authService:AuthService,private router:Router){}
 
   ngOnInit(): void {
@@ -33,25 +33,45 @@ export class LoginComponent implements OnInit {
 
   }
   
+  // login(){
+
+  //   if(this.loginAddForm.valid){
+
+  //     let loginModal:ILoginModel = this.loginAddForm.value;
+  //     this.authService.login(loginModal).subscribe((data)=>{
+
+  //       if(data.length>0){
+  //         this.tokenModel = data[0]
+  //         localStorage.setItem("token", this.tokenModel.token)
+  //         this.router.navigate(["admin"])
+  //         alert("Giriş Başarılı")
+  //       }
+  //       else{
+  //         alert("Başaramadın")
+  //       }
+  //     })
+  //   }
+
+
+  // }
+
   login(){
 
-    if(this.loginAddForm.valid){
-
-      let loginModal:ILoginModel = this.loginAddForm.value;
-      this.authService.login(loginModal).subscribe((data)=>{
-
-        if(data.length>0){
-          this.tokenModel = data[0]
-          localStorage.setItem("token", this.tokenModel.token)
-          this.router.navigate(["admin"])
+    if (this.loginAddForm.valid){
+      this.authService.login(this.loginAddForm.value).subscribe((data)=> {
+        if(data){
           alert("Giriş Başarılı")
+          data[0].role == "roleInstructor" ? this.router.navigate(["instructor"])
+          :data[0].role == "roleAdmin" ? this.router.navigate(["admin"])
+          : this.router.navigate(["applicant"])
+          localStorage.setItem("token", data[0].token);
+          localStorage.setItem("role", data[0].role);
+        }else {
+          alert("Giriş Başarısız")
         }
-        else{
-          alert("Başaramadın")
-        }
-      })
+      });
     }
-
+    
 
   }
   

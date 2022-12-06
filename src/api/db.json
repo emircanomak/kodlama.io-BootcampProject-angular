@@ -67,9 +67,9 @@
   ],
   "employee": [
     {
-      "firstName": "beyza@gmail.comdasd",
+      "firstName": "beyza",
       "lastName": "asdsada",
-      "email": "asdads",
+      "email": "beyza@gmail.com",
       "password": "12345",
       "nationalIdentity": "asdasd",
       "dateOfBirth": "2022-12-30",
@@ -208,7 +208,7 @@
       "id": 1,
       "name": "Emir",
       "lastName": "Omak",
-      "mail": "emiromak@gmail.com",
+      "email": "emiromak@gmail.com",
       "password": "abbasyanbasan",
       "expiration": "lololololo",
       "token": "EMROMKEMROMKEMROM44K44",
@@ -216,30 +216,30 @@
     },
     {
       "id": 2,
-      "mail": "hasan@hotmail.com",
+      "email": "hasan@hotmail.com",
       "name": "hasan",
       "lastName": "saymaz",
-      "password": "123456",
+      "password": "1243",
       "expiration": "dsgdsgdsg",
       "token": "32532532532",
       "role": "roleInstructor"
     },
     {
       "id": 3,
-      "mail": "hediye@hotmail.com",
+      "email": "hediye@hotmail.com",
       "name": "hediye",
       "lastName": "yıldırım",
-      "password": "123456",
+      "password": "123",
       "expiration": "dsgdsgdsg",
       "token": "32532532532",
       "role": "roleAdmin"
     },
     {
       "id": 4,
-      "mail": "beyza@gmail.comdasd",
+      "email": "beyza@gmail.comdasd",
       "name": "Beyza",
       "lastName": "Alıcı",
-      "password": "123456",
+      "password": "123",
       "expiration": "dsgdsgdsg",
       "token": "76976976",
       "role": "roleAdmin"

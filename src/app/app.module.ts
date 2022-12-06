@@ -50,6 +50,7 @@ import { InstructorNavbarComponent } from './layouts/instructor-layouts/instruct
 import { InstructorFooterComponent } from './layouts/instructor-layouts/instructor-footer/instructor-footer.component';
 import { InstructorProfileComponent } from './instructor-components/instructor-profile/instructor-profile.component';
 import { InstructorAddApplicantBlacklistComponent } from './instructor-components/instructor-add-applicant-blacklist/instructor-add-applicant-blacklist.component';
+import { AdminNavbarComponent } from './layouts/admin-navbar/admin-navbar.component';
 
 
 
@@ -101,7 +102,8 @@ import { InstructorAddApplicantBlacklistComponent } from './instructor-component
     InstructorNavbarComponent,
     InstructorFooterComponent,
     InstructorProfileComponent,
-    InstructorAddApplicantBlacklistComponent
+    InstructorAddApplicantBlacklistComponent,
+    AdminNavbarComponent
     
 
   ],

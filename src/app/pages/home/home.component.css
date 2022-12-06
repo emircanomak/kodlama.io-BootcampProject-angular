@@ -64,7 +64,10 @@
   }
  */
 
-
+nav{
+  position: fixed !important;
+  width: 210vh;
+}
 
 
 .shadow{

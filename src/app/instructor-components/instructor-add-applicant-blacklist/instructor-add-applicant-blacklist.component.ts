@@ -1,7 +1,6 @@
 import { ICreateBlackListModel } from './../../models/request/blackList/createBlackListModel';
 import { BlacklistService } from './../../services/blacklist.service';
 import { ActivatedRoute } from '@angular/router';
-import { ApplicantService } from './../../services/applicant.service';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Component } from '@angular/core';
 
@@ -48,7 +47,15 @@ export class InstructorAddApplicantBlacklistComponent {
       });
       this.blacklistService
         .addBlacklist(blacklistAddRequest)
-        .subscribe((data) => {});
+        .subscribe((data) => {
+          alert('Blackliste eklendi');
+        });
     }
   }
+
+  // updateApplicantState() {
+  //   this.applicantService.updateApplicantState(this.id, 0).subscribe((val) => {
+  //     alert('Aday güncellendi');
+  //   });
+  // }
 }

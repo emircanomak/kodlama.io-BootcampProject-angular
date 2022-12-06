@@ -8,4 +8,5 @@ export interface ICreateApplicantModel {
   dateOfBirth: string;
   about: string;
   img: string;
+  state: number
 }

@@ -47,4 +47,10 @@ export class BlacklistService {
       this.apiUrl + '?q&id=' + id
     );
   }
+
+  // removeApplicant(id: number) {
+  //   return this.httpClient.delete<ICreateBlackListModel>(
+  //     this.apiUrl + '/' + id
+  //   );
+  // }
 }

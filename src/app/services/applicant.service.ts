@@ -1,8 +1,8 @@
+import { IUpdateApplicantModel } from 'src/app/models/request/applicant/updateApplicantModel';
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { ICreateApplicantModel } from '../models/request/applicant/createApplicantModel';
-import { IUpdateApplicantModel } from '../models/request/applicant/updateApplicantModel';
 
 @Injectable({
   providedIn: 'root',
@@ -48,4 +48,14 @@ export class ApplicantService {
       this.apiUrl + '?q&id=' + id
     );
   }
+
+  // updateApplicantState(
+  //   id: number,
+  //   stateVal: number
+  // ): Observable<IUpdateApplicantModel> {
+  //   return this.httpClient.patch<IUpdateApplicantModel>(
+  //     this.apiUrl + '/' + id,
+  //     { state: stateVal }
+  //   );
+  // }
 }

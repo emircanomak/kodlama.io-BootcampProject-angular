@@ -7,4 +7,6 @@ export interface IUpdateApplicantModel {
   nationalIdentity: number;
   dateOfBirth: string;
   about: string;
+  img: string;
+  state: number
 }

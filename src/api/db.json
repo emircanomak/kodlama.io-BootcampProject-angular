@@ -43,7 +43,6 @@
       "about": "325125",
       "id": 5,
       "img": "https://media-exp1.licdn.com/dms/image/D4D03AQElc-OsTbG7GA/profile-displayphoto-shrink_800_800/0/1668838419255?e=1675900800&v=beta&t=QbQ_ltYVH-axhv4uOA5pwJdzgd102n7aOqzP613-YrY"
-
     },
     {
       "firstName": "Mert",
@@ -54,7 +53,6 @@
       "dateOfBirth": "1995-01-18",
       "about": "ÇOK ÇALIŞKAN BİRİSİ EĞİTİM ALMAK İSTİYOR ",
       "id": 6
-
     }
   ],
   "employee": [
@@ -75,6 +73,7 @@
       "lastName": "Demiroğ",
       "email": "engindemirog@gmail.com",
       "password": "12345",
+      "image": "https://pbs.twimg.com/profile_images/1404479261566713856/_MklDkhx_400x400.jpg",
       "nationalIdentity": "asdas",
       "dateOfBirth": "2022-12-31",
       "companyName": "Kodlama.io",
@@ -85,10 +84,22 @@
       "lastName": "Samancıoğlu",
       "email": "atilsamancioglu@hotmail.com",
       "password": "12345",
+      "image": "http://atilsamancioglu.com/wp-content/uploads/2018/01/photo2.jpg",
       "nationalIdentity": "489489789",
       "dateOfBirth": "1999-04-04",
       "companyName": "Turkcell",
       "id": 4
+    },
+    {
+      "firstName": "Angela",
+      "lastName": "YU",
+      "email": "angela@gmail.com",
+      "password": "123456",
+      "image": "https://pbs.twimg.com/profile_images/1523987597751726081/XuQeo7gC_400x400.jpg",
+      "nationalIdentity": "11111111111",
+      "dateOfBirth": "1992-07-12",
+      "companyName": "Udemy",
+      "id": 5
     }
   ],
   "blackList": [

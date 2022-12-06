@@ -1,7 +1,8 @@
+
+import { ITokenModel } from './../models/request/login/tokenModel';
 import { ILoginModel } from './../models/request/login/loginModel';
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { ITokenModel } from '../models/request/login/tokenModel';
 
 @Injectable({
   providedIn: 'root'
@@ -9,6 +10,7 @@ import { ITokenModel } from '../models/request/login/tokenModel';
 export class AuthService {
 
   apiUrl=" http://localhost:3000/users"
+
 
   constructor(private httpClient:HttpClient) { }
 
@@ -26,6 +28,11 @@ export class AuthService {
       return false
     }
   }
-  
 
+
+  logout(){
+      localStorage.removeItem("token")
+      console.log("çıktın")
+      
+}
 }

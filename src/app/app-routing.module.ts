@@ -1,3 +1,4 @@
+import { InstructorAddApplicantBlacklistComponent } from './instructor-components/instructor-add-applicant-blacklist/instructor-add-applicant-blacklist.component';
 import { InstructorProfileComponent } from './instructor-components/instructor-profile/instructor-profile.component';
 import { InstructorListComponent } from './instructor-components/instructor-list/instructor-list.component';
 import { InstructorBlacklistComponent } from './instructor-components/instructor-blacklist/instructor-blacklist.component';
@@ -112,7 +113,8 @@ const routes: Routes = [
   {path: "instructor-applicant-list", component: InstructorApplicantListComponent},
   {path: "instructor-blacklist", component: InstructorBlacklistComponent},
   {path: "instructor-list", component: InstructorListComponent},
-  {path: "instructor-profile", component: InstructorProfileComponent}
+  {path: "instructor-profile", component: InstructorProfileComponent},
+  {path: "instructor-applicant-list/add-blacklist/:id", component: InstructorAddApplicantBlacklistComponent}
  ]}
 
 ];

@@ -34,8 +34,8 @@
       "img": "https://avatars.githubusercontent.com/u/77552400?v=4"
     },
     {
-      "firstName": "hediye",
-      "lastName": "Yildirım",
+      "firstName": "Hediye",
+      "lastName": "Yıldırım",
       "email": "hediyeyildirim@gmail.com",
       "password": "123456",
       "nationalIdentity": "2123616",
@@ -126,6 +126,12 @@
       "applicantId": "16",
       "date": "01.12.2022",
       "reason": "emir@yahoo@hotmail.com"
+    },
+    {
+      "reason": "yaramaz",
+      "date": "6/11/2022",
+      "applicantId": "6",
+      "id": 6
     }
   ],
   "bootcamp": [

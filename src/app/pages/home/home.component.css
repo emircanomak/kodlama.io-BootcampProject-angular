@@ -217,6 +217,7 @@ footer ul li {
   .footer-col{
     width: 100%;
 }
+
 }
 
 
@@ -309,3 +310,56 @@ ol, li {
   margin: 0;
   padding: 0;
  }
+
+.caro{
+  width: 75%;
+  margin: auto;
+}
+
+.caros img{
+  border-radius: 80px;
+  box-shadow: inset 50px 50px 50px rgb(23, 2, 2);
+
+}
+
+.caros{
+  background-color: #24262b;
+
+}
+
+.wah{
+  width: 125px; height:125px;
+  margin: 40px 0;
+  border-radius: 50%;
+  transition: 0.5s all;
+}
+
+.wah:hover {
+  
+  transform: scale(1,1);
+  transition: 1s all;
+  transform: matrix(1, -0.3, 0, 2, 1, 0);
+}
+
+.bgvv{
+  background-color:#edebeb;
+
+}
+
+ 
+
+
+/* Referance */
+.info-horizontal {
+
+  transition: 1s all;
+}
+
+.info-horizontal{
+  transform: scale(1,1);
+  transition: 1s all;
+}
+
+.fasf{
+  background-color: #24262b;
+}

@@ -104,7 +104,8 @@ import { CarouselModule } from 'ngx-bootstrap/carousel';
     InstructorFooterComponent,
     InstructorProfileComponent,
     InstructorAddApplicantBlacklistComponent,
-    AdminNavbarComponent
+    AdminNavbarComponent,
+    
     
 
   ],

@@ -52,6 +52,10 @@ import { InstructorProfileComponent } from './instructor-components/instructor-p
 import { InstructorAddApplicantBlacklistComponent } from './instructor-components/instructor-add-applicant-blacklist/instructor-add-applicant-blacklist.component';
 import { AdminNavbarComponent } from './layouts/admin-navbar/admin-navbar.component';
 import { CarouselModule } from 'ngx-bootstrap/carousel';
+import { BootcampListPipe } from './pipes/bootcamp-list.pipe';
+import { ApplicantListPipe } from './pipes/applicant-list.pipe';
+import { InstructorListPipe } from './pipes/instructor-list.pipe';
+import { EmployeeListPipe } from './pipes/employee-list.pipe';
 
 
 
@@ -105,6 +109,11 @@ import { CarouselModule } from 'ngx-bootstrap/carousel';
     InstructorProfileComponent,
     InstructorAddApplicantBlacklistComponent,
     AdminNavbarComponent,
+    BootcampListPipe,
+    ApplicantListPipe,
+    InstructorListPipe,
+    EmployeeListPipe,
+    
     
     
 

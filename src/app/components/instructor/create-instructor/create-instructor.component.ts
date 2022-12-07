@@ -9,6 +9,7 @@ import { ICreateInstructorModel } from 'src/app/models/request/instructor/create
   styleUrls: ['./create-instructor.component.css'],
 })
 export class CreateInstructorComponent {
+  filterInstructor;
   instructors: ICreateInstructorModel[] = [];
 
   constructor(

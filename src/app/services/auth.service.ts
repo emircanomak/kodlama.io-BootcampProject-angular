@@ -48,9 +48,10 @@ export class AuthService {
 
 
   logout(){
-      localStorage.removeItem("token")
-      localStorage.removeItem("role")
-      console.log("çıktın")
+      // localStorage.removeItem("token")
+      // localStorage.removeItem("role")
+      // console.log("çıktın")
+      localStorage.clear()
 
 }
 }

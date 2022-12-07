@@ -8,7 +8,7 @@ import { AuthService } from 'src/app/services/auth.service';
   styleUrls: ['./admin-navbar.component.css']
 })
 export class AdminNavbarComponent {
-
+ filterText;
   constructor(private authService:AuthService, private router:Router) {}
 
   ngOnInit():void {

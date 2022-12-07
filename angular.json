@@ -45,6 +45,8 @@
               "./src/app/assets/js/plugins/chartjs.min.js",
               "./src/app/assets/js/plugins/perfect-scrollbar.min.js",
               "./src/app/assets/js/plugins/smooth-scrollbar.min.js"
+             
+
             ]
           },
           "configurations": {

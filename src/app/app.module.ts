@@ -51,6 +51,7 @@ import { InstructorFooterComponent } from './layouts/instructor-layouts/instruct
 import { InstructorProfileComponent } from './instructor-components/instructor-profile/instructor-profile.component';
 import { InstructorAddApplicantBlacklistComponent } from './instructor-components/instructor-add-applicant-blacklist/instructor-add-applicant-blacklist.component';
 import { AdminNavbarComponent } from './layouts/admin-navbar/admin-navbar.component';
+import { CarouselModule } from 'ngx-bootstrap/carousel';
 
 
 
@@ -112,7 +113,8 @@ import { AdminNavbarComponent } from './layouts/admin-navbar/admin-navbar.compon
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    CarouselModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]

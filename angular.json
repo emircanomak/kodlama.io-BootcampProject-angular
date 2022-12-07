@@ -34,8 +34,8 @@
             ],
             "scripts": [
               "./node_modules/jquery/dist/jquery.min.js",
-              "./node_modules/@popperjs/core/dist/umd/popper.min.js",
               "./node_modules/bootstrap/dist/js/bootstrap.min.js",
+              "./node_modules/@popperjs/core/dist/umd/popper.min.js",
               "./src/app/assets/js/soft-ui-dashboard.js",
               "./src/app/assets/js/soft-ui-dashboard.min.js",
               "./src/app/assets/js/core/bootstrap.bundle.min.js",

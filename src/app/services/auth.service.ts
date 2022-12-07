@@ -23,12 +23,12 @@ export class AuthService {
   }
 
   roleLogin(value:string){
-  
+
     this.isLogin = true;
     this.roleAs  = value;
     localStorage.setItem("role",this.roleAs);
     return {success: this.isLogin , role: this.roleAs}
-    
+
 
   }
 
@@ -49,7 +49,8 @@ export class AuthService {
 
   logout(){
       localStorage.removeItem("token")
+      localStorage.removeItem("role")
       console.log("çıktın")
-      
+
 }
 }

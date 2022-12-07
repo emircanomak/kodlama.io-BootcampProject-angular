@@ -11,7 +11,7 @@
       "id": 3,
       "img": "https://pbs.twimg.com/profile_images/1028670681620340736/u2U89A2c_400x400.jpg",
       "role": "roleApplicant",
-      "state": 1
+      "state": 0
     },
     {
       "firstName": "EMİR",
@@ -24,7 +24,7 @@
       "id": 4,
       "img": "https://miro.medium.com/max/2400/1*LV8tB2fEYMSReispTnjcDw.jpeg",
       "role": "roleApplicant",
-      "state": 1
+      "state": 0
     },
     {
       "firstName": "Beyza",
@@ -62,7 +62,7 @@
       "about": "ÇOK ÇALIŞKAN BİRİSİ EĞİTİM ALMAK İSTİYOR ",
       "id": 6,
       "role": "roleApplicant",
-      "state": 1
+      "state": 0
     }
   ],
   "employee": [
@@ -130,34 +130,22 @@
       "reason": "uğur : küfür"
     },
     {
-      "id": 3,
-      "applicantId": "16",
-      "date": "879879",
-      "reason": "safsagsauhkluıhlouıl"
-    },
-    {
-      "id": 4,
-      "applicantId": "16",
-      "date": "01.12.2022",
-      "reason": "emir@yahoo@hotmail.com"
-    },
-    {
-      "reason": "yaramaz",
-      "date": "6/11/2022",
+      "reason": "gelmedi",
+      "date": "7/11/2022",
       "applicantId": "6",
+      "id": 5
+    },
+    {
+      "reason": "canım istedi",
+      "date": "7/11/2022",
+      "applicantId": "4",
       "id": 6
     },
     {
-      "reason": "çok yaramaz",
-      "date": "6/11/2022",
-      "applicantId": "6",
+      "reason": "olaa",
+      "date": "7/11/2022",
+      "applicantId": "3",
       "id": 7
-    },
-    {
-      "reason": "bitik",
-      "date": "6/11/2022",
-      "applicantId": "6",
-      "id": 8
     }
   ],
   "bootcamp": [
@@ -168,7 +156,7 @@
       "dateEnd": "2022-12-29",
       "state": 2,
       "id": 1,
-      "instructorName" : "Engin Demiroğ"
+      "instructorName": "Engin Demiroğ"
     },
     {
       "instructorId": "3",

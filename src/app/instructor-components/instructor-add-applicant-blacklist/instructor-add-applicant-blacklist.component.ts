@@ -1,3 +1,4 @@
+import { ApplicantService } from 'src/app/services/applicant.service';
 import { ICreateBlackListModel } from './../../models/request/blackList/createBlackListModel';
 import { BlacklistService } from './../../services/blacklist.service';
 import { ActivatedRoute } from '@angular/router';
@@ -13,10 +14,12 @@ export class InstructorAddApplicantBlacklistComponent {
   constructor(
     private FormBuilder: FormBuilder,
     private blacklistService: BlacklistService,
-    private activatedRoute: ActivatedRoute
+    private activatedRoute: ActivatedRoute,
+    private applicantService: ApplicantService
   ) {}
 
   blacklistForm: FormGroup;
+  id: number;
   today: Date = new Date();
   date: any =
     this.today.getDate() +
@@ -44,18 +47,20 @@ export class InstructorAddApplicantBlacklistComponent {
       );
       this.activatedRoute.params.subscribe((params) => {
         blacklistAddRequest.applicantId = params['id'];
+        this.id = params['id'];
       });
       this.blacklistService
         .addBlacklist(blacklistAddRequest)
         .subscribe((data) => {
           alert('Blackliste eklendi');
         });
+      this.updateApplicantState()
     }
   }
 
-  // updateApplicantState() {
-  //   this.applicantService.updateApplicantState(this.id, 0).subscribe((val) => {
-  //     alert('Aday güncellendi');
-  //   });
-  // }
+  updateApplicantState() {
+    this.applicantService.updateApplicantState(this.id, 0).subscribe((val) => {
+      alert('Aday güncellendi');
+    });
+  }
 }

@@ -23,9 +23,9 @@ export class InstructorApplicantListComponent {
   }
 
   getApplicant() {
-    this.applicantService
-      .getApplicant()
-      .subscribe((data) => (this.applicants = data));
+    this.applicantService.getApplicant().subscribe((data) => {
+      this.applicants = data;
+    });
   }
 
   deleteApplicant(applicantModel: ICreateApplicantModel) {

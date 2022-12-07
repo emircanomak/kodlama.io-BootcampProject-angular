@@ -36,7 +36,7 @@ export class ApplicantService {
   constructor(private httpClient: HttpClient) {}
 
   getApplicant(): Observable<ICreateApplicantModel[]> {
-    return this.httpClient.get<ICreateApplicantModel[]>(this.apiUrl);
+    return this.httpClient.get<ICreateApplicantModel[]>(this.apiUrl + "?state=1");
   }
 
   getApplicantById(id: number): Observable<IUpdateApplicantModel> {
@@ -49,13 +49,13 @@ export class ApplicantService {
     );
   }
 
-  // updateApplicantState(
-  //   id: number,
-  //   stateVal: number
-  // ): Observable<IUpdateApplicantModel> {
-  //   return this.httpClient.patch<IUpdateApplicantModel>(
-  //     this.apiUrl + '/' + id,
-  //     { state: stateVal }
-  //   );
-  // }
+  updateApplicantState(
+    id: number,
+    stateVal: number
+  ): Observable<IUpdateApplicantModel> {
+    return this.httpClient.patch<IUpdateApplicantModel>(
+      this.apiUrl + '/' + id,
+      { state: stateVal }
+    );
+  }
 }

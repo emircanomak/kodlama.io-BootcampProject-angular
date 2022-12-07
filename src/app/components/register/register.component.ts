@@ -1,3 +1,4 @@
+import { ToastrService } from 'ngx-toastr';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Component } from '@angular/core';
 import { RegisterService } from 'src/app/services/register.service';
@@ -10,7 +11,7 @@ import { RegisterService } from 'src/app/services/register.service';
 export class RegisterComponent {
   registerForm:FormGroup;
 
-  constructor(private formBuilder:FormBuilder, private registerServive:RegisterService){}
+  constructor(private formBuilder:FormBuilder, private registerServive:RegisterService, private toastrService:ToastrService){}
 
   ngOnInit(): void {
     this.createRegister()
@@ -29,7 +30,7 @@ export class RegisterComponent {
   add(){
     this.registerServive.add(this.registerForm.value).subscribe((data) => {
     })
-    alert("Kayıt Olundu")
+    this.toastrService.success("Kayıt Olundu")
 
   }
 

@@ -1,3 +1,4 @@
+import { ToastrService } from 'ngx-toastr';
 
 import { ITokenModel } from './../models/request/login/tokenModel';
 import { ILoginModel } from './../models/request/login/loginModel';
@@ -13,7 +14,7 @@ export class AuthService {
   isLogin = false;
   roleAs:string;
 
-  constructor(private httpClient:HttpClient) { }
+  constructor(private httpClient:HttpClient, private toastrService:ToastrService) { }
 
   login(user:ILoginModel){
 
@@ -52,6 +53,7 @@ export class AuthService {
       // localStorage.removeItem("role")
       // console.log("çıktın")
       localStorage.clear()
+      this.toastrService.success("Çıkış Yapıldı")
 
 }
 }

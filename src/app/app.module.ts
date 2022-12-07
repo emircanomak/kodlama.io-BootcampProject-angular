@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { ToastrModule } from 'ngx-toastr';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CreateApplicantComponent } from './components/applicant/create-applicant/create-applicant.component';
@@ -124,6 +124,7 @@ import { EmployeeListPipe } from './pipes/employee-list.pipe';
     HttpClientModule,
     FormsModule,
     ReactiveFormsModule,
+    ToastrModule.forRoot(),
     CarouselModule.forRoot()
   ],
   providers: [],

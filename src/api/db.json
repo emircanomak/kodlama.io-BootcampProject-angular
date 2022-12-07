@@ -231,6 +231,13 @@
       "expiration": "dsgdsgdsg",
       "token": "76976976",
       "role": "roleAdmin"
+    },
+    {
+      "id": 5,
+      "mail": "sygrok@yahoo.com",
+      "name": "Berkay",
+      "lastName": "Anduv67",
+      "password": "123456"
     }
   ]
 }

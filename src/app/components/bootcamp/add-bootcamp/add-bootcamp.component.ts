@@ -1,9 +1,13 @@
-import { ActivatedRoute } from '@angular/router';
+import { IGetAllInstructorResponse } from './../../../models/response/instructor/getAllInstructorResponse';
+import { IGetInstructorResponse } from './../../../models/response/instructor/getInstructorResponse';
+import { InstructorService } from './../../../services/instructor.service';
+import { ActivatedRoute, Router } from '@angular/router';
 import { Validators } from '@angular/forms';
 import { FormGroup } from '@angular/forms';
 import { BootcampService } from './../../../services/bootcamp.service';
 import { FormBuilder } from '@angular/forms';
 import { Component } from '@angular/core';
+import { ICreateBootcampModel } from 'src/app/models/request/bootcamp/createBootcampModel';
 
 @Component({
   selector: 'app-add-bootcamp',
@@ -13,14 +17,23 @@ import { Component } from '@angular/core';
 export class AddBootcampComponent { 
 
   bootcampAddForm:FormGroup
+  instructors : IGetAllInstructorResponse[]=[]
 
- constructor(private formBuilder:FormBuilder, private bootcampService:BootcampService, private activatedRoute:ActivatedRoute){}
+ constructor(private formBuilder:FormBuilder, 
+  private bootcampService:BootcampService, 
+  private activatedRoute:ActivatedRoute, 
+  private instructorService : InstructorService,
+  private router : Router
+  ){}
 
  ngOnInit(){
-  
-  this.createBootcampAddForm();
+  this.getInstructor()
  }
 
+ getInstructor(){
+  this.instructorService.getInstructor().subscribe(data=> this.instructors=data)
+  this.createBootcampAddForm()
+ }
     createBootcampAddForm(){
       this.bootcampAddForm = this.formBuilder.group({
 
@@ -40,4 +53,9 @@ export class AddBootcampComponent {
 
       }
     }
+
+
+        
+    
+
 }

@@ -4,7 +4,7 @@
     <div class="col-12">
       <div class="card mb-4">
         <div class="card-header pb-0">
-          <h6 style="float:left; font-size: 2rem;"  >Bootcamp Listesi <button type="button"  class="btn btn-success btn-lg "
+          <h6 style="float:left; font-size: 2rem;"  >Bootcamp Listesi <button type="button"  class="btn btn-success bg-gradient-dark btn-lg "
             routerLink="add-bootcampList">Bootcamp Ekle</button> </h6>
        
         </div>
@@ -13,13 +13,13 @@
             <table class="table align-items-center mb-0">
               <thead>
                 <tr class="text-center">
-                  <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Id</th>
-                  <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">Instructor Id</th>
-                  <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Bootcamp Adı</th>
-                  <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Başlangıç Tarihi</th>
-                  <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Bitiş Tarihi</th>
-                  <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7"> Durum</th>
-                  <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7"> İşlemler</th>
+                  <th class="text-uppercase text-dark text-xxs font-weight-bolder">Id</th>
+                  <th class="text-uppercase text-dark text-xxs font-weight-bolder  ps-2">Instructor Id</th>
+                  <th class="text-center text-uppercase text-dark text-xxs font-weight-bolder ">Bootcamp Adı</th>
+                  <th class="text-center text-uppercase text-dark text-xxs font-weight-bolder ">Başlangıç Tarihi</th>
+                  <th class="text-center text-uppercase text-dark text-xxs font-weight-bolder ">Bitiş Tarihi</th>
+                  <th class="text-center text-uppercase text-dark text-xxs font-weight-bolder "> Durum</th>
+                  <th class="text-center text-uppercase text-dark text-xxs font-weight-bolder "> İşlemler</th>
 
                   <th class="text-secondary opacity-7"></th>
                 </tr>
@@ -57,11 +57,11 @@
 
                 <td>
                   <div>
-                    <button type="button" class="btn btn-primary mx-3"
+                    <button type="button" class="btn btn-primary bg-gradient-dark mx-3"
                       routerLink="bootcampList-detail/{{bootcamp.id}}">Detay</button>
-                    <button type="button" class="btn btn-secondary mx-3"
+                    <button type="button" class="btn btn-secondary bg-gradient-dark mx-3"
                       routerLink="update-bootcampList/{{bootcamp.id}}">Düzenle</button>
-                    <button type="button" class="btn btn-danger mx-3" (click)="delete(bootcamp)">Sil</button>
+                    <button type="button" class="btn btn-danger mx-3 bg-gradient-dark" (click)="delete(bootcamp)">Sil</button>
                   </div>
           
                 </td>

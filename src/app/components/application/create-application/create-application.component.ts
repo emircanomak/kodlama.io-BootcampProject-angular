@@ -4,6 +4,7 @@ import { ICreateApplicantModel } from 'src/app/models/request/applicant/createAp
 import { ActivatedRoute } from '@angular/router';
 import { ApplicantService } from './../../../services/applicant.service';
 import { Component } from '@angular/core';
+import { ToastrService } from 'ngx-toastr';
 
 @Component({
   selector: 'app-create-application',
@@ -12,7 +13,7 @@ import { Component } from '@angular/core';
 })
 export class CreateApplicationComponent {
   applications:ICreateApplicationModel[]=[]
-  constructor(private applicationService:ApplicationService, private activatedRoute:ActivatedRoute){}
+  constructor(private applicationService:ApplicationService, private activatedRoute:ActivatedRoute ,private toastrService:ToastrService){}
   ngOnInit(): void{
     this.activatedRoute.params.subscribe(params=>{
       this.getApplication();
@@ -28,6 +29,7 @@ export class CreateApplicationComponent {
   deleteApplication(applicationModel : ICreateApplicationModel) {
     this.applications = this.applications.filter(m=>m  !== applicationModel);
     this.applicationService.delete(applicationModel).subscribe();
+    this.toastrService.error("Silindi")
   }
 
 

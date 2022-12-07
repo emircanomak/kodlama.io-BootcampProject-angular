@@ -4,17 +4,33 @@
   </div>
   <div class="card-body px-0 pt-0 pb-2" >
     <form  [formGroup]="applicationAddForm">
-      <div class="form-group">
+      <!-- <div class="form-group">
           <label for="example-text-input" class="form-control-label">userId</label>
           <input class="form-control" placeholder="userId" formControlName="userId" type="text" value="John Snow" id="example-text-input">
+      </div> -->
+      <div class="form-group">
+        <label for="example-search-input" class="form-control-label">Bootcamp Adı</label>
+        <select class="form-select" aria-label="Default select example " id="bootcampId" formControlName="bootcampId" class="form-control">
+          <option value="" disabled selected>Bootcamp Seç</option>
+          <option *ngFor="let bootcamp of bootcamps" [value]="bootcamp.id">
+            {{bootcamp.name}}
+          </option>
+          
+        </select>
+          <!-- <label for="example-search-input" class="form-control-label">Bootcamp Id</label>
+          <input class="form-control" placeholder="bootcampId" formControlName="bootcampId" type="search" value="Tell me your secret ..." id="example-search-input"> -->
       </div>
       <div class="form-group">
-          <label for="example-search-input" class="form-control-label">Bootcamp Id</label>
-          <input class="form-control" placeholder="bootcampId" formControlName="bootcampId" type="search" value="Tell me your secret ..." id="example-search-input">
-      </div>
-      <div class="form-group">
-          <label for="example-number-input" class="form-control-label">Applicant Id</label>
-          <input class="form-control"  placeholder="applicantId" formControlName="applicantId" type="number" value="23" id="example-number-input">
+        <label for="example-number-input" class="form-control-label">Aday</label>
+        <select class="form-select" aria-label="Default select example " id="applicantId" formControlName="applicantId" class="form-control">
+          <option value="" disabled selected>seç </option>
+          <option *ngFor="let applicant of applicants" [value]="applicant.id">
+            {{applicant.firstName}}  {{applicant.lastName}} 
+          </option>
+          
+        </select>
+          <!-- <label for="example-number-input" class="form-control-label">Applicant Id</label>
+          <input class="form-control"  placeholder="applicantId" formControlName="applicantId" type="number" value="23" id="example-number-input"> -->
       </div>
       <div class="form-group">
         <label for="example-number-input" class="form-control-label">Durum</label>

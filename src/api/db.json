@@ -11,7 +11,7 @@
       "id": 3,
       "img": "https://pbs.twimg.com/profile_images/1028670681620340736/u2U89A2c_400x400.jpg",
       "role": "roleApplicant",
-      "state": 0
+      "state": 1
     },
     {
       "firstName": "EMİR",
@@ -47,7 +47,7 @@
       "nationalIdentity": "2123616",
       "dateOfBirth": "1999-11-17",
       "about": "325125",
-      "id": 5,
+      "id": 2,
       "img": "https://media-exp1.licdn.com/dms/image/D4D03AQElc-OsTbG7GA/profile-displayphoto-shrink_800_800/0/1668838419255?e=1675900800&v=beta&t=QbQ_ltYVH-axhv4uOA5pwJdzgd102n7aOqzP613-YrY",
       "role": "roleApplicant",
       "state": 1
@@ -62,7 +62,7 @@
       "about": "ÇOK ÇALIŞKAN BİRİSİ EĞİTİM ALMAK İSTİYOR ",
       "id": 6,
       "role": "roleApplicant",
-      "state": 0
+      "state": 1
     }
   ],
   "employee": [
@@ -76,6 +76,16 @@
       "position": "qweqwe",
       "id": 4,
       "role": "roleAdmin"
+    },
+    {
+      "firstName": "Hediye",
+      "lastName": "Yıldırım",
+      "email": "sadasjd@hotmail.com",
+      "password": "654554",
+      "nationalIdentity": "23165498984",
+      "dateOfBirth": "2121-03-12",
+      "position": "GİFT",
+      "id": 5
     }
   ],
   "instructor": [
@@ -118,39 +128,16 @@
   ],
   "blackList": [
     {
-      "id": 1,
-      "applicantId": 1,
-      "date": "12/11/2022",
-      "reason": "Uygun değillss"
-    },
-    {
-      "id": 2,
-      "applicantId": "06",
-      "date": "04/04/2022",
-      "reason": "uğur : küfür"
-    },
-    {
-      "reason": "gelmedi",
-      "date": "7/11/2022",
-      "applicantId": "6",
-      "id": 5
-    },
-    {
-      "reason": "canım istedi",
-      "date": "7/11/2022",
-      "applicantId": "4",
-      "id": 6
-    },
-    {
-      "reason": "olaa",
-      "date": "7/11/2022",
-      "applicantId": "3",
-      "id": 7
+      "applicantId": "5",
+      "date": "0001-11-11",
+      "reason": "1",
+      "applicantName": "Beyza Alıcı",
+      "id": 3
     }
   ],
   "bootcamp": [
     {
-      "instructorId": "5",
+      "instructorId": "3",
       "name": "React",
       "dateStart": "2022-06-25",
       "dateEnd": "2022-12-29",
@@ -159,12 +146,13 @@
       "instructorName": "Engin Demiroğ"
     },
     {
-      "instructorId": "3",
+      "instructorId": "5",
       "name": "HTML-CSS",
       "dateStart": "2022-12-08",
       "dateEnd": "2022-12-15",
       "state": 1,
-      "id": 3
+      "id": 3,
+      "instructorName": "Angela YU"
     },
     {
       "instructorId": "1",
@@ -172,26 +160,37 @@
       "dateStart": "2022-12-10",
       "dateEnd": "2023-01-13",
       "state": 1,
-      "id": 4
-    },
-    {
-      "instructorId": "2",
-      "name": "DevOps",
-      "dateStart": "2022-12-17",
-      "dateEnd": "2023-01-07",
-      "state": 1,
-      "id": 5
+      "id": 4,
+      "instructorName": "Atıl Samancıoğlu"
     },
     {
       "instructorId": "4",
-      "name": "Java",
-      "dateStart": "2023-01-02",
-      "dateEnd": "2023-02-02",
+      "name": "Siber Güvenlik",
+      "dateStart": "2022-12-07",
+      "dateEnd": "2022-12-31",
       "state": 1,
-      "id": 6
+      "instructorName": "AtılSamancıoğlu",
+      "id": 5
     }
   ],
-  "application": [],
+  "application": [
+    {
+      "bootcampId": "1",
+      "applicantId": "3",
+      "state": 1,
+      "applicantName": "Berkay Anduv",
+      "bootcampName": "React",
+      "id": 3
+    },
+    {
+      "bootcampId": "5",
+      "applicantId": "5",
+      "state": 1,
+      "applicantName": "BeyzaAlıcı",
+      "bootcampName": "Siber Güvenlik",
+      "id": 4
+    }
+  ],
   "users": [
     {
       "id": 1,

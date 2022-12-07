@@ -5,8 +5,15 @@
   <div class="card-body px-0 pt-0 pb-2" >
     <form  [formGroup]="addBlackListForm" >
       <div class="form-group">
-        <label for="example-number-input" class="form-control-label">Applicant Id</label>
-        <input class="form-control"  placeholder="applicantId" formControlName="applicantId"  value="23" id="example-number-input">
+        <select class="form-select" aria-label="Default select example " id="applicantId" formControlName="applicantId" class="form-control">
+          <option value="" disabled selected>Seç</option>
+          <option *ngFor="let applicant of applicants" [value]="applicant.id">
+            {{applicant.firstName}}
+          </option>
+          
+        </select>
+        <!-- <label for="example-number-input" class="form-control-label">Applicant Id</label>
+        <input class="form-control"  placeholder="applicantId" formControlName="applicantId"  value="23" id="example-number-input"> -->
     </div>
     <div class="form-group">
       <label for="example-date-input" class="form-control-label">Tarih</label>

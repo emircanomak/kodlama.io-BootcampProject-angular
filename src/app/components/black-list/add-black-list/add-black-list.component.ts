@@ -1,3 +1,6 @@
+import { ICreateApplicantModel } from './../../../models/request/applicant/createApplicantModel';
+import { ApplicantService } from 'src/app/services/applicant.service';
+import { ICreateBlackListModel } from 'src/app/models/request/blackList/createBlackListModel';
 
 import { FormGroup } from '@angular/forms';
 import { FormBuilder, Validators } from '@angular/forms';
@@ -12,14 +15,23 @@ import { BlacklistService } from 'src/app/services/blacklist.service';
 })
 export class AddBlackListComponent {
 
-  addBlackListForm:FormGroup
+  addBlackListForm:FormGroup;
+  applicants : ICreateApplicantModel[] = []
   
   
   
 
-  constructor(private blacklistService:BlacklistService, private activatedRoute:ActivatedRoute, private formBuilder:FormBuilder){}
+  constructor(private blacklistService:BlacklistService, private activatedRoute:ActivatedRoute,
+     private formBuilder:FormBuilder, private applicantService : ApplicantService){}
 
   ngOnInit(): void{
+    this.getApplicant()
+  }
+
+  getApplicant(){
+    this.applicantService.getApplicant().subscribe(data => {
+      this.applicants = data
+    });
     this.createBlacklistAddForm()
   }
   
@@ -27,7 +39,6 @@ export class AddBlackListComponent {
   
   createBlacklistAddForm() {
       this.addBlackListForm = this.formBuilder.group({
-        id: ['', Validators.required],
         applicantId: ['', Validators.required],
         date: ['', [Validators.required, Validators.max(4)]],
         reason: ['', Validators.required],
@@ -37,11 +48,26 @@ export class AddBlackListComponent {
 
     
     addBlacklist(){
-      this.blacklistService.addBlacklist(this.addBlackListForm.value).subscribe(data => {
+      if(this.addBlackListForm.valid){
+        let blackList:ICreateBlackListModel = Object.assign({}, this.addBlackListForm.value);
+        this.applicantService.getApplicantById(blackList.applicantId).subscribe((applicant) => {
+          
+          blackList.applicantName = applicant.firstName + ' ' + applicant.lastName;
 
-      })
-      alert("Eklendi")
+          this.blacklistService.addBlacklist(blackList).subscribe(data => {
+            
+          })
+          alert("Eklendi")
+          
+        })
+
+      }
+
+
+       
     }
+
+  
 }
 
 

@@ -27,13 +27,19 @@ export class AddBootcampComponent {
   ){}
 
  ngOnInit(){
-  this.getInstructor()
+  this.getInstructor();
  }
 
  getInstructor(){
-  this.instructorService.getInstructor().subscribe(data=> this.instructors=data)
-  this.createBootcampAddForm()
+  this.instructorService.getInstructor().subscribe(data=> {
+    this.instructors=data
+  });
+  this.createBootcampAddForm();
+  
  }
+
+
+
     createBootcampAddForm(){
       this.bootcampAddForm = this.formBuilder.group({
 
@@ -45,13 +51,26 @@ export class AddBootcampComponent {
       })
     }
     add(){
-      if(this.bootcampAddForm.value){
-        let bootcampInputData=Object.assign({},this.bootcampAddForm.value);
-        this.bootcampService.add(bootcampInputData).subscribe((data)=>{
-          alert("Eklendi")
-        });
 
+      if(this.bootcampAddForm.valid){
+        let bootcamp : ICreateBootcampModel = Object.assign({}, this.bootcampAddForm.value);
+        this.instructorService.getInstructorById(bootcamp.instructorId).subscribe((instructor)=>{
+          bootcamp.instructorName = instructor.firstName + '' + instructor.lastName;
+          this.bootcampService.add(bootcamp).subscribe(data=>{
+
+          });
+          alert("Eklendi")
+          
+        })
       }
+
+      // if(this.bootcampAddForm.value){
+      //   let bootcampInputData=Object.assign({},this.bootcampAddForm.value);
+      //   this.bootcampService.add(bootcampInputData).subscribe((data)=>{
+      //     alert("Eklendi")
+      //   });
+
+      // }
     }
 
 

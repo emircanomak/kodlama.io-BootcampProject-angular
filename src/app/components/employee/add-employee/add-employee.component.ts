@@ -4,6 +4,7 @@ import { FormBuilder } from '@angular/forms';
 import { ActivatedRoute } from '@angular/router';
 import { EmployeeService } from './../../../services/employee.service';
 import { Component } from '@angular/core';
+import { ToastrService } from 'ngx-toastr';
 
 @Component({
   selector: 'app-add-employee',
@@ -12,7 +13,8 @@ import { Component } from '@angular/core';
 })
 export class AddEmployeeComponent {
   addEmployeeForm:FormGroup
-  constructor(private employeeService:EmployeeService, private activatedRoute:ActivatedRoute, private formBuilder:FormBuilder){}
+  constructor(private employeeService:EmployeeService, private activatedRoute:ActivatedRoute, private formBuilder:FormBuilder,
+    private toastrService:ToastrService){}
   
   ngOnInit(): void {
     
@@ -36,7 +38,7 @@ export class AddEmployeeComponent {
       this.employeeService.addEmployee(this.addEmployeeForm.value).subscribe(data => {
 
       })
-      alert("eklendi")
+      this.toastrService.success("Eklendi")
     }
 
   }

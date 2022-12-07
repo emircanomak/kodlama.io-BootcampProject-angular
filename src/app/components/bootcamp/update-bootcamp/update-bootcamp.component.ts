@@ -3,6 +3,7 @@ import { BootcampService } from './../../../services/bootcamp.service';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Component } from '@angular/core';
 import { IUpdateBootcampModel } from 'src/app/models/request/bootcamp/updateBootcampModel';
+import { ToastrService } from 'ngx-toastr';
 
 @Component({
   selector: 'app-update-bootcamp',
@@ -13,7 +14,8 @@ export class UpdateBootcampComponent {
 
   bootcampUpdateForm:FormGroup
   bootcamp:IUpdateBootcampModel
-  constructor(private formBuilder:FormBuilder , private bootcampService:BootcampService,private activatedRoute:ActivatedRoute){}
+  constructor(private formBuilder:FormBuilder , private bootcampService:BootcampService,private activatedRoute:ActivatedRoute,
+    private toastrService:ToastrService){}
 
   ngOnInit(){
 
@@ -35,7 +37,7 @@ export class UpdateBootcampComponent {
     this.bootcampService.update(this.activatedRoute.snapshot.params["id"],this.bootcampUpdateForm.value).subscribe(()=>{
       
     })
-
+    this.toastrService.success("Güncellendi")
   }
 
 

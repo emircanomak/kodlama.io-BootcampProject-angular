@@ -8,6 +8,7 @@ import { BootcampService } from './../../../services/bootcamp.service';
 import { FormBuilder } from '@angular/forms';
 import { Component } from '@angular/core';
 import { ICreateBootcampModel } from 'src/app/models/request/bootcamp/createBootcampModel';
+import { ToastrService } from 'ngx-toastr';
 
 @Component({
   selector: 'app-add-bootcamp',
@@ -23,7 +24,8 @@ export class AddBootcampComponent {
   private bootcampService:BootcampService, 
   private activatedRoute:ActivatedRoute, 
   private instructorService : InstructorService,
-  private router : Router
+  private router : Router,
+  private toastrService:ToastrService
   ){}
 
  ngOnInit(){
@@ -59,7 +61,7 @@ export class AddBootcampComponent {
           this.bootcampService.add(bootcamp).subscribe(data=>{
 
           });
-          alert("Eklendi")
+          this.toastrService.success("Eklendi")
           
         })
       }

@@ -47,10 +47,7 @@
       "nationalIdentity": "2123616",
       "dateOfBirth": "1999-11-17",
       "about": "325125",
-      "id": 2,
-      "img": "https://media-exp1.licdn.com/dms/image/D4D03AQElc-OsTbG7GA/profile-displayphoto-shrink_800_800/0/1668838419255?e=1675900800&v=beta&t=QbQ_ltYVH-axhv4uOA5pwJdzgd102n7aOqzP613-YrY",
-      "role": "roleApplicant",
-      "state": 1
+      "id": 2
     },
     {
       "firstName": "Mert",
@@ -63,6 +60,46 @@
       "id": 6,
       "role": "roleApplicant",
       "state": 1
+    },
+    {
+      "firstName": "GökAn",
+      "lastName": "Asd",
+      "email": "askflşa",
+      "password": "21540*210",
+      "nationalIdentity": "3204302",
+      "dateOfBirth": "4353-03-31",
+      "about": "kdslşgkjldşs",
+      "id": 7
+    },
+    {
+      "firstName": "",
+      "lastName": "",
+      "email": "",
+      "password": "",
+      "nationalIdentity": "",
+      "dateOfBirth": "",
+      "about": "",
+      "id": 8
+    },
+    {
+      "firstName": "PPPPP",
+      "lastName": "PPPPPP",
+      "email": "PPPPP@skalfşas",
+      "password": "2632632",
+      "nationalIdentity": "32532532",
+      "dateOfBirth": "5333-05-31",
+      "about": "32532532",
+      "id": 9
+    },
+    {
+      "firstName": "",
+      "lastName": "",
+      "email": "",
+      "password": "",
+      "nationalIdentity": "",
+      "dateOfBirth": "",
+      "about": "",
+      "id": 10
     }
   ],
   "employee": [
@@ -86,6 +123,16 @@
       "dateOfBirth": "2121-03-12",
       "position": "GİFT",
       "id": 5
+    },
+    {
+      "firstName": "yuyuuy",
+      "lastName": "yuyuyu",
+      "email": "yuyuy@fhgfhf",
+      "password": "667676",
+      "nationalIdentity": "6754745754",
+      "dateOfBirth": "3333-02-23",
+      "position": "Murat67",
+      "id": 6
     }
   ],
   "instructor": [
@@ -124,6 +171,17 @@
       "companyName": "Udemy",
       "id": 5,
       "role": "roleInstructor"
+    },
+    {
+      "firstName": "Murat",
+      "lastName": "HHHHH",
+      "email": "fsjakfjlas@hjdskfl",
+      "password": "3ı09*23940",
+      "image": "https://galeri8.uludagsozluk.com/407/eruhlu-muhdi_852160.jpg",
+      "nationalIdentity": "3532532532",
+      "dateOfBirth": "1333-02-12",
+      "companyName": "GökAn",
+      "id": 6
     }
   ],
   "blackList": [
@@ -171,6 +229,14 @@
       "state": 1,
       "instructorName": "AtılSamancıoğlu",
       "id": 5
+    },
+    {
+      "instructorId": "3",
+      "name": "HTML59",
+      "dateStart": "4554-05-04",
+      "dateEnd": "5455-05-04",
+      "state": 1,
+      "id": 6
     }
   ],
   "application": [
@@ -189,6 +255,28 @@
       "applicantName": "BeyzaAlıcı",
       "bootcampName": "Siber Güvenlik",
       "id": 4
+    },
+    {
+      "userId": "7",
+      "bootcampId": "1",
+      "applicantId": "5",
+      "state": 777,
+      "id": 5
+    },
+    {
+      "bootcampId": "3",
+      "applicantId": "2",
+      "state": 9,
+      "applicantName": "HediyeYıldırım",
+      "bootcampName": "HTML-CSS",
+      "id": 6
+    },
+    {
+      "userId": null,
+      "bootcampId": "3",
+      "applicantId": "5",
+      "state": 3204302,
+      "id": 7
     }
   ],
   "users": [
@@ -231,6 +319,13 @@
       "expiration": "dsgdsgdsg",
       "token": "76976976",
       "role": "roleAdmin"
+    },
+    {
+      "id": 5,
+      "mail": "sygrok@yahoo.com",
+      "name": "Berkay",
+      "lastName": "Anduv67",
+      "password": "123456"
     }
   ]
 }

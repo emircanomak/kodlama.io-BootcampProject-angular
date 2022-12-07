@@ -7,6 +7,7 @@ import { FormBuilder, Validators } from '@angular/forms';
 import { Component } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { BlacklistService } from 'src/app/services/blacklist.service';
+import { ToastrService } from 'ngx-toastr';
 
 @Component({
   selector: 'app-add-black-list',
@@ -22,7 +23,8 @@ export class AddBlackListComponent {
   
 
   constructor(private blacklistService:BlacklistService, private activatedRoute:ActivatedRoute,
-     private formBuilder:FormBuilder, private applicantService : ApplicantService){}
+     private formBuilder:FormBuilder, private applicantService : ApplicantService ,
+     private toastrService:ToastrService){}
 
   ngOnInit(): void{
     this.getApplicant()
@@ -57,7 +59,7 @@ export class AddBlackListComponent {
           this.blacklistService.addBlacklist(blackList).subscribe(data => {
             
           })
-          alert("Eklendi")
+          this.toastrService.success("Engellendi")
           
         })
 

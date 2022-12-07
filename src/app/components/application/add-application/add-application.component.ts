@@ -8,6 +8,7 @@ import { ActivatedRoute } from '@angular/router';
 import { ApplicationService } from './../../../services/application.service';
 import { FormBuilder } from '@angular/forms';
 import { Component } from '@angular/core';
+import { ToastrService } from 'ngx-toastr';
 
 @Component({
   selector: 'app-add-application',
@@ -22,7 +23,8 @@ export class AddApplicationComponent {
      private applicationService:ApplicationService,
      private activatedRoute:ActivatedRoute,
      private bootcampService : BootcampService,
-     private applicantService : ApplicantService
+     private applicantService : ApplicantService,
+     private toastrService:ToastrService
      ){}
 
   ngOnInit(){
@@ -71,14 +73,14 @@ export class AddApplicationComponent {
           application.bootcampName = bootcamp.name;
 
         this.applicationService.add(application).subscribe(data =>{
-          alert("eklendi")
+          
         });
         
       });
       
         
       });
-      
+      this.toastrService.success("Eklendi")
 
     }
 

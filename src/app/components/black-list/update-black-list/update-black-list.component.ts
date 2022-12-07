@@ -5,6 +5,7 @@ import { IUpdateBlackListModel } from './../../../models/request/blackList/updat
 import { ActivatedRoute } from '@angular/router';
 import { BlacklistService } from 'src/app/services/blacklist.service';
 import { Component } from '@angular/core';
+import { ToastrService } from 'ngx-toastr';
 
 @Component({
   selector: 'app-update-black-list',
@@ -14,7 +15,8 @@ import { Component } from '@angular/core';
 export class UpdateBlackListComponent {
   blacklist:IUpdateBlackListModel;
   updateBlacklist:FormGroup;
-  constructor(private blacklistService:BlacklistService, private activatedRoute:ActivatedRoute, private formBuilder:FormBuilder){}
+  constructor(private blacklistService:BlacklistService, private activatedRoute:ActivatedRoute, private formBuilder:FormBuilder,
+    private toastrService:ToastrService){}
 
   ngOnInit(): void{
     this.activatedRoute.params.subscribe(params => {
@@ -45,6 +47,7 @@ export class UpdateBlackListComponent {
       this.blacklistService.update(this.activatedRoute.snapshot.params["id"], this.updateBlacklist.value).subscribe(data => {
 
       })
+      this.toastrService.success("Güncellendi")
     }
 }
 

@@ -22,6 +22,7 @@
     "bootstrap": "^5.2.3",
     "jquery": "^3.6.1",
     "ngx-bootstrap": "^6.2.0",
+    "ngx-toastr": "^15.2.1",
     "rxjs": "~7.5.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.12.0"

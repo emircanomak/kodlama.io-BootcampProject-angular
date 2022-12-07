@@ -3,6 +3,7 @@ import { Component } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { IUpdateApplicantModel } from 'src/app/models/request/applicant/updateApplicantModel';
+import { ToastrService } from 'ngx-toastr';
 
 @Component({
   selector: 'app-update-applicant',
@@ -23,7 +24,8 @@ export class UpdateApplicantComponent {
     
   }
 
-  constructor(private applicantService : ApplicantService, private formBuilder : FormBuilder , private activatedRoute : ActivatedRoute){}
+  constructor(private applicantService : ApplicantService, private formBuilder : FormBuilder , private activatedRoute : ActivatedRoute,
+    private toastrService:ToastrService){}
 
   createApplicantUpdateform(){
     this.applicantUpdateForm = this.formBuilder.group({
@@ -50,6 +52,7 @@ export class UpdateApplicantComponent {
     this.applicantService.update(this.activatedRoute.snapshot.params["id"], this.applicantUpdateForm.value).subscribe(data=>{
 
     });
+    this.toastrService.success("Güncellendi")
   }
 
 }

@@ -48,9 +48,15 @@ export class BlacklistService {
     );
   }
 
-  // removeApplicant(id: number) {
-  //   return this.httpClient.delete<ICreateBlackListModel>(
-  //     this.apiUrl + '/' + id
-  //   );
-  // }
+  updateBlackListState(id: number, stateVal: number): Observable<IUpdateBlackListModel>{
+    return this.httpClient.patch<IUpdateBlackListModel>(
+      this.apiUrl + "/" + id, {state : stateVal}
+    );
+  }
+
+  removeApplicant(id: number) {
+    return this.httpClient.delete<ICreateBlackListModel>(
+      this.apiUrl + '/' + id
+    );
+  }
 }

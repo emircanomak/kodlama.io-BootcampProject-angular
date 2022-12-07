@@ -11,7 +11,7 @@
       "id": 3,
       "img": "https://pbs.twimg.com/profile_images/1028670681620340736/u2U89A2c_400x400.jpg",
       "role": "roleApplicant",
-      "state": 0
+      "state": 1
     },
     {
       "firstName": "EMİR",
@@ -47,7 +47,7 @@
       "nationalIdentity": "2123616",
       "dateOfBirth": "1999-11-17",
       "about": "325125",
-      "id": 5,
+      "id": 2,
       "img": "https://media-exp1.licdn.com/dms/image/D4D03AQElc-OsTbG7GA/profile-displayphoto-shrink_800_800/0/1668838419255?e=1675900800&v=beta&t=QbQ_ltYVH-axhv4uOA5pwJdzgd102n7aOqzP613-YrY",
       "role": "roleApplicant",
       "state": 1
@@ -62,7 +62,7 @@
       "about": "ÇOK ÇALIŞKAN BİRİSİ EĞİTİM ALMAK İSTİYOR ",
       "id": 6,
       "role": "roleApplicant",
-      "state": 0
+      "state": 1
     }
   ],
   "employee": [
@@ -116,38 +116,7 @@
       "role": "roleInstructor"
     }
   ],
-  "blackList": [
-    {
-      "id": 1,
-      "applicantId": 1,
-      "date": "12/11/2022",
-      "reason": "Uygun değillss"
-    },
-    {
-      "id": 2,
-      "applicantId": "06",
-      "date": "04/04/2022",
-      "reason": "uğur : küfür"
-    },
-    {
-      "reason": "gelmedi",
-      "date": "7/11/2022",
-      "applicantId": "6",
-      "id": 5
-    },
-    {
-      "reason": "canım istedi",
-      "date": "7/11/2022",
-      "applicantId": "4",
-      "id": 6
-    },
-    {
-      "reason": "olaa",
-      "date": "7/11/2022",
-      "applicantId": "3",
-      "id": 7
-    }
-  ],
+  "blackList": [],
   "bootcamp": [
     {
       "instructorId": "5",

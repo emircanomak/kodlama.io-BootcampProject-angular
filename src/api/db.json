@@ -191,6 +191,18 @@
       "reason": "1",
       "applicantName": "Beyza Alıcı",
       "id": 3
+    },
+    {
+      "reason": "GökAn",
+      "date": "7/11/2022",
+      "applicantId": "6",
+      "id": 4
+    },
+    {
+      "reason": "küfür",
+      "date": "7/11/2022",
+      "applicantId": "5",
+      "id": 5
     }
   ],
   "bootcamp": [
@@ -316,10 +328,13 @@
     },
     {
       "id": 5,
-      "mail": "sygrok@yahoo.com",
+      "email": "sygrok@yahoo.com",
       "name": "Berkay",
       "lastName": "Anduv67",
-      "password": "123456"
+      "password": "123456",
+      "token": "76976976",
+      "role": "roleAdmin"
     }
+
   ]
 }

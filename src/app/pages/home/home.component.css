@@ -5,6 +5,9 @@
     perspective: 1000px;
     font-family: sans-serif;
   }
+  h3,h1{
+    font-weight:500;
+  }
   
  h3,h1{
   font-weight: 500;
@@ -69,7 +72,11 @@
  */
 
 nav{
+
+ position: fixed !important; 
+
   position: fixed !important;
+
   width: 100%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   text-align: center;
@@ -363,4 +370,9 @@ ol, li {
 
 .fasf{
   background-color: #24262b;
+}
+
+.topButton{
+  padding-left: 1170px;
+ 
 }

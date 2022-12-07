@@ -2,6 +2,7 @@ import { BootcampService } from './../../../services/bootcamp.service';
 import { Component } from '@angular/core';
 import { ICreateBootcampModel } from 'src/app/models/request/bootcamp/createBootcampModel';
 import { ActivatedRoute } from '@angular/router';
+import { ToastrService } from 'ngx-toastr';
 
 @Component({
   selector: 'app-create-bootcamp',
@@ -11,7 +12,7 @@ import { ActivatedRoute } from '@angular/router';
 export class CreateBootcampComponent {
   filterBootcamp;
   bootcamps:ICreateBootcampModel[]=[]
-  constructor(private bootcampService:BootcampService, private activatedRoute:ActivatedRoute){}
+  constructor(private bootcampService:BootcampService, private activatedRoute:ActivatedRoute,private toastrService:ToastrService){}
 
   ngOnInit(): void{
    
@@ -28,5 +29,6 @@ export class CreateBootcampComponent {
     delete(bootcamp:ICreateBootcampModel){
       this.bootcamps = this.bootcamps.filter(b=>b!==bootcamp);
       this.bootcampService.delete(bootcamp).subscribe()
+      this.toastrService.error("Silindi")
     }
 }

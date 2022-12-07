@@ -257,13 +257,6 @@
       "id": 4
     },
     {
-      "userId": "7",
-      "bootcampId": "1",
-      "applicantId": "5",
-      "state": 777,
-      "id": 5
-    },
-    {
       "bootcampId": "3",
       "applicantId": "2",
       "state": 9,
@@ -272,10 +265,11 @@
       "id": 6
     },
     {
-      "userId": null,
-      "bootcampId": "3",
+      "bootcampId": "1",
       "applicantId": "5",
-      "state": 3204302,
+      "state": 1,
+      "applicantName": "BeyzaAlıcı",
+      "bootcampName": "React",
       "id": 7
     }
   ],

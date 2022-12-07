@@ -9,7 +9,7 @@ import { ActivatedRoute } from '@angular/router';
   styleUrls: ['./create-bootcamp.component.css']
 })
 export class CreateBootcampComponent {
-  
+  filterBootcamp;
   bootcamps:ICreateBootcampModel[]=[]
   constructor(private bootcampService:BootcampService, private activatedRoute:ActivatedRoute){}
 

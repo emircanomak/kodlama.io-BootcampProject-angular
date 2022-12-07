@@ -9,7 +9,7 @@ import { ICreateApplicantModel } from 'src/app/models/request/applicant/createAp
   styleUrls: ['./create-applicant.component.css']
 })
 export class CreateApplicantComponent {
-
+  filterApplicant;
   applicants : ICreateApplicantModel[]= []
 
   constructor(private applicantService : ApplicantService, private activatedRoute : ActivatedRoute){}

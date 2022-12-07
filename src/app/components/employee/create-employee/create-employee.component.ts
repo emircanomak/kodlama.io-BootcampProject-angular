@@ -9,6 +9,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./create-employee.component.css'],
 })
 export class CreateEmployeeComponent {
+  filterEmployee;
   employees: ICreateEmployeeModel[] = [];
 
   constructor(

@@ -76,6 +76,16 @@
       "position": "qweqwe",
       "id": 4,
       "role": "roleAdmin"
+    },
+    {
+      "firstName": "Hediye",
+      "lastName": "Yıldırım",
+      "email": "sadasjd@hotmail.com",
+      "password": "654554",
+      "nationalIdentity": "23165498984",
+      "dateOfBirth": "2121-03-12",
+      "position": "GİFT",
+      "id": 5
     }
   ],
   "instructor": [
@@ -160,7 +170,15 @@
       "id": 6
     }
   ],
-  "application": [],
+  "application": [
+    {
+      "userId": "1",
+      "bootcampId": "1",
+      "applicantId": 1,
+      "state": 1,
+      "id": 1
+    }
+  ],
   "users": [
     {
       "id": 1,

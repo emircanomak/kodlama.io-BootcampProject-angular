@@ -1,4 +1,11 @@
 
+<div class="col-auto ">
+  <div class="bg-white border-radius-lg d-flex me-2">
+    <input type="text" class="form-control border-0 ps-3" [(ngModel)]="filterEmployee" [ngModelOptions]="{standalone:true}"  placeholder="Arayınız..">
+    <button class="btn bg-gradient-secondary text-light my-1 me-1 ">Search</button>
+  </div>
+</div> 
+
 <div class="container-fluid py-4"> 
   <div class="row">
     <div class="col-12">
@@ -26,7 +33,7 @@
                   <th class="text-secondary opacity-7"></th>
                 </tr>
               </thead>
-              <tbody *ngFor="let employee of employees" class="text-center">
+              <tbody *ngFor="let employee of employees |employeeList:filterEmployee" class="text-center">
                 <tr>
                   
                   <td class="align-middle text-center text-sm">

@@ -1,3 +1,4 @@
+import { ToastrService } from 'ngx-toastr';
 import { ApplicantService } from './../../../services/applicant.service';
 import { Component } from '@angular/core';
 import {
@@ -17,7 +18,8 @@ export class AddApplicantComponent {
   constructor(
     private FormBuilder: FormBuilder,
     private applicantService: ApplicantService,
-    private activatedRoute: ActivatedRoute
+    private activatedRoute: ActivatedRoute,
+    private toastrService:ToastrService
   ) {}
 
   applicantAddForm: FormGroup;
@@ -42,5 +44,6 @@ export class AddApplicantComponent {
     this.applicantService
       .add(this.applicantAddForm.value)
       .subscribe((data) => {});
+      this.toastrService.success("aday eklendi")
   }
 }

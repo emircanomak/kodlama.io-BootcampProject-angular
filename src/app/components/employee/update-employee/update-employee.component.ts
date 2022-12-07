@@ -3,6 +3,7 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { EmployeeService } from './../../../services/employee.service';
 import { Component } from '@angular/core';
 import { IUpdateEmployeeModel } from 'src/app/models/request/employee/updateEmployeeModel';
+import { ToastrService } from 'ngx-toastr';
 
 @Component({
   selector: 'app-update-employee',
@@ -23,7 +24,8 @@ export class UpdateEmployeeComponent {
 
   }
 
-  constructor(private employeeService  : EmployeeService, private formBuilder : FormBuilder, private activatedRoute : ActivatedRoute){}
+  constructor(private employeeService  : EmployeeService, private formBuilder : FormBuilder, private activatedRoute : ActivatedRoute,
+    private toastrService:ToastrService){}
 
   createEmployeeUpdateform(){
     this.employeeUpdateForm = this.formBuilder.group({
@@ -50,6 +52,7 @@ export class UpdateEmployeeComponent {
     this.employeeService.update(this.activatedRoute.snapshot.params["id"], this.employeeUpdateForm.value).subscribe(data=>{
 
     });
+    this.toastrService.success("Güncellendi")
   }
 
 }

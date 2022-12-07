@@ -4,6 +4,7 @@ import { FormGroup } from '@angular/forms';
 import { InstructorService } from './../../../services/instructor.service';
 import { FormBuilder } from '@angular/forms';
 import { Component } from '@angular/core';
+import { ToastrService } from 'ngx-toastr';
 
 @Component({
   selector: 'app-add-instructor',
@@ -15,7 +16,8 @@ export class AddInstructorComponent {
   constructor(
     private formBuilder: FormBuilder,
     private instructorService: InstructorService,
-    private activatedRoute: ActivatedRoute
+    private activatedRoute: ActivatedRoute,
+    private toastrService:ToastrService
   ) {}
 
   ngOnInit(): void {
@@ -43,5 +45,6 @@ export class AddInstructorComponent {
       );
       this.instructorService.add(instructorInputDatas).subscribe((data) => {});
     }
+    this.toastrService.success("Eklendi")
   }
 }

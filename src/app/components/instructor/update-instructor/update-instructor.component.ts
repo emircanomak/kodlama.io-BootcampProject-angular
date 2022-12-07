@@ -3,6 +3,7 @@ import { IUpdateInstructorModel } from './../../../models/request/instructor/upd
 import { InstructorService } from './../../../services/instructor.service';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { Component } from '@angular/core';
+import { ToastrService } from 'ngx-toastr';
 
 @Component({
   selector: 'app-update-instructor',
@@ -16,7 +17,8 @@ export class UpdateInstructorComponent {
   constructor(
     private instructorService: InstructorService,
     private formBuilder: FormBuilder,
-    private activatedRoute: ActivatedRoute
+    private activatedRoute: ActivatedRoute,
+    private toastrService:ToastrService
   ) {}
 
   ngOnInit(): void {
@@ -52,5 +54,6 @@ export class UpdateInstructorComponent {
         this.instructorUpdateForm.value
       )
       .subscribe((data) => {});
+      this.toastrService.success("güncellendi")
   }
 }

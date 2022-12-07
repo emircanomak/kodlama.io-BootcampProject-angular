@@ -20,12 +20,10 @@
             <table class="table align-items-center mb-0">
               <thead>
                 <tr class="text-center">
-                  <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Id</th>
                   <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">Ad</th>
                   <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Soyad</th>
                   <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">E-mail</th>
                   <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Şifre</th>
-                  <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Görsel URL</th>
                   <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Kimlik No</th>
                   <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Doğum Tarihi</th>
                   <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Şirket Adı</th>
@@ -37,9 +35,6 @@
               <tbody *ngFor="let instructor of instructors |instructorList:filterInstructor" class="text-center">
                 <tr>
 
-                  <td class="align-middle text-center text-sm">
-                    <span class="mb-0 text-sm">{{instructor.id}}</span>
-                  </td>
                   <td class="align-middle text-center">
                     <span class="text-secondary text-xs font-weight-bold">{{instructor.firstName}}</span>
                   </td>
@@ -56,11 +51,6 @@
                   <td class="align-middle">
                     <a href="javascript:;" class="text-secondary font-weight-bold text-xs" data-toggle="tooltip" data-original-title="Edit user">
                       {{instructor.password}}
-                    </a>
-                  </td>
-                  <td class="align-middle">
-                    <a href="javascript:;" class="text-secondary font-weight-bold text-xs" data-toggle="tooltip" data-original-title="Edit user">
-                      {{instructor.image}}
                     </a>
                   </td>
                   <td class="align-middle">

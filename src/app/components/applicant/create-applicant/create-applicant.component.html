@@ -22,7 +22,6 @@
             <table class="table align-items-center mb-0">
               <thead>
                 <tr class="text-center">
-                  <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Id</th>
                   <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">Adı</th>
                   <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Soyadı</th>
                   <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">E-mail</th>
@@ -39,17 +38,7 @@
               </thead>
               <tbody *ngFor="let applicant of applicants |applicantList:filterApplicant" class="text-center">
                 <tr>
-                  <td>
-                    <div class="d-flex px-2 py-1">
-                      <div>
-                      </div>
-                      <td >
-                        <p class="text-xs font-weight-bold mb-0"></p>
-                        <p class="text-xs text-secondary mb-0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{applicant.id}}</p>
-                      </td>
-                    </div>
-                  </td>
+                  
                   <td class="align-middle text-center text-sm">
                     <span class="mb-0 text-sm">{{applicant.firstName}}</span>
                   </td>

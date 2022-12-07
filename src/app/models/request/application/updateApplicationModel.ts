@@ -4,4 +4,7 @@ export interface IUpdateApplicationModel {
   bootcampId: number;
   applicantId: number;
   state: number;
+  bootcampName : string;
+  applicantName: string;
+  
 }

@@ -13,8 +13,7 @@
             <table class="table align-items-center mb-0">
               <thead>
                 <tr class="text-center">
-                  <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Id</th>
-                  <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">Application Id</th>
+                  <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">Aday Adı</th>
                   <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Tarih</th>
                   <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Neden</th>
                 
@@ -25,18 +24,9 @@
               </thead>
               <tbody *ngFor="let blacklist of blacklists" class="text-center">
                 <tr>
-                  <td>
-                    <div class="d-flex px-2 py-1">
-                      <div>
-                      </div>
-                      <td >
-                        <p class="text-xs font-weight-bold mb-0"></p>
-                        <p class="text-xs text-secondary mb-0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{blacklist.id}}</p>
-                      </td>
-                    </div>
-                  </td>
+              
                   <td class="align-middle text-center text-sm">
-                    <span class="mb-0 text-sm">{{blacklist.applicantId}}</span>
+                    <span class="mb-0 text-sm">{{blacklist.applicantName}}</span>
                   </td>
                   <td class="align-middle text-center">
                     <span class="text-secondary text-xs font-weight-bold">{{blacklist.date}}</span>

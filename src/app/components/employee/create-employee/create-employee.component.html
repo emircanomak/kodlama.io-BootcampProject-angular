@@ -20,7 +20,6 @@
             <table class="table align-items-center mb-0">
               <thead>
                 <tr class="text-center">
-                  <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Id</th>
                   <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">Ad</th>
                   <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Soyad</th>
                   <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">E-mail</th>
@@ -35,10 +34,7 @@
               </thead>
               <tbody *ngFor="let employee of employees |employeeList:filterEmployee" class="text-center">
                 <tr>
-                  
-                  <td class="align-middle text-center text-sm">
-                    <span class="mb-0 text-sm">{{employee.id}}</span>
-                  </td>
+   
                   <td class="align-middle text-center">
                     <span class="text-secondary text-xs font-weight-bold">{{employee.firstName}}</span>
                   </td>

@@ -5,12 +5,19 @@
   <div class="card-body px-0 pt-0 pb-2" >
     <form  [formGroup]="bootcampAddForm">
       <div class="form-group">
-          <label for="example-text-input" class="form-control-label">Instructor Id</label>
-          <input class="form-control" placeholder="instructor id" formControlName="instructorId" type="text" value="John Snow" id="example-text-input">
+        <select class="form-select" aria-label="Default select example " id="instructorId" formControlName="instructorId" class="form-control">
+          <option value="" disabled selected>Seç</option>
+          <option *ngFor="let instructor of instructors" [value]="instructor.id">
+            {{instructor.firstName}}
+          </option>
+          
+        </select>
+          <!-- <label for="example-text-input" class="form-control-label">Instructor Id</label>
+          <input class="form-control" placeholder="instructor id" formControlName="instructorId" type="text" value="John Snow" id="example-text-input"> -->
       </div>
       <div class="form-group">
-          <label for="example-search-input" class="form-control-label">İsim</label>
-          <input class="form-control" placeholder="İsim" formControlName="name" type="search" value="Tell me your secret ..." id="example-search-input">
+          <label for="example-search-input" class="form-control-label">Bootcamp Adı</label>
+          <input class="form-control" placeholder="Bootcamp Adı" formControlName="name" type="search" value="Tell me your secret ..." id="example-search-input">
       </div>
       <div class="form-group">
           <label for="example-number-input" class="form-control-label">Durum</label>

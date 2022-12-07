@@ -1,3 +1,4 @@
+import { ToastrService } from 'ngx-toastr';
 import { ActivatedRoute } from '@angular/router';
 import { InstructorService } from './../../../services/instructor.service';
 import { Component } from '@angular/core';
@@ -14,7 +15,7 @@ export class CreateInstructorComponent {
 
   constructor(
     private instructorService: InstructorService,
-    private activatedRoute: ActivatedRoute
+    private activatedRoute: ActivatedRoute,private toastrService:ToastrService
   ) {}
 
   ngOnInit(): void {
@@ -32,5 +33,6 @@ export class CreateInstructorComponent {
   delete(data: ICreateInstructorModel) {
     this.instructors = this.instructors.filter((x) => x !== data);
     this.instructorService.delete(data).subscribe();
+    this.toastrService.error("Silindi")
   }
 }

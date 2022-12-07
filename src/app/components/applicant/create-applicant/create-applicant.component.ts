@@ -1,3 +1,4 @@
+import { ToastrService } from 'ngx-toastr';
 import { ActivatedRoute } from '@angular/router';
 import { ApplicantService } from './../../../services/applicant.service';
 import { Component } from '@angular/core';
@@ -12,7 +13,7 @@ export class CreateApplicantComponent {
   filterApplicant;
   applicants : ICreateApplicantModel[]= []
 
-  constructor(private applicantService : ApplicantService, private activatedRoute : ActivatedRoute){}
+  constructor(private applicantService : ApplicantService, private activatedRoute : ActivatedRoute ,private toastrService:ToastrService){}
 
 
   ngOnInit(): void {
@@ -29,6 +30,7 @@ export class CreateApplicantComponent {
   deleteApplicant(applicantModel : ICreateApplicantModel) {
     this.applicants = this.applicants.filter(m=>m  !== applicantModel);
     this.applicantService.delete(applicantModel).subscribe();
+    this.toastrService.error("Silindi")
   }
 
 }

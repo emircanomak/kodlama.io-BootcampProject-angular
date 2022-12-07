@@ -2,6 +2,7 @@ import { ActivatedRoute } from '@angular/router';
 import { EmployeeService } from './../../../services/employee.service';
 import { ICreateEmployeeModel } from './../../../models/request/employee/createEmployeeModel';
 import { Component } from '@angular/core';
+import { ToastrService } from 'ngx-toastr';
 
 @Component({
   selector: 'app-create-employee',
@@ -14,7 +15,7 @@ export class CreateEmployeeComponent {
 
   constructor(
     private employeeService: EmployeeService,
-    private activatedRoute: ActivatedRoute
+    private activatedRoute: ActivatedRoute,private toastrService:ToastrService
   ) {}
 
   ngOnInit(): void {
@@ -32,5 +33,6 @@ export class CreateEmployeeComponent {
   delete(data: ICreateEmployeeModel) {
     this.employees = this.employees.filter((x) => x !== data);
     this.employeeService.delete(data).subscribe();
+    this.toastrService.error("Silindi")
   }
 }

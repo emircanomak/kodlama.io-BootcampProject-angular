@@ -136,8 +136,8 @@
   ],
   "blackList": [
     {
-      "id" : 1,
-      "applicantId" : 1,
+      "id": 1,
+      "applicantId": 1,
       "date ": "12-12-2022",
       "reason": "deli"
     }
@@ -157,9 +157,9 @@
       "name": "HTML-CSS",
       "dateStart": "2022-12-08",
       "dateEnd": "2022-12-15",
-      "state": 1,
-      "id": 3,
-      "instructorName": "Angela YU"
+      "state": "2",
+      "instructorName": "AngelaYU",
+      "id": 3
     },
     {
       "instructorId": "1",
@@ -187,6 +187,15 @@
       "state": 1,
       "instructorName": "EnginDemiroğ",
       "id": 6
+    },
+    {
+      "instructorId": "4",
+      "name": "Java Bootcamp",
+      "dateStart": "2022-12-20",
+      "dateEnd": "2022-12-31",
+      "state": "2",
+      "instructorName": "AtılSamancıoğlu",
+      "id": 7
     }
   ],
   "application": [

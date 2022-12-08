@@ -50,7 +50,7 @@
                     </a>
                   </td>
                   <td class="align-middle text-center text-sm">
-                    <span class="badge badge-sm bg-gradient-success">{{bootcamp.state}}</span>
+                    <span class="badge badge-sm {{bootcamp.state == 1 ? 'bg-success' : 'bg-danger'}}">{{bootcamp.state==1 ? "Aktif" : "Pasif"}}</span>
                   </td>
 
                 <td>

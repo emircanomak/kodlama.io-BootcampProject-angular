@@ -40,6 +40,8 @@ export class AddApplicationComponent {
     });
     this.createApplicationAddForm();
   }
+
+
   getBootcamp(){
     this.bootcampService.getBootcamp().subscribe(data=>{
       this.bootcamps = data
@@ -48,7 +50,7 @@ export class AddApplicationComponent {
   }
 
 
-
+  
 
   createApplicationAddForm(){
 

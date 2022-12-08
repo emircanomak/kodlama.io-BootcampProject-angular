@@ -6,6 +6,7 @@ import { ActivatedRoute } from '@angular/router';
 import { BlacklistService } from 'src/app/services/blacklist.service';
 import { Component } from '@angular/core';
 import { ToastrService } from 'ngx-toastr';
+import { IUpdateApplicantModel } from 'src/app/models/request/applicant/updateApplicantModel';
 
 @Component({
   selector: 'app-update-black-list',

@@ -24,7 +24,7 @@
       "id": 4,
       "img": "https://miro.medium.com/max/2400/1*LV8tB2fEYMSReispTnjcDw.jpeg",
       "role": "roleApplicant",
-      "state": 0
+      "state": 1
     },
     {
       "firstName": "Beyza",
@@ -47,59 +47,9 @@
       "nationalIdentity": "2123616",
       "dateOfBirth": "1999-11-17",
       "about": "325125",
-      "id": 2
-    },
-    {
-      "firstName": "Mert",
-      "lastName": "Subaşı",
-      "email": "mert@gmail.com",
-      "password": "mert123",
-      "nationalIdentity": "31541423124657",
-      "dateOfBirth": "1995-01-18",
-      "about": "ÇOK ÇALIŞKAN BİRİSİ EĞİTİM ALMAK İSTİYOR ",
-      "id": 6,
-      "role": "roleApplicant",
+      "img": "https://avatars.githubusercontent.com/u/49349272?v=4",
+      "id": 2,
       "state": 1
-    },
-    {
-      "firstName": "GökAn",
-      "lastName": "Asd",
-      "email": "askflşa",
-      "password": "21540*210",
-      "nationalIdentity": "3204302",
-      "dateOfBirth": "4353-03-31",
-      "about": "kdslşgkjldşs",
-      "id": 7
-    },
-    {
-      "firstName": "",
-      "lastName": "",
-      "email": "",
-      "password": "",
-      "nationalIdentity": "",
-      "dateOfBirth": "",
-      "about": "",
-      "id": 8
-    },
-    {
-      "firstName": "PPPPP",
-      "lastName": "PPPPPP",
-      "email": "PPPPP@skalfşas",
-      "password": "2632632",
-      "nationalIdentity": "32532532",
-      "dateOfBirth": "5333-05-31",
-      "about": "32532532",
-      "id": 9
-    },
-    {
-      "firstName": "",
-      "lastName": "",
-      "email": "",
-      "password": "",
-      "nationalIdentity": "",
-      "dateOfBirth": "",
-      "about": "",
-      "id": 10
     }
   ],
   "employee": [
@@ -184,27 +134,7 @@
       "id": 6
     }
   ],
-  "blackList": [
-    {
-      "applicantId": "5",
-      "date": "0001-11-11",
-      "reason": "1",
-      "applicantName": "Beyza Alıcı",
-      "id": 3
-    },
-    {
-      "reason": "GökAn",
-      "date": "7/11/2022",
-      "applicantId": "6",
-      "id": 4
-    },
-    {
-      "reason": "küfür",
-      "date": "7/11/2022",
-      "applicantId": "5",
-      "id": 5
-    }
-  ],
+  "blackList": [],
   "bootcamp": [
     {
       "instructorId": "3",
@@ -335,6 +265,5 @@
       "token": "76976976",
       "role": "roleAdmin"
     }
-
   ]
 }

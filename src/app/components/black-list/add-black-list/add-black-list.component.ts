@@ -57,7 +57,6 @@ export class AddBlackListComponent {
           blackList.applicantName = applicant.firstName + ' ' + applicant.lastName;
 
           this.blacklistService.addBlacklist(blackList).subscribe(data => {
-            
           })
           this.toastrService.success("Engellendi")
           

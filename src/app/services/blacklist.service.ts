@@ -16,7 +16,7 @@ export class BlacklistService {
     return this.httpClient.get<ICreateBlackListModel[]>(this.apiUrl);
   }
 
-  addBlacklist(value: any) {
+  addBlacklist(value: any) {1
     return this.httpClient.post(this.apiUrl, value);
   }
 

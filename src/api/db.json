@@ -200,52 +200,19 @@
   ],
   "application": [
     {
-      "bootcampId": "3",
-      "applicantId": "4",
-      "state": "1",
-      "applicantName": "EMİROMAK",
+      "bootcampId": 1,
+      "bootcampName": "Angular",
+      "id": 1
+    },
+    {
+      "bootcampId": 3,
+      "bootcampName": "HTML-CSS",
+      "id": 2
+    },
+    {
+      "bootcampId": 3,
       "bootcampName": "HTML-CSS",
       "id": 3
-    },
-    {
-      "bootcampId": "5",
-      "applicantId": "5",
-      "state": 1,
-      "applicantName": "BeyzaAlıcı",
-      "bootcampName": "Siber Güvenlik",
-      "id": 4
-    },
-    {
-      "bootcampId": "3",
-      "applicantId": "2",
-      "state": 9,
-      "applicantName": "HediyeYıldırım",
-      "bootcampName": "HTML-CSS",
-      "id": 6
-    },
-    {
-      "bootcampId": "1",
-      "applicantId": "5",
-      "state": 1,
-      "applicantName": "BeyzaAlıcı",
-      "bootcampName": "React",
-      "id": 7
-    },
-    {
-      "bootcampId": "5",
-      "applicantId": "5",
-      "state": 123,
-      "applicantName": "BeyzaAlıcı",
-      "bootcampName": "Siber Güvenlik",
-      "id": 8
-    },
-    {
-      "bootcampId": "4",
-      "applicantId": "3",
-      "state": "2",
-      "applicantName": "Berkay Anduv",
-      "bootcampName": "Angular",
-      "id": 9
     }
   ],
   "users": [

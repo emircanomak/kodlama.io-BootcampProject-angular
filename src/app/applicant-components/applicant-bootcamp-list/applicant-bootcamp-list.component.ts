@@ -1,3 +1,4 @@
+import { ApplicationService } from './../../services/application.service';
 import { ActivatedRoute } from '@angular/router';
 import { BootcampService } from './../../services/bootcamp.service';
 import { ICreateBootcampModel } from './../../models/request/bootcamp/createBootcampModel';
@@ -10,10 +11,12 @@ import { Component } from '@angular/core';
 })
 export class ApplicantBootcampListComponent {
   bootcamps: ICreateBootcampModel[] = [];
+  setBootcamp:ICreateBootcampModel;
+
 
   constructor(
     private bootcampService: BootcampService,
-    private activatedRoute: ActivatedRoute
+    private activatedRoute: ActivatedRoute,private applicationService:ApplicationService
   ) {}
 
   ngOnInit(): void {
@@ -26,5 +29,25 @@ export class ApplicantBootcampListComponent {
     this.bootcampService
       .getBootcamp()
       .subscribe((data) => (this.bootcamps = data));
+  }
+  add(bootcamp:any){
+  
+    this.setBootcamp=bootcamp
+    this.send()
+
+  }
+  send(){
+    let bootcampData = Object.assign({})
+
+    bootcampData.bootcampId = this.setBootcamp.id
+    bootcampData.bootcampName = this.setBootcamp.name
+    this.applicationService.add(bootcampData).subscribe()
+
+    // userId: number;
+    // bootcampId: number;
+    // applicantId: number;
+    // state: number;
+    // bootcampName : string;
+    // applicantName: string;
   }
 }

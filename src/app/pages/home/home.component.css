@@ -376,3 +376,8 @@ ol, li {
   padding-left: 1170px;
  
 }
+
+
+.navhov :hover{
+  width: 50%!;
+}

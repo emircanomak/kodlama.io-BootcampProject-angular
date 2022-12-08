@@ -1,25 +1,25 @@
 
- <div class="container-fluid py-4"> 
+ <div class="container-fluid py-4 cont-resp"> 
   <div class="row">
     <div class="col-12">
       <div class="card mb-4">
         <div class="card-header pb-0">
-          <h6 style="float:left; font-size: 2rem;"  >Kara Liste <button type="button"  class="btn btn-success btn-lg "
+          <h6 style="float:left; font-size: 2rem;"  >Kara Liste <button type="button"  class="btn-lg btn btn-outline-dark"
             routerLink="add-blacklist">Engelle</button> </h6>
        
         </div>
         <div class="card-body px-0 pt-0 pb-2">
-          <div class="table-responsive p-0">
+          <div class="table-responsive p-0 table-resp">
             <table class="table align-items-center mb-0">
               <thead>
                 <tr class="text-center">
-                  <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">Aday Adı</th>
-                  <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Tarih</th>
-                  <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Neden</th>
+                  <th class="text-uppercase text-secondary text-xxs font-weight-bolder text-dark ps-2">Aday Adı</th>
+                  <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder text-dark">Tarih</th>
+                  <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder text-dark">Neden</th>
                 
-                  <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7"> İşlemler</th>
+                  <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder text-dark"> İşlemler</th>
 
-                  <th class="text-secondary opacity-7"></th>
+                
                 </tr>
               </thead>
               <tbody *ngFor="let blacklist of blacklists" class="text-center">
@@ -39,11 +39,11 @@
 
                 <td>
                   <div>
-                    <button type="button" class="btn btn-primary mx-3"
+                    <button type="button" class=" btn btn-outline-dark mx-3"
                       routerLink="blacklist-detail/{{blacklist.id}}">Detay</button>
-                    <button type="button" class="btn btn-secondary mx-3"
+                    <button type="button" class=" btn btn-outline-dark mx-3"
                       routerLink="update-blacklist/{{blacklist.id}}">Düzenle</button>
-                    <button type="button" class="btn btn-danger mx-3"  (click)="deleteBlacklist(blacklist)">Sil</button>
+                    <button type="button" class=" btn btn-outline-dark mx-3"  (click)="deleteBlacklist(blacklist)">Sil</button>
                   </div>
           
                 </td>

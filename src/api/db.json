@@ -201,9 +201,9 @@
   "application": [
     {
       "bootcampId": "3",
-      "applicantId": "3",
-      "state": 1,
-      "applicantName": "Berkay Anduv",
+      "applicantId": "4",
+      "state": "1",
+      "applicantName": "EMİROMAK",
       "bootcampName": "HTML-CSS",
       "id": 3
     },
@@ -238,6 +238,14 @@
       "applicantName": "BeyzaAlıcı",
       "bootcampName": "Siber Güvenlik",
       "id": 8
+    },
+    {
+      "bootcampId": "4",
+      "applicantId": "3",
+      "state": "2",
+      "applicantName": "Berkay Anduv",
+      "bootcampName": "Angular",
+      "id": 9
     }
   ],
   "users": [

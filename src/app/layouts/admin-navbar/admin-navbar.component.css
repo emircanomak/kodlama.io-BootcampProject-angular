@@ -3,4 +3,9 @@
 }
 .nav-1{
     margin-right: 1% !important; 
+    margin-left: 1% !important;
+}
+.navis{
+    position: fixed;
+    width: -webkit-fill-available;
 }

@@ -1,0 +1,8 @@
+.cont-resp{
+    top: 80px !important;
+    position: relative;
+}
+.table-resp{
+    overflow: auto;
+    height: 420px;
+}

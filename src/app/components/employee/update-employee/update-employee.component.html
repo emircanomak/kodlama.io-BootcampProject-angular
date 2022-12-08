@@ -1,6 +1,6 @@
 <div style="border-top: 1px solid rgb(40, 26, 34,0.23); width: 55%; margin: auto;" class="card mb-4 mt-5 px-8">
   <div class="card-header pb-0">
-    <h6 class="text-center mb-4" style=" font-size: 2rem;">Çalışan Ekle</h6>
+    <h6 class="text-center mb-4" style=" font-size: 2rem;">Çalışan Güncelle</h6>
   </div>
   <div class="card-body px-0 pt-0 pb-2" >
     <form  [formGroup]="employeeUpdateForm" *ngIf="employee" >
@@ -34,7 +34,7 @@
       </div>
     
     <button (click)="update()" style="margin-right:15px" type="submit" class="btn btn-warning">Güncelle</button>
-    <button type="button" class="btn btn-outline-dark px-3" routerLink="/employee">Geri Dön</button>
+    <button type="button" class="btn btn-outline-dark px-3" routerLink="/admin/admin-employee">Gerİ Dön</button>
     </form>
   </div>
 </div>

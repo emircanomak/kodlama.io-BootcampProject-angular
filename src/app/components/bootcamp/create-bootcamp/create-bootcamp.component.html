@@ -1,8 +1,9 @@
 
-     <div class="col-auto ">
-      <div class="bg-white border-radius-lg d-flex me-2">
-        <input type="text" class="form-control border-0 ps-3" [(ngModel)]="filterBootcamp" [ngModelOptions]="{standalone:true}"  placeholder="Arayınız..">
-        <button class="btn bg-gradient-secondary text-light my-1 me-1 ">Search</button>
+<div class="comple cont-resp">    
+    <div class="col-auto ">
+      <div class="bg-white border-radius-lg d-flex me-2" >
+        <input type="text" class="form-control border-2 ps-3 " [(ngModel)]="filterBootcamp" [ngModelOptions]="{standalone:true}"  placeholder="Arayınız..">
+        <button class="btn-lg btn btn-outline-dark text-dark my-0 me-1 ">Search</button>
       </div>
     </div> 
       
@@ -11,13 +12,13 @@
     <div class="col-12">
       <div class="card mb-4">
         <div class="card-header pb-0">
-          <h6 style="float:left; font-size: 2rem;"  >Bootcamp Listesi <button type="button"  class="btn btn-success bg-gradient-dark btn-lg "
+          <h6 style="float:left; font-size: 2rem;"  >Bootcamp Listesi <button type="button"  class=" btn-lg btn btn-outline-dark " 
             routerLink="add-bootcampList">Bootcamp Ekle</button> </h6>
        
         </div>
         
         <div class="card-body px-0 pt-0 pb-2">
-          <div class="table-responsive p-0">
+          <div class="table-responsive p-0 table-resp">
             <table class="table align-items-center mb-0">
               <thead>
                 <tr class="text-center">
@@ -50,16 +51,16 @@
                     </a>
                   </td>
                   <td class="align-middle text-center text-sm">
-                    <span class="badge badge-sm {{bootcamp.state == 1 ? 'bg-success' : 'bg-danger'}}">{{bootcamp.state==1 ? "Aktif" : "Pasif"}}</span>
+                    <span class="badge badge-sm {{bootcamp.state == 1 ? 'bg-success' : 'bg-danger'}}">{{bootcamp.state==1 ? "AKTİF" : "PASİF"}}</span>
                   </td>
 
                 <td>
                   <div>
-                    <button type="button" class="btn btn-primary bg-gradient-dark mx-3"
+                    <button type="button" class=" btn btn-outline-dark  mx-3"
                       routerLink="bootcampList-detail/{{bootcamp.id}}">Detay</button>
-                    <button type="button" class="btn btn-secondary bg-gradient-dark mx-3"
+                    <button type="button" class="btn btn-outline-dark mx-3"
                       routerLink="update-bootcampList/{{bootcamp.id}}">Düzenle</button>
-                    <button type="button" class="btn btn-danger mx-3 bg-gradient-dark" (click)="delete(bootcamp)">Sil</button>
+                    <button type="button" class="btn btn-outline-dark mx-3 " (click)="delete(bootcamp)">SİL</button>
                   </div>
           
                 </td>
@@ -72,3 +73,4 @@
       </div>
     </div>
   </div>
+</div>

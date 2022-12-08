@@ -1,91 +1,94 @@
 
-<div class="col-auto ">
-  <div class="bg-white border-radius-lg d-flex me-2">
-    <input type="text" class="form-control border-0 ps-3" [(ngModel)]="filterEmployee" [ngModelOptions]="{standalone:true}"  placeholder="Arayınız..">
-    <button class="btn bg-gradient-secondary text-light my-1 me-1 ">Search</button>
-  </div>
-</div> 
+<div class="comple cont-resp">
 
-<div class="container-fluid py-4"> 
-  <div class="row">
-    <div class="col-12">
-      <div class="card mb-4">
-        <div class="card-header pb-0">
-          <h6 style="float:left; font-size: 2rem;"  >Çalışan Listesi <button type="button"  class="btn btn-success btn-lg "
-            routerLink="add-employee">Çalışan ekle</button> </h6>
-       
-        </div>
-        <div class="card-body px-0 pt-0 pb-2">
-          <div class="table-responsive p-0">
-            <table class="table align-items-center mb-0">
-              <thead>
-                <tr class="text-center">
-                  <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">Ad</th>
-                  <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Soyad</th>
-                  <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">E-mail</th>
-                  <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Şifre</th>
-                  <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Kimlik No</th>
-                  <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Doğum Tarihi</th>
-                  <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Pozisyon</th>
-                  <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7"> İşlemler</th>
-
-                  <th class="text-secondary opacity-7"></th>
-                </tr>
-              </thead>
-              <tbody *ngFor="let employee of employees |employeeList:filterEmployee" class="text-center">
-                <tr>
-   
-                  <td class="align-middle text-center">
-                    <span class="text-secondary text-xs font-weight-bold">{{employee.firstName}}</span>
+  <div class="col-auto ">
+    <div class="bg-white border-radius-lg d-flex me-2">
+      <input type="text" class="form-control border-2 ps-3" [(ngModel)]="filterEmployee" [ngModelOptions]="{standalone:true}"  placeholder="Arayınız..">
+      <button class="btn-lg btn btn-outline-dark text-dark my-0 me-1 ">Search</button>
+    </div>
+  </div> 
+  
+  <div class="container-fluid py-4"> 
+    <div class="row">
+      <div class="col-12">
+        <div class="card mb-4">
+          <div class="card-header pb-0">
+            <h6 style="float:left; font-size: 2rem;"  >Çalışan Listesi <button type="button"  class="btn btn-outline-dark btn-lg "
+              routerLink="add-employee">Çalışan ekle</button> </h6>
+         
+          </div>
+          <div class="card-body px-0 pt-0 pb-2">
+            <div class="table-responsive p-0 table-resp">
+              <table class="table align-items-center mb-0">
+                <thead>
+                  <tr class="text-center">
+                    <th class="text-uppercase text-secondary text-xxs font-weight-bolder text-dark ps-2">Ad</th>
+                    <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder text-dark">Soyad</th>
+                    <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder text-dark">E-mail</th>
+                    <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder text-dark">Şifre</th>
+                    <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder text-dark">Kimlik No</th>
+                    <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder text-dark">Doğum Tarihi</th>
+                    <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder text-dark">Pozisyon</th>
+                    <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder text-dark"> İşlemler</th>
+  
+                  </tr>
+                </thead>
+                <tbody *ngFor="let employee of employees |employeeList:filterEmployee" class="text-center">
+                  <tr>
+     
+                    <td class="align-middle text-center">
+                      <span class="text-secondary text-xs font-weight-bold">{{employee.firstName}}</span>
+                    </td>
+                    <td class="align-middle">
+                      <a href="javascript:;" class="text-secondary font-weight-bold text-xs" data-toggle="tooltip" data-original-title="Edit user">
+                        {{employee.lastName}}
+                      </a>
+                    </td>
+                    <td class="align-middle">
+                      <a href="javascript:;" class="text-secondary font-weight-bold text-xs" data-toggle="tooltip" data-original-title="Edit user">
+                        {{employee.email}}
+                      </a>
+                    </td>
+                    <td class="align-middle">
+                      <a href="javascript:;" class="text-secondary font-weight-bold text-xs" data-toggle="tooltip" data-original-title="Edit user">
+                        {{employee.password}}
+                      </a>
+                    </td>
+                    <td class="align-middle">
+                      <a href="javascript:;" class="text-secondary font-weight-bold text-xs" data-toggle="tooltip" data-original-title="Edit user">
+                        {{employee.nationalIdentity}}
+                      </a>
+                    </td>
+                    <td class="align-middle">
+                      <a href="javascript:;" class="text-secondary font-weight-bold text-xs" data-toggle="tooltip" data-original-title="Edit user">
+                        {{employee.dateOfBirth}}
+                      </a>
+                    </td>
+                    <td class="align-middle">
+                      <a href="javascript:;" class="text-secondary font-weight-bold text-xs" data-toggle="tooltip" data-original-title="Edit user">
+                        {{employee.position}}
+                      </a>
+                    </td>
+  
+                  <td>
+                    <div>
+                      <button type="button" class="btn btn-outline-dark mx-3"
+                        routerLink="employee-detail/{{employee.id}}">Detay</button>
+                      <button type="button" class="btn btn-outline-dark mx-3"
+                        routerLink="update-employee/{{employee.id}}">Düzenle</button>
+                      <button type="button" class="btn btn-outline-dark mx-3"  (click)="delete(employee)">SİL</button>
+                    </div>
+            
                   </td>
-                  <td class="align-middle">
-                    <a href="javascript:;" class="text-secondary font-weight-bold text-xs" data-toggle="tooltip" data-original-title="Edit user">
-                      {{employee.lastName}}
-                    </a>
-                  </td>
-                  <td class="align-middle">
-                    <a href="javascript:;" class="text-secondary font-weight-bold text-xs" data-toggle="tooltip" data-original-title="Edit user">
-                      {{employee.email}}
-                    </a>
-                  </td>
-                  <td class="align-middle">
-                    <a href="javascript:;" class="text-secondary font-weight-bold text-xs" data-toggle="tooltip" data-original-title="Edit user">
-                      {{employee.password}}
-                    </a>
-                  </td>
-                  <td class="align-middle">
-                    <a href="javascript:;" class="text-secondary font-weight-bold text-xs" data-toggle="tooltip" data-original-title="Edit user">
-                      {{employee.nationalIdentity}}
-                    </a>
-                  </td>
-                  <td class="align-middle">
-                    <a href="javascript:;" class="text-secondary font-weight-bold text-xs" data-toggle="tooltip" data-original-title="Edit user">
-                      {{employee.dateOfBirth}}
-                    </a>
-                  </td>
-                  <td class="align-middle">
-                    <a href="javascript:;" class="text-secondary font-weight-bold text-xs" data-toggle="tooltip" data-original-title="Edit user">
-                      {{employee.position}}
-                    </a>
-                  </td>
-
-                <td>
-                  <div>
-                    <button type="button" class="btn btn-primary mx-3"
-                      routerLink="employee-detail/{{employee.id}}">Detay</button>
-                    <button type="button" class="btn btn-secondary mx-3"
-                      routerLink="update-employee/{{employee.id}}">Düzenle</button>
-                    <button type="button" class="btn btn-danger mx-3"  (click)="delete(employee)">Sil</button>
-                  </div>
-          
-                </td>
-                </tr>
-                
-              </tbody>
-            </table>
+                  </tr>
+                  
+                </tbody>
+              </table>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
+
+</div>
 

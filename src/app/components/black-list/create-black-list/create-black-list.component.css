@@ -2,3 +2,12 @@
     margin-left: 500px;
     margin-top: 500px;
 }
+
+.cont-resp{
+    top: 80px !important;
+    position: relative;
+}
+.table-resp{
+    overflow: auto;
+    height: 420px;
+}

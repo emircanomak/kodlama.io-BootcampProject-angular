@@ -23,12 +23,14 @@ export class BootcampService {
     return this.httpClient.post(this.apiUrl, value);
   }
 
-  delete(bootcamp: ICreateBootcampModel): Observable<ICreateBootcampModel> {
-    return this.httpClient.delete<ICreateBootcampModel>(
-      this.apiUrl + '/' + bootcamp.id
-    );
-  }
-
+  // delete(bootcamp: ICreateBootcampModel): Observable<ICreateBootcampModel> {
+  //   return this.httpClient.delete<ICreateBootcampModel>(
+  //     this.apiUrl + '/' + bootcamp.id
+  //   );
+  // }
+delete(id:number){
+  return this.httpClient.delete(this.apiUrl+"/"+id)
+}
   update(id, bootcamp: any) {
     return this.httpClient.put(this.apiUrl + '/' + id, bootcamp);
   }

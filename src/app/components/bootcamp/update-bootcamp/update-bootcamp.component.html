@@ -5,8 +5,15 @@
   <div class="card-body px-0 pt-0 pb-2" >
     <form  [formGroup]="bootcampUpdateForm"  *ngIf="bootcamp">
       <div class="form-group">
-          <label for="example-text-input" class="form-control-label">Instructor Id</label>
-          <input class="form-control" placeholder="instructor id" formControlName="instructorId" type="text" value="John Snow" id="example-text-input">
+          <label for="example-text-input" class="form-control-label">Eğitmen</label>
+          <select class="form-select" aria-label="Default select example " id="instructorId" formControlName="instructorId" class="form-control">
+            <option value="" disabled selected>Seç</option>
+            <option *ngFor="let instructor of instructors" [value]="instructor.id">
+              {{instructor.firstName}} {{instructor.lastName}}
+            </option>
+            
+          </select>
+          <!-- <input class="form-control" placeholder="instructor id" formControlName="instructorId" type="text" value="John Snow" id="example-text-input"> -->
       </div>
       <div class="form-group">
           <label for="example-search-input" class="form-control-label">İsim</label>

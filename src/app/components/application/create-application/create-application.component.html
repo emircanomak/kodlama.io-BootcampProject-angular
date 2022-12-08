@@ -1,23 +1,23 @@
 
- <div class="container-fluid py-4"> 
+ <div class="container-fluid py-4 cont-resp"> 
   <div class="row">
     <div class="col-12">
       <div class="card mb-4">
         <div class="card-header pb-0">
-          <h6 style="float:left; font-size: 2rem;"  >Başvuru Listesi <button type="button"  class="btn btn-success btn-lg "
+          <h6 style="float:left; font-size: 2rem;"  >Başvuru Listesi <button type="button"  class="btn btn-outline-dark btn-lg "
             routerLink="add-application">Başvuru Ekle</button> </h6>
        
         </div>
         <div class="card-body px-0 pt-0 pb-2">
-          <div class="table-responsive p-0">
+          <div class="table-responsive p-0 table-resp">
             <table class="table align-items-center mb-0">
               <thead>
                 <tr class="text-center">
-                  <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">Aday Adı</th>
+                  <th class="text-uppercase text-dark text-xxs font-weight-bolder  ps-2">Aday Adı</th>
                   <!-- <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">User Id</th> -->
-                  <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Bootcamp Adı</th>
-                  <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Durum</th>
-                  <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7"> İşlemler</th>
+                  <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder text-dark ">Bootcamp Adı</th>
+                  <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder text-dark">Durum</th>
+                  <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder text-dark "> İşlemler</th>
 
                   <th class="text-secondary opacity-7"></th>
                 </tr>
@@ -34,18 +34,19 @@
                     <span class="text-secondary text-xs font-weight-bold">{{application.bootcampName}}</span>
                   </td>
                   <td class="align-middle">
-                    <a href="javascript:;" class="text-secondary font-weight-bold text-xs" data-toggle="tooltip" data-original-title="Edit user">
+                    <span class="badge badge-sm {{application.state == 1 ? 'bg-success' : 'bg-danger'}}">{{application.state==1 ? "AKTİF" : "PASİF"}}</span>
+                    <!-- <a href="javascript:;" class="text-secondary font-weight-bold text-xs" data-toggle="tooltip" data-original-title="Edit user">
                       {{application.state}}
-                    </a>
+                    </a> -->
                   </td>
 
                 <td>
                   <div>
-                    <button type="button" class="btn btn-primary mx-3"
+                    <button type="button" class="btn btn-outline-dark mx-3"
                       routerLink="application-detail/{{application.id}}">Detay</button>
-                    <button type="button" class="btn btn-secondary mx-3"
+                    <button type="button" class="btn btn-outline-dark mx-3"
                       routerLink="update-application/{{application.id}}">Düzenle</button>
-                    <button type="button" class="btn btn-danger mx-3"  (click)="deleteApplication(application)">Sil</button>
+                    <button type="button" class="btn btn-outline-dark mx-3"  (click)="deleteApplication(application)">SİL</button>
                   </div>
           
                 </td>

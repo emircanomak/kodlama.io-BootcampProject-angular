@@ -1,0 +1,13 @@
+
+.table-resp{
+    overflow: auto;
+    height: 420px;
+}
+.comple{
+    top: 100px;
+    position: relative;
+}
+.cont-resp{
+    top: 100px !important;
+    position: relative;
+}

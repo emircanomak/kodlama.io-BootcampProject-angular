@@ -1,8 +1,9 @@
 
+<div class="comple cont-resp">     
      <div class="col-auto ">
       <div class="bg-white border-radius-lg d-flex me-2">
-        <input type="text" class="form-control border-0 ps-3" [(ngModel)]="filterInstructor" [ngModelOptions]="{standalone:true}"  placeholder="Arayınız..">
-        <button class="btn bg-gradient-secondary text-light my-1 me-1 ">Search</button>
+        <input type="text" class="form-control border-2 ps-3" [(ngModel)]="filterInstructor" [ngModelOptions]="{standalone:true}"  placeholder="Arayınız..">
+        <button class="btn-lg btn btn-outline-dark text-dark my-0 me-1 ">Search</button>
       </div>
     </div> 
 
@@ -11,8 +12,8 @@
     <div class="col-12">
       <div class="card mb-4">
         <div class="card-header pb-0">
-          <h6 style="float:left; font-size: 2rem;"  >Eğitmen Listesi <button type="button"  class="btn btn-success btn-lg "
-            routerLink="add-instructor">Eğitmen ekle</button> </h6>
+          <h6 style="float:left; font-size: 2rem;"  >Eğitmen Listesi <button type="button"  class="btn btn-outline-dark btn-lg "
+            routerLink="add-instructor">Eğİtmen ekle</button> </h6>
 
         </div>
         <div class="card-body px-0 pt-0 pb-2">
@@ -20,16 +21,15 @@
             <table class="table align-items-center mb-0">
               <thead>
                 <tr class="text-center">
-                  <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">Ad</th>
-                  <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Soyad</th>
-                  <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">E-mail</th>
-                  <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Şifre</th>
-                  <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Kimlik No</th>
-                  <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Doğum Tarihi</th>
-                  <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Şirket Adı</th>
-                  <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7"> İşlemler</th>
+                  <th class="text-uppercase text-secondary text-xxs font-weight-bolder text-dark ps-2">Ad</th>
+                  <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder text-dark">Soyad</th>
+                  <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder text-dark">E-mail</th>
+                  <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder text-dark">Şifre</th>
+                  <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder text-dark">Kimlik No</th>
+                  <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder text-dark">Doğum Tarihi</th>
+                  <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder text-dark">Şirket Adı</th>
+                  <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder text-dark"> İşlemler</th>
 
-                  <th class="text-secondary opacity-7"></th>
                 </tr>
               </thead>
               <tbody *ngFor="let instructor of instructors |instructorList:filterInstructor" class="text-center">
@@ -71,11 +71,11 @@
 
                 <td>
                   <div>
-                    <button type="button" class="btn btn-primary mx-3"
+                    <button type="button" class="btn btn-outline-dark mx-3"
                       routerLink="instructor-detail/{{instructor.id}}">Detay</button>
-                    <button type="button" class="btn btn-secondary mx-3"
+                    <button type="button" class="btn btn-outline-dark mx-3"
                       routerLink="update-instructor/{{instructor.id}}">Düzenle</button>
-                    <button type="button" class="btn btn-danger mx-3"  (click)="delete(instructor)">Sil</button>
+                    <button type="button" class="btn btn-outline-dark mx-3"  (click)="delete(instructor)">SİL</button>
                   </div>
 
                 </td>
@@ -88,6 +88,7 @@
       </div>
     </div>
   </div>
+</div>
 
 
 

@@ -1,4 +1,14 @@
 aside{
     width: 10vh;
-    
+}
+.side-resp{
+    height: auto !important;
+    overflow: revert !important;
+}
+.fs-20{
+    font-size: 20px !important;
+}
+.i-40{
+    width: 40px;
+    height: 40px;
 }

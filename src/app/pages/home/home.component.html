@@ -1,33 +1,37 @@
+Skip to content
+Search or jump to…
+Pull requests
+Issues
+Codespaces
+Marketplace
+Explore
+ 
+@sygrok 
+emircanomak
+/
+kodlama.io-BootcampProject
+Public
+Code
+Issues
+Pull requests
+Actions
+Projects
+Wiki
+Security
+Insights
+kodlama.io-BootcampProject/src/app/pages/home/home.component.html
+@emircanomak
+emircanomak edit home
+Latest commit e0832d3 2 hours ago
+ History
+ 3 contributors
+@sygrok@emircanomak@Beyzaalici
+788 lines (641 sloc)  94 KB
+
 <router-outlet></router-outlet>
 <!--navbar start-->
 
-<div>
-  <div class="bgvv">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-gradient-dark z-index-3 py-3 top-0">
-      <div class="container ">
-        <a class="navbar-brand " name="home" rel="tooltip" title="Designed and Coded by Creative Tim"
-          data-placement="bottom" target="_blank">
-          <h4 class="text-light">Pair 4 Academy</h4>
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation"
-          aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navigation">
-          <ul class="navbar-nav navbar-nav-hover ms-auto">
-            <div class="row">
-              <div class="col-auto m-auto">
-
-                <a class="text-white cursor-pointer">
-                  <li class="nav-item d-flex align-items-center">
-                    <a href="#bootcampler" class="nav-link text-body font-weight-bold navhov">
-                      <span class="d-sm-inline d-none text-light tt">BOOTCAMPLER</span>
-                    </a>
-                  </li>
-
-
 <div >
-
 
 <div class="bgvv">
 
@@ -53,14 +57,6 @@
                 </a>
               </li>
 
-              <div class="col-auto m-auto">
-
-                <a class="text-white cursor-pointer">
-                  <li class="nav-item d-flex align-items-center">
-                    <a href="#egitmenler" class="nav-link text-body font-weight-bold navhov">
-                      <span class="d-sm-inline d-none text-light tt">EĞİTMENLER </span>
-                    </a>
-                  </li>
             </a>
           </div>
 
@@ -71,15 +67,6 @@
                 <a href="#egitmenler" class="nav-link text-body font-weight-bold">
                   <span class="d-sm-inline d-none text-light tt">EĞİTMENLER </span>
                 </a>
-              </div>
-              <div class="col-auto m-auto">
-
-                <a class="text-white cursor-pointer">
-                  <li class="nav-item d-flex align-items-center">
-                    <a href="#hakkımızda" class="nav-link text-body font-weight-bold navhov">
-                      <span class="d-sm-inline d-none text-light tt">HAKKIMIZDA </span>
-                    </a>
-                  </li>
               </li>
 
 
@@ -98,13 +85,6 @@
             </a>
           </div>
 
-                <a class="text-white cursor-pointer">
-                  <li class="nav-item d-flex align-items-center">
-                    <a routerLink="/home-login" class="nav-link text-body font-weight-bold navhov">
-                      <i class="fa fa-user me-sm-1 text-light px-1"></i>
-                      <span class="d-sm-inline d-none text-light tt">GİRİŞ YAP </span>
-                    </a>
-                  </li>
 
           <div class="col-auto m-auto">
 
@@ -114,21 +94,6 @@
                   <i class="fa fa-user me-sm-1 text-light px-1"></i>
                   <span class="d-sm-inline d-none text-light tt">GİRİŞ YAP </span>
                 </a>
-              </li>>
-              <div class="col-auto m-auto">
-                <div class="dropdown">
-                  <li class="nav-item d-flex align-items-center">
-                    <a routerLink="/home-register" class="nav-link text-body font-weight-bold navhov ">
-                      <i class="fa fa-user me-sm-1 text-light px-1 "></i>
-                      <span class="d-sm-inline d-none text-light tt">KAYIT OL</span>
-                    </a>
-                  </li>
-                  <ul class="dropdown-menu dropdown-menu-right px-2 py-3 ms-n4" aria-labelledby="dropdownMenuButton">
-                    ...
-                  </ul>
-                </div>
-              </div>
-              <!-- <div class="col-auto ">
               </li>
 
             </a>
@@ -146,17 +111,17 @@
               </ul>
             </div>
           </div>
-          <div class="col-auto ">
+          <!-- <div class="col-auto ">
             <div class="bg-white border-radius-lg d-flex me-2">
               <input type="text" class="form-control border-0 ps-3" placeholder="Arayınız..">
               <button class="btn bg-gradient-secondary text-light my-1 me-1 ">Search</button>
             </div>
           </div> -->
-        </a>
-      </div>
-    </a>
-  </a>
-</div>
+        </div>
+      </ul>
+    </div>
+  </div>
+</nav>
 
 <!-- carousel  -->
 
@@ -824,7 +789,6 @@
           <div class="copyright text-center text-sm text-muted text-lg-start">
             © <script>
               document.write(new Date().getFullYear())
-
             </script>,
             made with <i class="fa fa-heart"></i> by
             <a class="font-weight-bold" target="_blank">Creative Tim</a>

@@ -134,7 +134,14 @@
       "id": 6
     }
   ],
-  "blackList": [],
+  "blackList": [
+    {
+      "id" : 1,
+      "applicantId" : 1,
+      "date ": "12-12-2022",
+      "reason": "deli"
+    }
+  ],
   "bootcamp": [
     {
       "instructorId": "3",

@@ -31,7 +31,8 @@
               "./src/app/assets/css/nucleo-svg.css",
               "./src/app/assets/css/soft-ui-dashboard.css",
               "./src/app/assets/css/soft-ui-dashboard.min.css",
-              "node_modules/ngx-toastr/toastr.css"
+              "node_modules/ngx-toastr/toastr.css",
+              "./src/app/assets/css/ekip.css"
             ],
             "scripts": [
               "./node_modules/jquery/dist/jquery.min.js",

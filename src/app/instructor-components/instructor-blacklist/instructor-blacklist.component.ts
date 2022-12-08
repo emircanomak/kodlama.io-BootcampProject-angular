@@ -1,3 +1,4 @@
+import { ToastrService } from 'ngx-toastr';
 import { ApplicantService } from 'src/app/services/applicant.service';
 import { ICreateApplicantModel } from './../../models/request/applicant/createApplicantModel';
 import { Component } from '@angular/core';
@@ -15,7 +16,8 @@ export class InstructorBlacklistComponent {
   constructor(
     private blacklistService: BlacklistService,
     private activatedRoute: ActivatedRoute,
-    private applicantService: ApplicantService
+    private applicantService: ApplicantService,
+    private toastrService:ToastrService
   ) {}
 
   ngOnInit(): void {
@@ -33,9 +35,12 @@ export class InstructorBlacklistComponent {
   deleteUserFromBlacklist(id:number, applicantId:number){
     this.updateBlacklistState(applicantId);
     this.blacklistService.removeApplicant(id).subscribe((data)=>{
-      window.location.reload()
-      console.log("kaldırıldı")
     })
+    this.toastrService.success("Engeli Kaldırıldı")
+    setTimeout(() => {
+      window.location.reload()
+    }, 1000)
+    
   }
 
   updateBlacklistState(id:number) {

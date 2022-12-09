@@ -1,8 +1,9 @@
 import { ApplicationService } from './../../services/application.service';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { BootcampService } from './../../services/bootcamp.service';
 import { ICreateBootcampModel } from './../../models/request/bootcamp/createBootcampModel';
 import { Component } from '@angular/core';
+import { ToastrService } from 'ngx-toastr';
 
 @Component({
   selector: 'app-applicant-bootcamp-list',
@@ -16,7 +17,8 @@ export class ApplicantBootcampListComponent {
 
   constructor(
     private bootcampService: BootcampService,
-    private activatedRoute: ActivatedRoute,private applicationService:ApplicationService
+    private activatedRoute: ActivatedRoute,private applicationService:ApplicationService,
+    private toastrService: ToastrService, private router:Router
   ) {}
 
   ngOnInit(): void {
@@ -34,6 +36,10 @@ export class ApplicantBootcampListComponent {
   
     this.setBootcamp=bootcamp
     this.send()
+    this.toastrService.success("Başvuru Yapıldı","Başarılı")
+  
+    this.router.navigate(["applicant/applicant-profile"])
+
 
   }
   send(){
@@ -41,6 +47,9 @@ export class ApplicantBootcampListComponent {
 
     bootcampData.bootcampId = this.setBootcamp.id
     bootcampData.bootcampName = this.setBootcamp.name
+    bootcampData.userName = this.setBootcamp.instructorName
+    bootcampData.state = 1;
+    bootcampData.userId = localStorage.getItem("userId")
     this.applicationService.add(bootcampData).subscribe()
 
     // userId: number;

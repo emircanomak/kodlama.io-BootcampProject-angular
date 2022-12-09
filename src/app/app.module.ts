@@ -56,6 +56,7 @@ import { BootcampListPipe } from './pipes/bootcamp-list.pipe';
 import { ApplicantListPipe } from './pipes/applicant-list.pipe';
 import { InstructorListPipe } from './pipes/instructor-list.pipe';
 import { EmployeeListPipe } from './pipes/employee-list.pipe';
+import { ApplicantProfileComponent } from './applicant-components/applicant-profile/applicant-profile.component';
 
 
 
@@ -113,6 +114,7 @@ import { EmployeeListPipe } from './pipes/employee-list.pipe';
     ApplicantListPipe,
     InstructorListPipe,
     EmployeeListPipe,
+    ApplicantProfileComponent,
     
     
     

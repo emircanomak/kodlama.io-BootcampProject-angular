@@ -1,4 +1,4 @@
-export interface ICreateApplicationModel {
+export interface ICreateApplicationModel{
   id: number;
   userId: number;
   bootcampId: number;

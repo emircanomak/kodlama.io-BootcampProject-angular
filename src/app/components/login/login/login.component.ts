@@ -1,3 +1,4 @@
+import { ICreateApplicationModel } from './../../../models/request/application/createApplicationModel';
 import { ToastrService } from 'ngx-toastr';
 import { ILoginModel } from './../../../models/request/login/loginModel';
 import { AuthService } from './../../../services/auth.service';
@@ -16,6 +17,7 @@ export class LoginComponent implements OnInit {
   loginAddForm:FormGroup
   tokenModel:ITokenModel
   role:ILoginModel
+  application:ICreateApplicationModel
   constructor(private formBuilder:FormBuilder,private authService:AuthService,private router:Router, private toastrService:ToastrService){}
 
   ngOnInit(): void {
@@ -66,6 +68,7 @@ export class LoginComponent implements OnInit {
           : this.router.navigate(["applicant"])
           localStorage.setItem("token", data[0].token);
           localStorage.setItem("role", data[0].role);
+          localStorage.setItem("userId",data[0].id)
           this.toastrService.success("Giriş Başarılı")
         }else {
           this.toastrService.error("Giriş Başarısız")

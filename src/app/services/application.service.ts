@@ -20,6 +20,10 @@ export class ApplicationService {
   getApplicationById(id: number): Observable<ICreateApplicationModel> {
     return this.httpClient.get<ICreateApplicationModel>(this.apiUrl + '/' + id);
   }
+  getUserId(id:string):Observable<ICreateApplicationModel[]>{
+    return this.httpClient.get<ICreateApplicationModel[]>(this.apiUrl + '?userId=' + id);
+
+  }
 
   add(value: any) {
     return this.httpClient.post(this.apiUrl, value);

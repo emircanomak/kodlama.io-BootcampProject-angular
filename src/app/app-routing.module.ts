@@ -1,3 +1,4 @@
+import { ApplicantProfileComponent } from './applicant-components/applicant-profile/applicant-profile.component';
 import { InstructorAddApplicantBlacklistComponent } from './instructor-components/instructor-add-applicant-blacklist/instructor-add-applicant-blacklist.component';
 import { InstructorProfileComponent } from './instructor-components/instructor-profile/instructor-profile.component';
 import { InstructorListComponent } from './instructor-components/instructor-list/instructor-list.component';
@@ -177,6 +178,10 @@ const routes: Routes = [
         path: 'applicant-instructor-list',
         component: ApplicantInstructorListComponent,
       },
+      {
+        path:"applicant-profile",
+        component:ApplicantProfileComponent
+      }
     ],
     data: {
       role: 'roleApplicant',

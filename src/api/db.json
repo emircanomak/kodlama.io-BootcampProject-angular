@@ -340,6 +340,14 @@
       "state": 1,
       "userId": "1",
       "id": 18
+    },
+    {
+      "bootcampId": 5,
+      "bootcampName": "Siber Güvenlik",
+      "userName": "AtılSamancıoğlu",
+      "state": 1,
+      "userId": "1",
+      "id": 19
     }
   ],
   "users": [
@@ -349,6 +357,16 @@
       "lastName": "Omak",
       "email": "emiromak@gmail.com",
       "password": "abbasyanbasan",
+      "expiration": "lololololo",
+      "token": "EMROMKEMROMKEMROM44K44",
+      "role": "roleApplicant"
+    },
+    {
+      "id": 1,
+      "name": "Beyza",
+      "lastName": "Alıcı",
+      "email": "beyza17@gmail.com",
+      "password": "beyza123",
       "expiration": "lololololo",
       "token": "EMROMKEMROMKEMROM44K44",
       "role": "roleApplicant"

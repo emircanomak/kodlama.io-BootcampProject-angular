@@ -6,18 +6,18 @@
           <input type="text" class="form-control border-2 ps-3" [(ngModel)]="filterApplicant" [ngModelOptions]="{standalone:true}"  placeholder="Arayınız..">
           <button class="btn btn-outline-dark btn-lg text-dark my-0 me-1 ">Search</button>
         </div>
-      </div> 
-   
-   
-   
-   <div class="container-fluid py-4"> 
+      </div>
+
+
+
+   <div class="container-fluid py-4">
     <div class="row">
       <div class="col-12">
         <div class="card mb-4">
           <div class="card-header pb-0">
             <h6 style="float:left; font-size: 2rem;"  >Aday Listesi<button type="button"  class="btn btn-outline-dark btn-lg "
               routerLink="add-applicant">Aday Ekle</button> </h6>
-         
+
           </div>
           <div class="card-body px-0 pt-0 pb-2">
             <div class="table-responsive p-0 table-resp">
@@ -31,15 +31,15 @@
                     <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder text-dark">Kimlik No</th>
                     <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder text-dark">Doğum Tarihi</th>
                     <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder text-dark">Hakkında</th>
-  
-                  
+
+
                     <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder text-dark"> İşlemler</th>
-  
+
                   </tr>
                 </thead>
                 <tbody *ngFor="let applicant of applicants |applicantList:filterApplicant" class="text-center">
                   <tr>
-                    
+
                     <td class="align-middle text-center text-sm">
                       <span class="mb-0 text-sm">{{applicant.firstName}}</span>
                     </td>
@@ -71,8 +71,8 @@
                         {{applicant.about}}
                       </a>
                     </td>
-                    
-  
+
+
                   <td>
                     <div>
                       <button type="button" class="btn btn-outline-dark mx-3"
@@ -81,10 +81,10 @@
                         routerLink="update-applicant/{{applicant.id}}">Düzenle</button>
                       <button type="button" class="btn btn-outline-dark mx-3"  (click)="deleteApplicant(applicant)">SİL</button>
                     </div>
-            
+
                   </td>
                   </tr>
-                  
+
                 </tbody>
               </table>
             </div>
@@ -92,7 +92,7 @@
         </div>
       </div>
     </div>
-  
+
 
 
      </div>

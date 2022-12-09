@@ -138,14 +138,7 @@
       "id": 6
     }
   ],
-  "blackList": [
-    {
-      "id": 1,
-      "applicantId": 1,
-      "date ": "12-12-2022",
-      "reason": "deli"
-    }
-  ],
+  "blackList": [],
   "bootcamp": [
     {
       "instructorId": "3",
@@ -155,15 +148,6 @@
       "state": 2,
       "instructorName": "EnginDemiroğ",
       "id": 1
-    },
-    {
-      "instructorId": "5",
-      "name": "HTML-CSS",
-      "dateStart": "2022-12-08",
-      "dateEnd": "2022-12-15",
-      "state": "2",
-      "instructorName": "AngelaYU",
-      "id": 3
     },
     {
       "instructorId": "1",
@@ -184,15 +168,6 @@
       "id": 5
     },
     {
-      "instructorId": "3",
-      "name": "HTML59",
-      "dateStart": "4554-05-04",
-      "dateEnd": "5455-05-04",
-      "state": 1,
-      "instructorName": "EnginDemiroğ",
-      "id": 6
-    },
-    {
       "instructorId": "4",
       "name": "Java Bootcamp",
       "dateStart": "2022-12-20",
@@ -206,148 +181,29 @@
     {
       "bootcampId": 1,
       "bootcampName": "Angular",
-      "id": 1,
-      "userId": 1
-    },
-    {
-      "bootcampId": 3,
-      "bootcampName": "HTML-CSS",
-      "id": 2,
-      "userId": 2
-    },
-    {
-      "bootcampId": 3,
-      "bootcampName": "HTML-CSS",
-      "id": 3,
-      "userId": 2
-    },
-    {
-      "bootcampId": 1,
-      "bootcampName": "Angular",
       "userName": "EnginDemiroğ",
       "state": 1,
-      "userId": null,
+      "userId": "1",
+      "applyName": "Beyza",
+      "id": 1
+    },
+    {
+      "bootcampId": 3,
+      "bootcampName": "HTML-CSS",
+      "userName": "AngelaYU",
+      "state": 1,
+      "userId": "1",
+      "applyName": "Beyza",
+      "id": 2
+    },
+    {
+      "bootcampId": 4,
+      "bootcampName": "Angular",
+      "userName": "Atıl Samancıoğlu",
+      "state": 1,
+      "userId": "1",
+      "applyName": "Emir",
       "id": 4
-    },
-    {
-      "bootcampId": 1,
-      "bootcampName": "Angular",
-      "userName": "EnginDemiroğ",
-      "state": 1,
-      "userId": null,
-      "id": 5
-    },
-    {
-      "bootcampId": 1,
-      "bootcampName": "Angular",
-      "userName": "EnginDemiroğ",
-      "state": 1,
-      "userId": null,
-      "id": 6
-    },
-    {
-      "bootcampId": 4,
-      "bootcampName": "Angular",
-      "userName": "Atıl Samancıoğlu",
-      "state": 1,
-      "userId": null,
-      "id": 7
-    },
-    {
-      "bootcampId": 1,
-      "bootcampName": "Angular",
-      "userName": "EnginDemiroğ",
-      "state": 1,
-      "userId": null,
-      "id": 8
-    },
-    {
-      "bootcampId": 3,
-      "bootcampName": "HTML-CSS",
-      "userName": "AngelaYU",
-      "state": 1,
-      "userId": null,
-      "id": 9
-    },
-    {
-      "bootcampId": 1,
-      "bootcampName": "Angular",
-      "userName": "EnginDemiroğ",
-      "state": 1,
-      "userId": "1",
-      "id": 10
-    },
-    {
-      "bootcampId": 3,
-      "bootcampName": "HTML-CSS",
-      "userName": "AngelaYU",
-      "state": 1,
-      "userId": "1",
-      "id": 11
-    },
-    {
-      "bootcampId": 3,
-      "bootcampName": "HTML-CSS",
-      "userName": "AngelaYU",
-      "state": 1,
-      "userId": "1",
-      "id": 12
-    },
-    {
-      "bootcampId": 3,
-      "bootcampName": "HTML-CSS",
-      "userName": "AngelaYU",
-      "state": 1,
-      "userId": "1",
-      "id": 13
-    },
-    {
-      "bootcampId": 4,
-      "bootcampName": "Angular",
-      "userName": "Atıl Samancıoğlu",
-      "state": 1,
-      "userId": "1",
-      "id": 14
-    },
-    {
-      "bootcampId": 5,
-      "bootcampName": "Siber Güvenlik",
-      "userName": "AtılSamancıoğlu",
-      "state": 1,
-      "userId": "1",
-      "id": 15
-    },
-    {
-      "bootcampId": 4,
-      "bootcampName": "Angular",
-      "userName": "Atıl Samancıoğlu",
-      "state": 1,
-      "userId": "1",
-      "id": 16
-    },
-    {
-      "bootcampId": 3,
-      "bootcampNam": "HTML-CSS",
-      "userName": "AngelaYU",
-      "state": 1,
-      "userId": "1",
-      "id": 17
-    },
-    {
-      "bootcampId": 3,
-      "bootcampName": "HTML-CSS",
-      "userName": "AngelaYU",
-      "state": 1,
-      "userId": "1",
-      "id": 18
-    },
-    {
-      "bootcampId": 5,
-      "bootcampName": "Siber Güvenlik",
-      "userName": "AtılSamancıoğlu",
-      "state": 1,
-      "userId": "1",
-      "id": 19
     }
   ],
   "users": [

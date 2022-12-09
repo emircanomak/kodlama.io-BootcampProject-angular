@@ -29,7 +29,7 @@ export class CreateBootcampComponent {
     }
     // delete(bootcamp:ICreateBootcampModel){
     //   this.bootcamps = this.bootcamps.filter(b=>b!==bootcamp);
-    //   this.bootcampService.delete(bootcamp).subscribe()
+    //   this.bootcampService.delete(bootcamp.id).subscribe()
     //   this.toastrService.error("Silindi")
     // }
 

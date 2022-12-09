@@ -50,6 +50,7 @@ export class ApplicantBootcampListComponent {
     bootcampData.userName = this.setBootcamp.instructorName
     bootcampData.state = 1;
     bootcampData.userId = localStorage.getItem("userId")
+    bootcampData.applyName=localStorage.getItem("name")
     this.applicationService.add(bootcampData).subscribe()
 
     // userId: number;

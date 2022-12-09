@@ -23,6 +23,8 @@ export class CreateApplicationComponent {
   getApplication(){
     this.applicationService.getApplication().subscribe(data => {
       this.applications = data
+      console.log(data);
+      
     })
   }
 

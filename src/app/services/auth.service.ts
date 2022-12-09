@@ -13,6 +13,7 @@ export class AuthService {
   apiUrl=" http://localhost:3000/users"
   isLogin = false;
   roleAs:string;
+  applyName:string
 
   constructor(private httpClient:HttpClient, private toastrService:ToastrService) { }
 
@@ -36,6 +37,10 @@ export class AuthService {
   getRole(){
     this.roleAs = localStorage.getItem("role");
     return this.roleAs
+  }
+  getName(){
+    this.applyName = localStorage.getItem("name");
+    return this.applyName
   }
 
   isAuthenticated(){

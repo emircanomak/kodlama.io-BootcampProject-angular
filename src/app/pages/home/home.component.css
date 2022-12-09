@@ -378,9 +378,6 @@ ol, li {
 }
  
 
-
-
-.navhov :hover{
-  width: 50%!;
+.hehz a:hover{
+  background-color: #aa1818!important;
 }
-

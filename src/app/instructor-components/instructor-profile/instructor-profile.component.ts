@@ -10,6 +10,7 @@ import { InstructorService } from 'src/app/services/instructor.service';
 })
 export class InstructorProfileComponent {
   instructors: ICreateInstructorModel[] = [];
+  name= localStorage.getItem("name")
 
   constructor(
     private instructorService: InstructorService,

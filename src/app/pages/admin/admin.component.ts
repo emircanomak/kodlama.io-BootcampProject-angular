@@ -1,3 +1,4 @@
+import { BootcampService } from './../../services/bootcamp.service';
 import { Router } from '@angular/router';
 import { AuthService } from './../../services/auth.service';
 import { Component } from '@angular/core';
@@ -9,7 +10,9 @@ import { Component } from '@angular/core';
 })
 export class AdminComponent {
 
-  constructor(private authService:AuthService, private router:Router) {}
+  constructor(private authService:AuthService,
+     private router:Router) {}
+     name= localStorage.getItem("name")
 
   ngOnInit():void {
     // this.logout()
@@ -20,5 +23,8 @@ export class AdminComponent {
     this.router.navigate(["home-login"])
     
   }
+
+
+
 
 }

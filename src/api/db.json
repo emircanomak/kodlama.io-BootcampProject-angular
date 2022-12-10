@@ -125,6 +125,17 @@
       "companyName": "Udemy",
       "id": 5,
       "role": "roleInstructor"
+    },
+    {
+      "firstName": "Berkay",
+      "lastName": "Anduv",
+      "email": "berkayanduv@x",
+      "password": "123456789",
+      "image": "https://pbs.twimg.com/profile_images/1028670681620340736/u2U89A2c_400x400.jpg",
+      "nationalIdentity": "3532532532",
+      "dateOfBirth": "0404-04-04",
+      "companyName": "Microsoft",
+      "id": 6
     }
   ],
   "blackList": [],
@@ -164,6 +175,15 @@
       "state": "2",
       "instructorName": "AtılSamancıoğlu",
       "id": 7
+    },
+    {
+      "instructorId": "6",
+      "name": "VS CODE",
+      "dateStart": "0404-04-04",
+      "dateEnd": "11111-11-11",
+      "state": "1",
+      "instructorName": "BerkayAnduv",
+      "id": 8
     }
   ],
   "application": [

@@ -128,7 +128,12 @@ import { MainPageComponent } from './components/main-page/main-page.component';
     HttpClientModule,
     FormsModule,
     ReactiveFormsModule,
-    ToastrModule.forRoot(),
+    ToastrModule.forRoot({
+      timeOut:2000,
+      positionClass:"toast-bottom-right",
+      preventDuplicates: true,
+
+    }),
     CarouselModule.forRoot()
   ],
   providers: [],

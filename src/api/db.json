@@ -52,7 +52,7 @@
       "about": "325125",
       "img": "https://avatars.githubusercontent.com/u/49349272?v=4",
       "id": 2,
-      "state": 1,
+      "state": 0,
       "userId": 4
     }
   ],
@@ -138,7 +138,14 @@
       "id": 6
     }
   ],
-  "blackList": [],
+  "blackList": [
+    {
+      "reason": "küfür ett",
+      "date": "11/11/2022",
+      "applicantId": "2",
+      "id": 1
+    }
+  ],
   "bootcamp": [
     {
       "instructorId": "3",
@@ -280,6 +287,18 @@
       "token": "32532532532",
       "role": "roleInstructor",
       "fullName": "Hasan Haşmet",
+      "localImg": "https://i.ibb.co/6tncw2N/beyzaimg.jpg"
+    },
+    {
+      "id": 2,
+      "email": "angutbrky@hotmail.com",
+      "name": "Berkay",
+      "lastName": "Angut",
+      "password": "123",
+      "expiration": "dsgdsgdsg",
+      "token": "32532532532",
+      "role": "roleInstructor",
+      "fullName": "Berkay ANGUT",
       "localImg": "https://i.ibb.co/6tncw2N/beyzaimg.jpg"
     },
     {

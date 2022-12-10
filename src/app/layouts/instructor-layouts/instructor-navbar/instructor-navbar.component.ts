@@ -8,7 +8,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./instructor-navbar.component.css']
 })
 export class InstructorNavbarComponent {
-  name = localStorage.getItem("name")
+  fullName= localStorage.getItem("fullName")
   constructor(
    private authService: AuthService,
    private route: Router

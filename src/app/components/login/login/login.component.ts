@@ -63,7 +63,7 @@ export class LoginComponent implements OnInit {
     if (this.loginAddForm.valid){
       this.authService.login(this.loginAddForm.value).subscribe((data)=> {
         if(data){
-          data[0].role == "roleInstructor" ? this.router.navigate(["instructor"])
+          data[0].role == "roleInstructor" ? this.router.navigate(["instructor/instructor-profile"])
           :data[0].role == "roleAdmin" ? this.router.navigate(["admin/admin-main-page"])
           : this.router.navigate(["applicant"])
           localStorage.setItem("token", data[0].token);

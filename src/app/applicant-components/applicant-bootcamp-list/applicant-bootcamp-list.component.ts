@@ -12,13 +12,14 @@ import { ToastrService } from 'ngx-toastr';
 })
 export class ApplicantBootcampListComponent {
   bootcamps: ICreateBootcampModel[] = [];
-  setBootcamp:ICreateBootcampModel;
-
+  setBootcamp: ICreateBootcampModel;
 
   constructor(
     private bootcampService: BootcampService,
-    private activatedRoute: ActivatedRoute,private applicationService:ApplicationService,
-    private toastrService: ToastrService, private router:Router
+    private activatedRoute: ActivatedRoute,
+    private applicationService: ApplicationService,
+    private toastrService: ToastrService,
+    private router: Router
   ) {}
 
   ngOnInit(): void {
@@ -32,26 +33,23 @@ export class ApplicantBootcampListComponent {
       .getBootcamp()
       .subscribe((data) => (this.bootcamps = data));
   }
-  add(bootcamp:any){
-  
-    this.setBootcamp=bootcamp
-    this.send()
-    this.toastrService.success("Başvuru Yapıldı","Başarılı")
-  
-    this.router.navigate(["applicant/applicant-profile"])
+  add(bootcamp: any) {
+    this.setBootcamp = bootcamp;
+    this.send();
+    this.toastrService.success('Başvuru Yapıldı', 'Başarılı');
 
-
+    this.router.navigate(['applicant/applicant-profile']);
   }
-  send(){
-    let bootcampData = Object.assign({})
+  send() {
+    let bootcampData = Object.assign({});
 
-    bootcampData.bootcampId = this.setBootcamp.id
-    bootcampData.bootcampName = this.setBootcamp.name
-    bootcampData.userName = this.setBootcamp.instructorName
+    bootcampData.bootcampId = this.setBootcamp.id;
+    bootcampData.bootcampName = this.setBootcamp.name;
+    bootcampData.userName = this.setBootcamp.instructorName;
     bootcampData.state = 1;
-    bootcampData.userId = localStorage.getItem("userId")
-    bootcampData.applyName=localStorage.getItem("name")
-    this.applicationService.add(bootcampData).subscribe()
+    bootcampData.userId = localStorage.getItem('userId');
+    bootcampData.applyName = localStorage.getItem('name');
+    this.applicationService.add(bootcampData).subscribe();
 
     // userId: number;
     // bootcampId: number;

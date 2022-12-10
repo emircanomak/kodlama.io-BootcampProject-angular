@@ -125,17 +125,6 @@
       "companyName": "Udemy",
       "id": 5,
       "role": "roleInstructor"
-    },
-    {
-      "firstName": "Murat",
-      "lastName": "HHHHH",
-      "email": "fsjakfjlas@hjdskfl",
-      "password": "3ı09*23940",
-      "image": "https://galeri8.uludagsozluk.com/407/eruhlu-muhdi_852160.jpg",
-      "nationalIdentity": "3532532532",
-      "dateOfBirth": "1333-02-12",
-      "companyName": "GökAn",
-      "id": 6
     }
   ],
   "blackList": [],
@@ -151,7 +140,7 @@
     },
     {
       "instructorId": "1",
-      "name": "Angular",
+      "name": "Kotlin",
       "dateStart": "2022-12-10",
       "dateEnd": "2023-01-13",
       "state": 1,
@@ -204,6 +193,15 @@
       "userId": "1",
       "applyName": "Emir",
       "id": 4
+    },
+    {
+      "bootcampId": 4,
+      "bootcampName": "Kotlin",
+      "userName": "Atıl Samancıoğlu",
+      "state": 1,
+      "userId": "1",
+      "applyName": "Beyza",
+      "id": 5
     }
   ],
   "users": [

@@ -31,10 +31,11 @@
             <h4 class="text-white">{{bootcamp.name}}</h4>
             <p>Başlangıç Tarihi: {{bootcamp.dateStart}}</p>
             <p>Bitiş Tarihi: {{bootcamp.dateEnd}}</p>
-            
           </div>
         </div>
-        <button (click)="add(bootcamp)">Ekle</button>
+        <div class="d-grid gap-1 d-md-flex justify-content-md-end">
+          <button class="btn btn-outline-dark mt-3" (click)="add(bootcamp)">BAŞVUR</button>
+        </div>
       </a>
     </div>
   </div>

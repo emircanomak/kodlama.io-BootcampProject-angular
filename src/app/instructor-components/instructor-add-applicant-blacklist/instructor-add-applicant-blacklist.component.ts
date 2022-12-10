@@ -11,6 +11,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./instructor-add-applicant-blacklist.component.css'],
 })
 export class InstructorAddApplicantBlacklistComponent {
+ 
   constructor(
     private FormBuilder: FormBuilder,
     private blacklistService: BlacklistService,

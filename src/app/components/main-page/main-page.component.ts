@@ -1,3 +1,4 @@
+import { AuthService } from './../../services/auth.service';
 import { ICreateInstructorModel } from './../../models/request/instructor/createInstructorModel';
 import { InstructorService } from './../../services/instructor.service';
 import { ICreateApplicationModel } from './../../models/request/application/createApplicationModel';
@@ -8,6 +9,7 @@ import { IGetAllApplicantResponse } from './../../models/response/applicant/getA
 import { ApplicantService } from './../../services/applicant.service';
 import { Component } from '@angular/core';
 import { BootcampService } from 'src/app/services/bootcamp.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-main-page',
@@ -19,7 +21,8 @@ fullName= localStorage.getItem("fullName")
 localImg= localStorage.getItem("localImg")
 
 constructor(private applicantService:ApplicantService, private bootcampService:BootcampService,
-  private applicationService:ApplicationService, private instructorService:InstructorService
+  private applicationService:ApplicationService, private instructorService:InstructorService,
+  private router:Router, private authService:AuthService
   ){}
 
 applicants : ICreateApplicantModel[]=[];
@@ -33,6 +36,11 @@ ngOnInit(): void {
 
 
  }
+
+ logout(){
+  this.authService.logout()
+  this.router.navigate(["home-login"])
+}
 
   getAll(){
     this.getApplicant()

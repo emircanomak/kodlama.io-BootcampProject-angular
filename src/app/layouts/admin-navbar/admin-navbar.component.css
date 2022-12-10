@@ -9,3 +9,14 @@
     position: fixed;
     width: -webkit-fill-available;
 }
+
+.cbc li:hover{
+    background-color: rgba(104, 105, 105, 0.775);
+    border-radius: 1000px;
+}
+
+.cbca:hover{
+    background-color: rgba(104, 105, 105, 0.775);
+    border-radius: 1000px;
+}
+

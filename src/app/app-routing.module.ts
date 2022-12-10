@@ -1,3 +1,4 @@
+import { MainPageComponent } from './components/main-page/main-page.component';
 import { ApplicantProfileComponent } from './applicant-components/applicant-profile/applicant-profile.component';
 import { InstructorAddApplicantBlacklistComponent } from './instructor-components/instructor-add-applicant-blacklist/instructor-add-applicant-blacklist.component';
 import { InstructorProfileComponent } from './instructor-components/instructor-profile/instructor-profile.component';
@@ -65,7 +66,8 @@ const routes: Routes = [
       { path: 'admin-blacklist', component: CreateBlackListComponent },
       { path: 'admin-applicant', component: CreateApplicantComponent },
       { path: 'admin-instructor', component: CreateInstructorComponent },
-      { path: 'admin-employee', component: CreateEmployeeComponent },
+      { path: 'admin-employee', component: CreateEmployeeComponent }, 
+      { path: 'admin-main-page', component: MainPageComponent},
 
       //Child of admin-application-child
       {

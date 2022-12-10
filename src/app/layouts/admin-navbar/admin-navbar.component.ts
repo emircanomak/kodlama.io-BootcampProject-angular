@@ -10,7 +10,7 @@ import { AuthService } from 'src/app/services/auth.service';
 export class AdminNavbarComponent {
  filterText;
   constructor(private authService:AuthService, private router:Router) {}
-
+  fullName= localStorage.getItem("fullName")
   ngOnInit():void {
     // this.logout()
   }

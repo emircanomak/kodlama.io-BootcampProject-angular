@@ -57,6 +57,7 @@ import { ApplicantListPipe } from './pipes/applicant-list.pipe';
 import { InstructorListPipe } from './pipes/instructor-list.pipe';
 import { EmployeeListPipe } from './pipes/employee-list.pipe';
 import { ApplicantProfileComponent } from './applicant-components/applicant-profile/applicant-profile.component';
+import { MainPageComponent } from './components/main-page/main-page.component';
 
 
 
@@ -115,6 +116,7 @@ import { ApplicantProfileComponent } from './applicant-components/applicant-prof
     InstructorListPipe,
     EmployeeListPipe,
     ApplicantProfileComponent,
+    MainPageComponent,
     
     
     

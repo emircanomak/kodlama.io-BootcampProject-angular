@@ -1,6 +1,7 @@
 <div class="container" >
     <div class="row">
-<div class="col-md-4 mt-8" *ngFor="let instructor of instructors">
+      <h3 class="text-center mt-4" style="font-weight: 500;">Eğitmenlerimiz</h3>
+<div class="col-md-3 mt-5" *ngFor="let instructor of instructors">
   <div class="card x">
     <img class="card-img-top" src={{instructor.image}}>
     <div class="position-relative" style="height: 50px;overflow: hidden;margin-top: -50px;z-index:2;position: relative;">
@@ -23,10 +24,10 @@
     <div class="card-body">
 
         <ul style="list-style: none; padding-left:0;">
-            <li> <strong>Adı : </strong>  {{instructor.firstName}}  {{instructor.lastName}} </li>
-            <li> <strong>E-mail : </strong> {{instructor.email}}</li>
+            <li> <strong>Adı: </strong>  {{instructor.firstName}}  {{instructor.lastName}} </li>
+            <li> <strong>E-mail: </strong>{{instructor.email}}</li>
             <li> <strong>Doğum Tarihi: </strong> {{instructor.dateOfBirth}}</li>
-            <li> <strong>Şirketi:  </strong> {{instructor.companyName}}</li>
+            <li> <strong>Şirketi: </strong> {{instructor.companyName}}</li>
 
         </ul>
 

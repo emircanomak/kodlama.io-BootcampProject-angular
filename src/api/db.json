@@ -93,7 +93,7 @@
     {
       "firstName": "Engin",
       "lastName": "Demiroğ",
-      "email": "engindemirog@gmail.com",
+      "email": "engindemirog@x",
       "password": "12345",
       "image": "https://pbs.twimg.com/profile_images/1404479261566713856/_MklDkhx_400x400.jpg",
       "nationalIdentity": "asdas",
@@ -105,7 +105,7 @@
     {
       "firstName": "Atıl",
       "lastName": "Samancıoğlu",
-      "email": "atilsamancioglu@hotmail.com",
+      "email": "atilsamancioglu@x",
       "password": "12345",
       "image": "http://atilsamancioglu.com/wp-content/uploads/2018/01/photo2.jpg",
       "nationalIdentity": "489489789",
@@ -117,7 +117,7 @@
     {
       "firstName": "Angela",
       "lastName": "YU",
-      "email": "angela@gmail.com",
+      "email": "angela@x",
       "password": "123456",
       "image": "https://pbs.twimg.com/profile_images/1523987597751726081/XuQeo7gC_400x400.jpg",
       "nationalIdentity": "11111111111",
@@ -184,6 +184,15 @@
       "state": "1",
       "instructorName": "BerkayAnduv",
       "id": 8
+    },
+    {
+      "instructorId": "6",
+      "name": "Amazon AWS",
+      "dateStart": "2202-12-12",
+      "dateEnd": "2023-12-12",
+      "state": "1",
+      "instructorName": "BerkayAnduv",
+      "id": 9
     }
   ],
   "application": [
@@ -233,7 +242,21 @@
       "password": "abbasyanbasan",
       "expiration": "lololololo",
       "token": "EMROMKEMROMKEMROM44K44",
-      "role": "roleApplicant"
+      "role": "roleApplicant",
+      "fullName": "Emir Omak",
+      "localImg": "https://i.ibb.co/6tncw2N/beyzaimg.jpg"
+    },
+    {
+      "id": 1,
+      "name": "Emir",
+      "lastName": "Omak",
+      "email": "emiromak@hotmail.com",
+      "password": "abbasyanbasan",
+      "expiration": "lololololo",
+      "token": "EMROMKEMROMKEMROM44K44",
+      "role": "roleAdmin",
+      "fullName": "Emir Omak",
+      "localImg": "https://media-exp1.licdn.com/dms/image/C4D03AQF1im85b9TfiA/profile-displayphoto-shrink_800_800/0/1654860685373?e=1675900800&v=beta&t=bE7KtABkXGKsXJtbH1vNlUMtvLBJVmtpNeGdTIEqI2Y"
     },
     {
       "id": 1,
@@ -243,17 +266,21 @@
       "password": "beyza123",
       "expiration": "lololololo",
       "token": "EMROMKEMROMKEMROM44K44",
-      "role": "roleApplicant"
+      "role": "roleApplicant",
+      "fullName": "Beyza Alıcı",
+      "localImg": "https://i.ibb.co/6tncw2N/beyzaimg.jpg"
     },
     {
       "id": 2,
       "email": "hasan@hotmail.com",
       "name": "hasan",
-      "lastName": "saymaz",
+      "lastName": "haşmet",
       "password": "1243",
       "expiration": "dsgdsgdsg",
       "token": "32532532532",
-      "role": "roleInstructor"
+      "role": "roleInstructor",
+      "fullName": "Hasan Haşmet",
+      "localImg": "https://i.ibb.co/6tncw2N/beyzaimg.jpg"
     },
     {
       "id": 3,
@@ -263,7 +290,9 @@
       "password": "123",
       "expiration": "dsgdsgdsg",
       "token": "32532532532",
-      "role": "roleAdmin"
+      "role": "roleAdmin",
+      "fullName": "Hediye Yıldırım",
+      "localImg": "https://media-exp1.licdn.com/dms/image/D4D03AQElc-OsTbG7GA/profile-displayphoto-shrink_400_400/0/1668838419255?e=1675900800&v=beta&t=1riJTvZmAQ4vxYAt1t6jkQdWK6so0ezNP7JALJEFhNo"
     },
     {
       "id": 4,
@@ -273,16 +302,20 @@
       "password": "123",
       "expiration": "dsgdsgdsg",
       "token": "76976976",
-      "role": "roleAdmin"
+      "role": "roleAdmin",
+      "fullName": "Beyza Alıcı",
+      "localImg": "https://i.ibb.co/6tncw2N/beyzaimg.jpg"
     },
     {
       "id": 5,
       "email": "sygrok@yahoo.com",
       "name": "Berkay",
-      "lastName": "Anduv67",
+      "lastName": "Anduv",
       "password": "123456",
       "token": "76976976",
-      "role": "roleAdmin"
+      "role": "roleAdmin",
+      "fullName": "Berkay Anduv",
+      "localImg": "https://media-exp1.licdn.com/dms/image/C4D03AQH83fM5PxrPlw/profile-displayphoto-shrink_800_800/0/1655934601813?e=2147483647&v=beta&t=j4BzMJo3cyKnFi_zvptr9hYVW9GfhlX-4jMgAATCbNI"
     }
   ]
 }

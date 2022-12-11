@@ -36,27 +36,7 @@ export class LoginComponent implements OnInit {
 
   }
   
-  // login(){
-
-  //   if(this.loginAddForm.valid){
-
-  //     let loginModal:ILoginModel = this.loginAddForm.value;
-  //     this.authService.login(loginModal).subscribe((data)=>{
-
-  //       if(data.length>0){
-  //         this.tokenModel = data[0]
-  //         localStorage.setItem("token", this.tokenModel.token)
-  //         this.router.navigate(["admin"])
-  //         alert("Giriş Başarılı")
-  //       }
-  //       else{
-  //         alert("Başaramadın")
-  //       }
-  //     })
-  //   }
-
-
-  // }
+ 
 
   login(){
 

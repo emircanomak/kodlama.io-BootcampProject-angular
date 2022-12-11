@@ -6,4 +6,5 @@ export interface ICreateBootcampModel {
   dateEnd: string;
   state: number;
   instructorName : string;
+  img:string
 }

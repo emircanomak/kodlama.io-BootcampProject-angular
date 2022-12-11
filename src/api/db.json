@@ -390,7 +390,17 @@
       "password": "123",
       "token": "dshajkfhjasjhfksajk",
       "role": "roleAdmin",
-      "localImg": "aa"
+      "localImg": "https://www.seekpng.com/png/detail/41-410093_circled-user-icon-user-profile-icon-png.png"
+    },
+    {
+      "id": 9,
+      "email": "xcvb@hotmail.com",
+      "name": "xcvb",
+      "lastName": "xcvb7",
+      "password": "123456",
+      "token": "dshajkfhjasjhfksajk",
+      "role": "roleApplicant",
+      "localImg": "https://www.seekpng.com/png/detail/41-410093_circled-user-icon-user-profile-icon-png.png"
     }
   ]
 }

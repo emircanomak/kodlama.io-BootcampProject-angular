@@ -53,6 +53,7 @@ export class AddBlackListComponent {
     addBlacklist(){
       this.blacklistService.addBlacklist(this.addBlackListForm.value).subscribe(data => {
       })
+      this.toastrService.success("silindi")
     }
     
     

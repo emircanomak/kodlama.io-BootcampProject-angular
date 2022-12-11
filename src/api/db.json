@@ -128,7 +128,16 @@
       "id": 6
     }
   ],
-  "blackList": [],
+  "blackList": [
+    {
+      "firstName": "Uğur",
+      "lastName": "Mey",
+      "applicantId": "",
+      "date": "11/11/1111",
+      "reason": "xxx",
+      "id": 1
+    }
+  ],
   "bootcamp": [
     {
       "instructorId": "3",

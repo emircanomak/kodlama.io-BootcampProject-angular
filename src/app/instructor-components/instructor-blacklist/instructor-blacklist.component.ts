@@ -46,8 +46,8 @@ export class InstructorBlacklistComponent {
   updateBlacklistState(id:number) {
     this.applicantService.updateApplicantState(id, 1).subscribe((val) => {
       // alert('Kara liste güncellendi');
-      console.log("güncellendi")
     });
+    this.toastrService.success("Güncellendi")
   }
 
   // deleteBlacklist(blacklists: ICreateBlackListModel) {

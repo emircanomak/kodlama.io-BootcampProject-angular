@@ -391,6 +391,16 @@
       "token": "dshajkfhjasjhfksajk",
       "role": "roleAdmin",
       "localImg": "https://upload.wikimedia.org/wikipedia/commons/9/99/Sample_User_Icon.png"
+    },
+    {
+      "id": 9,
+      "email": "",
+      "name": "Elif Nisa",
+      "lastName": "Alıcı",
+      "password": "456",
+      "token": "dshajkfhjasjhfksajk",
+      "role": "roleApplicant",
+      "localImg": "aa"
     }
   ]
 }

@@ -4,4 +4,5 @@ export interface IApplicantRegisterModel {
     lastName:string,
     mail:string,
     password:string;
+    
 }

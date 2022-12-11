@@ -293,15 +293,15 @@
     },
     {
       "id": 2,
-      "email": "angutbrky@hotmail.com",
+      "email": "berkayanduv@hotmail.com",
       "name": "Berkay",
-      "lastName": "Angut",
+      "lastName": "Anduv",
       "password": "123",
       "expiration": "dsgdsgdsg",
       "token": "32532532532",
       "role": "roleInstructor",
-      "fullName": "Berkay ANGUT",
-      "localImg": "https://i.ibb.co/6tncw2N/beyzaimg.jpg"
+      "fullName": "Berkay Anduv",
+      "localImg": "https://pbs.twimg.com/profile_images/1028670681620340736/u2U89A2c_400x400.jpg"
     },
     {
       "id": 3,
@@ -337,6 +337,37 @@
       "role": "roleAdmin",
       "fullName": "Berkay Anduv",
       "localImg": "https://media-exp1.licdn.com/dms/image/C4D03AQH83fM5PxrPlw/profile-displayphoto-shrink_800_800/0/1655934601813?e=2147483647&v=beta&t=j4BzMJo3cyKnFi_zvptr9hYVW9GfhlX-4jMgAATCbNI"
+    },
+    {
+      "id": 6,
+      "mail": "ugir@xxx",
+      "name": "ugir",
+      "lastName": "mey",
+      "password": "123456",
+      "token": "dshajkfhjasjhfksajk",
+      "role": "roleApplicant",
+      "localImg": "https://upload.wikimedia.org/wikipedia/commons/9/99/Sample_User_Icon.png"
+    },
+    {
+      "id": 7,
+      "mail": "hasan@xxx",
+      "name": "hasanc",
+      "lastName": "haşmett",
+      "password": "123456",
+      "token": "dshajkfhjasjhfksajk",
+      "role": "roleApplicant",
+      "localImg": "https://upload.wikimedia.org/wikipedia/commons/9/99/Sample_User_Icon.png",
+      "fullName": "hfsjakhfjksa"
+    },
+    {
+      "id": 8,
+      "email": "kk@gmail.com",
+      "name": "baran",
+      "lastName": "yanık",
+      "password": "123",
+      "token": "dshajkfhjasjhfksajk",
+      "role": "roleAdmin",
+      "localImg": "aa"
     }
   ]
 }

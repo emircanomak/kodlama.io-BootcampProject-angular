@@ -7,5 +7,6 @@ export interface ICreateApplicationModel{
   bootcampName : string;
   applicantName: string;
   applyName:string
+  userName:string
 
 }

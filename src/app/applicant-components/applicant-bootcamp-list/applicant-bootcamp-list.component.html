@@ -1,42 +1,17 @@
 <div class="container mt-8">
-  <!-- <div class="row">
-    <div class="dropdown mb-5 mt-4"> -->
-  <!-- <a class="btn bg-gradient-dark dropdown-toggle" data-bs-toggle="dropdown" id="navbarDropdownMenuLink2">
-        Eğitmenler
-      </a> -->
-  <!-- <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink2">
-        <li>
-          <a class="dropdown-item">
-            Engin Demiroğ
-          </a>
-        </li>
-        <li>
-          <a class="dropdown-item">
-            Sadık Turan
-          </a>
-        </li>
-      </ul>
-    </div>
-  </div> -->
 
-  <div class="row">
-    <div class="col-md-3 mb-6" *ngFor="let bootcamp of bootcamps">
+<div class="row">
+  <div class="col-md-3 mb-6" *ngFor="let bootcamp of bootcamps">
 
-      <a href="javascript:;">
-        <div class="card card-background move-on-hover">
-          <div class="full-background"
-            style="background-image: url('https://images.unsplash.com/photo-1521620112244-f1d36327c766?ixlib=rb-1.2.1&amp;ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&amp;auto=format&amp;fit=crop&amp;w=1300&amp;q=80')">
-          </div>
-          <div class="card-body pt-12">
-            <h4 class="text-white">{{bootcamp.name}}</h4>
-            <p>Başlangıç Tarihi: {{bootcamp.dateStart}}</p>
-            <p>Bitiş Tarihi: {{bootcamp.dateEnd}}</p>
-          </div>
-        </div>
-        <div class="d-grid gap-1 d-md-flex justify-content-md-end">
-          <button class="btn btn-outline-dark mt-3" (click)="add(bootcamp)">BAŞVUR</button>
-        </div>
-      </a>
-    </div>
+  <div class="card" style="width: 18rem;">
+    <img src="{{bootcamp.img}}" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h4 class="text-dark mb-3 text-center">{{bootcamp.name}}</h4>
+      <p class="text-dark">Başlangıç Tarihi: {{bootcamp.dateStart}}</p>
+      <!-- <p>Bitiş Tarihi: {{bootcamp.dateEnd}}</p>    -->
+     </div>
+      <a  class="btn bg-gradient-dark" (click)="add(bootcamp)">Başvur</a>
+
+  </div>
   </div>
 </div>

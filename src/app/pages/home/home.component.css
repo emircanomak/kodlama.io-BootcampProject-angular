@@ -9,7 +9,9 @@
     font-weight:500;
   }
   
-
+  .eae{
+    overflow: hidden!important;
+  }
 
   .title {
     font-size: 1.5em;
@@ -60,14 +62,6 @@
 
 
     
-  /* }
-  .link li:hover{
-    color: red;
-  }
-  .link li{
-    list-style-type: none;
-  }
- */
 
 nav{
 
@@ -329,10 +323,6 @@ ol, li {
   padding: 0;
  }
 
-.caro{
-  width: 85%;
-  margin: auto;
-}
 
 .caros img{
   border-radius: 20px;
@@ -366,7 +356,7 @@ ol, li {
 
 /* Referance */
 .info-horizontal {
-
+  
   transition: 1s all;
 }
 
@@ -385,8 +375,9 @@ ol, li {
 }
  
 
-.hehz a:hover{
-  background-color: #aa1818!important;
+.hehz .asbc:hover{
+  margin-bottom: 12px;
+  
 }
 
 
@@ -519,6 +510,12 @@ body {
   color: #8e5858;
 }
 
+.eae{
+  width: 99%;
+}
 
-/* acordion */
+ 
 
+.shadow img {
+  width: 100%;
+}

@@ -41,6 +41,8 @@ export class AddBlackListComponent {
   
   createBlacklistAddForm() {
       this.addBlackListForm = this.formBuilder.group({
+        firstName:['', Validators.required],
+        lastName:['', Validators.required],
         applicantId: ['', Validators.required],
         date: ['', [Validators.required, Validators.max(4)]],
         reason: ['', Validators.required],
@@ -48,25 +50,33 @@ export class AddBlackListComponent {
     }
 
 
-    
     addBlacklist(){
-      if(this.addBlackListForm.valid){
-        let blackList:ICreateBlackListModel = Object.assign({}, this.addBlackListForm.value);
-        this.applicantService.getApplicantById(blackList.applicantId).subscribe((applicant) => {
+      this.blacklistService.addBlacklist(this.addBlackListForm.value).subscribe(data => {
+      })
+    }
+    
+    
+    
+    
+    //doesn't work
+    // addBlacklist(){
+    //   if(this.addBlackListForm.valid){
+    //     let blackList:ICreateBlackListModel = Object.assign({}, this.addBlackListForm.value);
+    //     this.applicantService.getApplicantById(blackList.applicantId).subscribe((applicant) => {
           
-          blackList.applicantName = applicant.firstName + ' ' + applicant.lastName;
+    //       blackList.applicantName = applicant.firstName + ' ' + applicant.lastName;
 
-          this.blacklistService.addBlacklist(blackList).subscribe(data => {
-          })
-          this.toastrService.success("Engellendi")
+    //       this.blacklistService.addBlacklist(blackList).subscribe(data => {
+    //       })
+    //       this.toastrService.success("Engellendi")
           
-        })
+    //     })
 
-      }
+    //   }
 
 
        
-    }
+    // }
 
   
 }

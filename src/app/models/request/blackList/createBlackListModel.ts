@@ -4,4 +4,6 @@ export interface ICreateBlackListModel {
   date: string;
   reason: string;
   applicantName : string;
+  firstName: string;
+  lastName: string;
 }

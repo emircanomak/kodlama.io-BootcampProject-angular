@@ -140,10 +140,20 @@
   ],
   "blackList": [
     {
-      "reason": "küfür ett",
-      "date": "11/11/2022",
-      "applicantId": "2",
-      "id": 1
+      "firstName": "GökAn",
+      "lastName": "Ali",
+      "applicantId": "4",
+      "date": "14/14/2222",
+      "reason": "ahki",
+      "id": 2
+    },
+    {
+      "firstName": "Emir",
+      "lastName": "haşmet",
+      "applicantId": "3",
+      "date": "14/14/2222",
+      "reason": "ahki",
+      "id": 2
     }
   ],
   "bootcamp": [

@@ -20,10 +20,14 @@ export class RegisterComponent {
   createRegister(){
     this.registerForm = this.formBuilder.group({
       id:["",Validators.required],
-      mail:["",Validators.required],
+      email:["",Validators.required],
       name:["",Validators.required],
       lastName:["", Validators.required],
       password:["", Validators.required],
+      token:["dshajkfhjasjhfksajk"],
+      role: ["roleApplicant"],
+      localImg: ['aa']  
+      
     })
   }
 

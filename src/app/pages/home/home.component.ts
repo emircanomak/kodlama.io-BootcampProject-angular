@@ -8,12 +8,13 @@ import { Component } from '@angular/core';
 })
 export class HomeComponent {
   constructor(private toastrService: ToastrService) {}
+ 
+  ngOnInit(){
 
-  test() {
-    console.log('hello');
   }
 
   toastrButton() {
-    this.toastrService.success("İletildi")
+    this.toastrService.success("Mesajınız İletildi")
+    
   }
 }

@@ -227,42 +227,6 @@
       "userId": "1",
       "applyName": "Beyza",
       "id": 5
-    },
-    {
-      "bootcampId": 1,
-      "bootcampName": "Angular",
-      "userName": "EnginDemiroğ",
-      "state": 1,
-      "userId": "1",
-      "applyName": null,
-      "id": 6
-    },
-    {
-      "bootcampId": 1,
-      "bootcampName": "Angular",
-      "userName": "EnginDemiroğ",
-      "state": 1,
-      "userId": "1",
-      "applyName": null,
-      "id": 7
-    },
-    {
-      "bootcampId": 1,
-      "bootcampName": "Angular",
-      "userName": "EnginDemiroğ",
-      "state": 1,
-      "userId": "1",
-      "applyName": null,
-      "id": 8
-    },
-    {
-      "bootcampId": 4,
-      "bootcampName": "Kotlin",
-      "userName": "Atıl Samancıoğlu",
-      "state": 1,
-      "userId": "1",
-      "applyName": null,
-      "id": 9
     }
   ],
   "users": [
@@ -363,17 +327,18 @@
     },
     {
       "id": 6,
-      "mail": "ugir@xxx",
-      "name": "ugir",
-      "lastName": "mey",
-      "password": "123456",
+      "email": "emirromak@gmail.com",
+      "name": "Emir",
+      "lastName": "Omak",
+      "password": "12346",
       "token": "dshajkfhjasjhfksajk",
       "role": "roleApplicant",
-      "localImg": "https://upload.wikimedia.org/wikipedia/commons/9/99/Sample_User_Icon.png"
+      "fullName": "Emir Omak",
+      "localImg": "https://media-exp1.licdn.com/dms/image/C4D03AQF1im85b9TfiA/profile-displayphoto-shrink_800_800/0/1654860685373?e=1675900800&v=beta&t=bE7KtABkXGKsXJtbH1vNlUMtvLBJVmtpNeGdTIEqI2Y"
     },
     {
       "id": 7,
-      "mail": "hasan@xxx",
+      "email": "hasan@xxx",
       "name": "hasanc",
       "lastName": "haşmett",
       "password": "123456",
@@ -398,6 +363,16 @@
       "name": "xcvb",
       "lastName": "xcvb7",
       "password": "123456",
+      "token": "dshajkfhjasjhfksajk",
+      "role": "roleApplicant",
+      "localImg": "https://www.seekpng.com/png/detail/41-410093_circled-user-icon-user-profile-icon-png.png"
+    },
+    {
+      "id": 10,
+      "email": "elifnisa@gmail.com",
+      "name": "Elif Nisa",
+      "lastName": "Alıcı",
+      "password": "1234567",
       "token": "dshajkfhjasjhfksajk",
       "role": "roleApplicant",
       "localImg": "https://www.seekpng.com/png/detail/41-410093_circled-user-icon-user-profile-icon-png.png"

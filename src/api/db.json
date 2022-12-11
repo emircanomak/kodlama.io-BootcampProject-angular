@@ -248,6 +248,15 @@
       "userId": "1",
       "applyName": "Beyza",
       "id": 5
+    },
+    {
+      "bootcampId": 1,
+      "bootcampName": "Angular",
+      "userName": "EnginDemiroğ",
+      "state": 1,
+      "userId": "1",
+      "applyName": null,
+      "id": 6
     }
   ],
   "users": [

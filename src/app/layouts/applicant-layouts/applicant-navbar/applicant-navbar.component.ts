@@ -9,7 +9,7 @@ import { AuthService } from 'src/app/services/auth.service';
 })
 export class ApplicantNavbarComponent {
   constructor(private authService:AuthService, private router:Router){}
-  name= localStorage.getItem("name")
+  fullName= localStorage.getItem("fullName")
 
   ngOnInit(): void{
 

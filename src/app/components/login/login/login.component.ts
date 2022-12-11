@@ -65,7 +65,7 @@ export class LoginComponent implements OnInit {
         if(data){
           data[0].role == "roleInstructor" ? this.router.navigate(["instructor/instructor-profile"])
           :data[0].role == "roleAdmin" ? this.router.navigate(["admin/admin-main-page"])
-          : this.router.navigate(["applicant"])
+          : this.router.navigate(["applicant/applicant-bootcamp-list"])
           localStorage.setItem("token", data[0].token);
           localStorage.setItem("role", data[0].role);
           localStorage.setItem("userId",data[0].id);

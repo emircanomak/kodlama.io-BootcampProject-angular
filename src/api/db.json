@@ -52,7 +52,7 @@
       "about": "325125",
       "img": "https://avatars.githubusercontent.com/u/49349272?v=4",
       "id": 2,
-      "state": 0,
+      "state": 1,
       "userId": 4
     }
   ],
@@ -138,24 +138,7 @@
       "id": 6
     }
   ],
-  "blackList": [
-    {
-      "firstName": "GökAn",
-      "lastName": "Ali",
-      "applicantId": "4",
-      "date": "14/14/2222",
-      "reason": "ahki",
-      "id": 2
-    },
-    {
-      "firstName": "Emir",
-      "lastName": "haşmet",
-      "applicantId": "3",
-      "date": "14/14/2222",
-      "reason": "ahki",
-      "id": 2
-    }
-  ],
+  "blackList": [],
   "bootcamp": [
     {
       "instructorId": "3",

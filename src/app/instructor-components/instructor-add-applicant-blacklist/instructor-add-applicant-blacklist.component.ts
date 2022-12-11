@@ -1,3 +1,4 @@
+import { ToastrService } from 'ngx-toastr';
 import { ApplicantService } from 'src/app/services/applicant.service';
 import { ICreateBlackListModel } from './../../models/request/blackList/createBlackListModel';
 import { BlacklistService } from './../../services/blacklist.service';
@@ -11,12 +12,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./instructor-add-applicant-blacklist.component.css'],
 })
 export class InstructorAddApplicantBlacklistComponent {
- 
   constructor(
     private FormBuilder: FormBuilder,
     private blacklistService: BlacklistService,
     private activatedRoute: ActivatedRoute,
-    private applicantService: ApplicantService
+    private applicantService: ApplicantService,
+    private toastrService: ToastrService
   ) {}
 
   blacklistForm: FormGroup;
@@ -52,16 +53,22 @@ export class InstructorAddApplicantBlacklistComponent {
       });
       this.blacklistService
         .addBlacklist(blacklistAddRequest)
-        .subscribe((data) => {
-          alert('Blackliste eklendi');
-        });
-      this.updateApplicantState()
+        .subscribe((data) => {});
+      this.toastrService.success("Blacklist'e eklendi");
+      setTimeout(() => {
+        window.location.reload();
+      }, 2000);
     }
+    this.updateApplicantState();
   }
 
   updateApplicantState() {
-    this.applicantService.updateApplicantState(this.id, 0).subscribe((val) => {
-      alert('Aday güncellendi');
-    });
+    this.applicantService
+      .updateApplicantState(this.id, 0)
+      .subscribe((val) => {});
+    this.toastrService.success('Aday listesi güncellendi');
+    setTimeout(() => {
+      window.location.reload();
+    }, 2000);
   }
 }

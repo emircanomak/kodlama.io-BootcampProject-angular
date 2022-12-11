@@ -390,17 +390,17 @@
       "password": "123",
       "token": "dshajkfhjasjhfksajk",
       "role": "roleAdmin",
-      "localImg": "https://upload.wikimedia.org/wikipedia/commons/9/99/Sample_User_Icon.png"
+      "localImg": "https://www.seekpng.com/png/detail/41-410093_circled-user-icon-user-profile-icon-png.png"
     },
     {
       "id": 9,
-      "email": "",
-      "name": "Elif Nisa",
-      "lastName": "Alıcı",
-      "password": "456",
+      "email": "xcvb@hotmail.com",
+      "name": "xcvb",
+      "lastName": "xcvb7",
+      "password": "123456",
       "token": "dshajkfhjasjhfksajk",
       "role": "roleApplicant",
-      "localImg": "aa"
+      "localImg": "https://www.seekpng.com/png/detail/41-410093_circled-user-icon-user-profile-icon-png.png"
     }
   ]
 }

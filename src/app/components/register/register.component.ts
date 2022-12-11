@@ -17,17 +17,17 @@ export class RegisterComponent {
     this.createRegister()
   }
 
-  createRegister(){
-    this.registerForm = this.formBuilder.group({
-      id:["",Validators.required],
-      email:["",Validators.required],
-      name:["",Validators.required],
-      lastName:["", Validators.required],
-      password:["", Validators.required],
-      token:["dshajkfhjasjhfksajk"],
-      role: ["roleApplicant"],
-      localImg: ['aa']  
-      
+    createRegister(){
+      this.registerForm = this.formBuilder.group({
+        id:["",Validators.required],
+        email:["",Validators.required],
+        name:["",Validators.required],
+        lastName:["", Validators.required],
+        password:["", Validators.required],
+        token:["dshajkfhjasjhfksajk"],
+        role: ["roleApplicant"],
+        localImg: ['https://www.seekpng.com/png/detail/41-410093_circled-user-icon-user-profile-icon-png.png']  
+        
     })
   }
 

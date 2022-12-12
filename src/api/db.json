@@ -4,15 +4,11 @@
       "firstName": "Berkay ",
       "lastName": "Anduv",
       "email": "berkayanduv@gmail.com",
-      "password": "aq23",
+      "password": "123456",
       "nationalIdentity": "1231231",
       "dateOfBirth": "1999-04-04",
       "about": "Mezunun iş arıyorum.",
-      "id": 3,
-      "img": "https://pbs.twimg.com/profile_images/1028670681620340736/u2U89A2c_400x400.jpg",
-      "role": "roleApplicant",
-      "state": 1,
-      "userId": 1
+      "id": 3
     },
     {
       "firstName": "EMİR",
@@ -71,7 +67,7 @@
     {
       "firstName": "Hediye",
       "lastName": "Yıldırım",
-      "email": "sadasjd@hotmail.com",
+      "email": "hediye@hotmail.com",
       "password": "654554",
       "nationalIdentity": "23165498984",
       "dateOfBirth": "2121-03-12",
@@ -128,7 +124,24 @@
       "id": 6
     }
   ],
-  "blackList": [],
+  "blackList": [
+    {
+      "firstName": "Emircan ",
+      "lastName": "Omak",
+      "applicantId": "",
+      "date": "12.12.2022",
+      "reason": "Yaramaz",
+      "id": 1
+    },
+    {
+      "firstName": "Berkay",
+      "lastName": "Anduv",
+      "applicantId": "",
+      "date": "09.09.2022",
+      "reason": "Hakaret",
+      "id": 2
+    }
+  ],
   "bootcamp": [
     {
       "instructorId": "3",

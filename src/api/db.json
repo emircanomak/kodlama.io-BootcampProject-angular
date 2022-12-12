@@ -97,7 +97,7 @@
       "lastName": "Samancıoğlu",
       "email": "atilsamancioglu@x",
       "password": "12345",
-      "image": "http://atilsamancioglu.com/wp-content/uploads/2018/01/photo2.jpg",
+      "image": "https://pbs.twimg.com/media/EgqVpF1XcAAwDsE.jpg",
       "nationalIdentity": "489489789",
       "dateOfBirth": "1999-04-04",
       "companyName": "Turkcell",
@@ -128,16 +128,7 @@
       "id": 6
     }
   ],
-  "blackList": [
-    {
-      "firstName": "Uğur",
-      "lastName": "Mey",
-      "applicantId": "",
-      "date": "11/11/1111",
-      "reason": "xxx",
-      "id": 1
-    }
-  ],
+  "blackList": [],
   "bootcamp": [
     {
       "instructorId": "3",
@@ -374,7 +365,8 @@
       "password": "123456",
       "token": "dshajkfhjasjhfksajk",
       "role": "roleApplicant",
-      "localImg": "https://www.seekpng.com/png/detail/41-410093_circled-user-icon-user-profile-icon-png.png"
+      "localImg": "https://www.seekpng.com/png/detail/41-410093_circled-user-icon-user-profile-icon-png.png",
+      "fullName": "XCVB"
     },
     {
       "id": 10,

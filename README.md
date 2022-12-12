@@ -14,3 +14,4 @@ First, we have a guest screen. On this screen, you can get to know us, see the b
 ## Images from the app<br/>
 ### Home Page
 ![enter image description here](https://im.ezgif.com/tmp/ezgif-1-c4bfc002b1.gif)
+<img align="right" alt="GIF" src="https://im.ezgif.com/tmp/ezgif-1-c4bfc002b1.gif" width="500" height="320" />

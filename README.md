@@ -13,4 +13,4 @@ First, we have a guest screen. On this screen, you can get to know us, see the b
 2. CSS - Bootstrap , Angular Bootstrap*
 ## Images from the app<br/>
 ### Home Page
-<img align="right" alt="GIF" src="[https://im.ezgif.com/tmp/ezgif-1-c4bfc002b1.gif](https://im.ezgif.com/tmp/ezgif-1-c4bfc002b1.gif)" width="500" height="325" />
+<img align="right" alt="GIF" src="[https://im.ezgif.com/tmp/ezgif-1-c4bfc002b1.gif]" width="500" height="325" />

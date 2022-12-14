@@ -14,5 +14,4 @@ First, we have a guest screen. On this screen, you can get to know us, see the b
 ## Images from the app<br/>
 ### Home Page
 <img src="https://github.com/emircanomak/kodlama.io-BootcampProject/blob/master/homegif.gif" width="auto"><br/>
-
-### Admin Page
+### Admin Page<br/>

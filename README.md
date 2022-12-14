@@ -16,3 +16,6 @@ First, we have a guest screen. On this screen, you can get to know us, see the b
 <img src="https://github.com/emircanomak/kodlama.io-BootcampProject/blob/master/homegif.gif" width="auto"><br/>
 ### Admin Page<br/>
 <img src="https://github.com/emircanomak/kodlama.io-BootcampProject/blob/master/admingif.gif" width="auto"><br/>
+### Applicant Page<br/>
+<img src="https://github.com/emircanomak/kodlama.io-BootcampProject/blob/master/applicantgif.gif" width="auto"><br/>
+

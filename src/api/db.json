@@ -240,6 +240,60 @@
       "userId": "1",
       "applyName": "Beyza",
       "id": 5
+    },
+    {
+      "bootcampId": 4,
+      "bootcampName": "Kotlin",
+      "userName": "Atıl Samancıoğlu",
+      "state": 1,
+      "userId": "6",
+      "applyName": null,
+      "id": 6
+    },
+    {
+      "bootcampId": 1,
+      "bootcampName": "Angular",
+      "userName": "EnginDemiroğ",
+      "state": 1,
+      "userId": "6",
+      "applyName": null,
+      "id": 7
+    },
+    {
+      "bootcampId": 8,
+      "bootcampName": "VS CODE",
+      "userName": "BerkayAnduv",
+      "state": 1,
+      "userId": "6",
+      "applyName": null,
+      "id": 8
+    },
+    {
+      "bootcampId": 9,
+      "bootcampName": "Amazon AWS",
+      "userName": "BerkayAnduv",
+      "state": 1,
+      "userId": "6",
+      "applyName": null,
+      "id": 9
+    },
+    {
+      "bootcampId": 1,
+      "bootcampName": "Angular",
+      "userName": "EnginDemiroğ",
+      "state": 1,
+      "userId": "6",
+      "applyName": null,
+      "id": 10
+    },
+    {
+      "bootcampId": 4,
+      "bootcampName": "Kotlin",
+      "userName": "Atıl Samancıoğlu",
+      "state": 1,
+      "userId": "6",
+      "applyName": null,
+      "id": 11
     }
   ],
   "users": [
